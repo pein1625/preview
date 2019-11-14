@@ -340,9 +340,9 @@ function getCoords(elem) {
   return { top: Math.round(top), left: Math.round(left) };
 }
 
-const Design = function () {
+const Design = function (data) {
   this.boards = [];
-  this.container = document.querySelector('.design__boards');
+  this.container = document.querySelector(".design__boards");
   this.focusBoard = null;
   this.focusBox = null;
 
@@ -368,28 +368,32 @@ const Design = function () {
     });
   };
 
-  this.addBox = box => {
-    this.focusBoard.addBox(box);
-  };
+  if (!data) {
+    this.addBoard(new Board());
+  } else {
+    data.boards.map(board => {
+      this.addBoard(new Board(board));
+    });
+  }
 };
 
 const Board = function () {
   let count = 0;
 
   return function (data) {
-    let boardEl = document.createElement('div');
-    let headerEl = document.createElement('div');
-    let bodyEl = document.createElement('div');
-    let removeEl = document.createElement('a');
+    let boardEl = document.createElement("div");
+    let headerEl = document.createElement("div");
+    let bodyEl = document.createElement("div");
+    let removeEl = document.createElement("a");
 
     count++;
 
-    boardEl.classList.add('board');
+    boardEl.classList.add("board");
     boardEl.dataset.id = count;
-    headerEl.classList.add('board__header');
-    bodyEl.classList.add('board__body');
-    removeEl.classList.add('board__btn');
-    removeEl.attributes.href = '#!';
+    headerEl.classList.add("board__header");
+    bodyEl.classList.add("board__body");
+    removeEl.classList.add("board__btn");
+    removeEl.attributes.href = "#!";
     removeEl.innerHTML = `
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.25h2c.69 0 1.25.56 1.25 1.25V5h-4.5v-.5c0-.69.56-1.25 1.25-1.25zM6.5 5v-.5A2.5 2.5 0 0 1 9 2h2a2.5 2.5 0 0 1 2.5 2.5V5h3.375a.625.625 0 1 1 0 1.25H16V15a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V6.25h-.875a.625.625 0 1 1 0-1.25H6.5zm7 1.25H5.25V15c0 .966.784 1.75 1.75 1.75h6A1.75 1.75 0 0 0 14.75 15V6.25H13.5zM8.125 8h-.25v6h1.25V8h-1zm2.75 1V8h1.25v6h-1.25V9z" fill="currentColor"></path>
@@ -415,9 +419,9 @@ const Board = function () {
         this.removeEl.onclick = () => this.design.deleteBoard(this.id);
       }
 
-      const $content = $('.design__content');
+      const $content = $(".design__content");
 
-      $content.on('scroll', () => {
+      $content.on("scroll", () => {
         let contentOffsetTop = $content.offset().top;
         let offsetTop = $(this.el).offset().top;
         let contentHeight = $content.outerHeight();
@@ -435,10 +439,11 @@ const Board = function () {
 
     this.addBox = box => {
       this.bodyEl.appendChild(box.el);
+      box.updateEl();
       box.board = this;
       box.attachEvent();
 
-      if (box.type === 'background') {
+      if (box.type === "background") {
         if (this.background) {
           this.background.el.remove();
         }
@@ -467,45 +472,62 @@ const Board = function () {
         });
       }
     };
+
+    if (data) {
+      data.boxes.map(box => {
+        this.addBox(new Box(box));
+      });
+    }
   };
 }();
 
 const Box = function () {
   let count = 0;
 
-  return function (data) {
-    count++;
-
-    if (!data) {
-      console.warn('Box element has no data!');
-      return;
-    }
-
-    let {
-      type = 'text',
-      text = null,
-      url = null,
-      scale = 1,
-      rotate = 0,
-      top = 0,
-      left = 0,
-      zIndex = 0,
-      color = 'inherit',
-      fontFamily = 'inherit',
-      fontSize = 'inherit',
-      fontWeight = 400,
-      fontStyle = 'normal',
-      textAlign = 'left',
-      textTransform = 'none'
-    } = data;
-
-    let box = document.createElement('div');
-    let boxContent = document.createElement('div');
-    let img = document.createElement('img');
-
+  return function ({
+    type = "text",
+    text = null,
+    url = null,
+    scale = 1,
+    rotate = 0,
+    top = 0,
+    left = 0,
+    zIndex = 0,
+    color = "inherit",
+    fontFamily = "Arial",
+    fontSize = "12px",
+    fontWeight = 400,
+    fontStyle = "normal",
+    textAlign = "left",
+    textTransform = "none"
+  }) {
+    this.id = count++;
+    this.board = null;
+    this.data = {
+      type,
+      text,
+      url,
+      scale,
+      rotate,
+      top,
+      left,
+      zIndex,
+      color,
+      fontFamily,
+      fontSize,
+      fontWeight,
+      fontStyle,
+      textAlign,
+      textTransform,
+      zIndex
+    };
+    // create DOM node
+    const box = document.createElement("div");
+    const boxContent = document.createElement("div");
+    const img = document.createElement("img");
     switch (type) {
-      case 'text':
-        boxContent.classList.add('box__text');
+      case "text":
+        boxContent.classList.add("box__text");
         boxContent.innerText = text;
         box.style.fontSize = fontSize;
         box.style.fontFamily = fontFamily;
@@ -515,22 +537,19 @@ const Box = function () {
         box.style.textAlign = textAlign;
         box.style.textTransform = textTransform;
         this.textEl = boxContent;
-
         break;
-      case 'image':
-        boxContent.classList.add('box__image');
+      case "image":
+        boxContent.classList.add("box__image");
         boxContent.appendChild(img);
         this.img = img;
         break;
-      case 'background':
-        box.classList.add('box--bg');
-        boxContent.classList.add('box__bg');
-
+      case "background":
+        box.classList.add("box--bg");
+        boxContent.classList.add("box__bg");
         if (url) {
           boxContent.appendChild(img);
           this.img = img;
         }
-
         if (color) {
           boxContent.style.background = color;
         }
@@ -538,31 +557,9 @@ const Box = function () {
       default:
         return;
     }
-
-    box.classList.add('box');
-    box.dataset = { scale, rotate, top, left };
+    box.classList.add("box");
     box.appendChild(boxContent);
-
-    // properties
-    this.id = count;
     this.el = box;
-    this.type = type;
-    this.text = text;
-    this.scale = scale;
-    this.rotate = rotate;
-    this.top = top;
-    this.left = left;
-    this.zIndex = zIndex;
-    this.style = {
-      color,
-      fontFamily,
-      fontSize,
-      fontWeight,
-      fontStyle,
-      textAlign,
-      textTransform
-    };
-    this.board = null;
 
     // Methods
     this.attachEvent = () => {
@@ -573,21 +570,21 @@ const Box = function () {
         img.src = url;
       }
 
-      el.addEventListener('mouseenter', e => {
+      el.addEventListener("mouseenter", e => {
         if (!this.board.design.focusBox) {
-          this.updateEl(false);
+          this.updateEl({}, false);
         }
       });
 
-      el.addEventListener('mouseleave', e => {
+      el.addEventListener("mouseleave", e => {
         if (!this.board.design.focusBox) {
           removeSkeleton();
         }
       });
 
-      el.addEventListener('mousedown', e => e.stopPropagation());
+      el.addEventListener("mousedown", e => e.stopPropagation());
 
-      el.addEventListener('click', e => {
+      el.addEventListener("click", e => {
         e.stopPropagation();
 
         this.board.design.focusBoard = this.board;
@@ -595,19 +592,26 @@ const Box = function () {
 
         this.updateEl();
 
-        if (this.type !== 'background') {
+        if (this.data.type !== "background") {
           this.dragEl();
           this.rotateEl();
           this.resizeEl();
         }
 
-        if (this.type === 'text') {
-          $(`.js-design-tab[href="#design-tab-3"]`).tab('show');
-          $('.js-text-input').val(this.text);
-          $('.js-text-btn').text('Sửa');
+        if (this.data.type === "text") {
+          $(`.js-design-tab[href="#design-tab-3"]`).tab("show");
+          $(".js-text-input").val(this.getData().text);
+          $(".js-text-btn").text("Sửa");
+
+          $(".js-font-family").val(this.getData().fontFamily);
+          $(".js-font-size").val(this.getData().fontSize);
+
+          if (colorPicker) {
+            colorPicker.setColor(this.getData().color);
+          }
         } else {
-          $('.js-text-btn').text('Thêm');
-          $('.js-text-input').val('');
+          $(".js-text-btn").text("Thêm");
+          $(".js-text-input").val("");
         }
       });
     };
@@ -618,7 +622,7 @@ const Box = function () {
       }
 
       this.zIndex = this.board.getIndex();
-      this.updateEl();
+      this.updateEl({ zIndex });
     };
 
     this.dragEl = () => {
@@ -647,10 +651,10 @@ const Box = function () {
         pos3 = e.clientX;
         pos4 = e.clientY;
 
-        // set the element's new position:
-        this.top = this.el.offsetTop - pos2;
-        this.left = this.el.offsetLeft - pos1;
-        this.updateEl();
+        this.updateEl({
+          top: this.el.offsetTop - pos2,
+          left: this.el.offsetLeft - pos1
+        });
       };
 
       const closeDragElement = () => {
@@ -694,9 +698,7 @@ const Box = function () {
           position: position
         });
 
-        this.rotate = angle;
-
-        this.updateEl();
+        this.updateEl({ rotate: angle });
       };
 
       const closeDragElement = () => {
@@ -731,11 +733,11 @@ const Box = function () {
             break;
         }
 
-        return result + 'deg';
+        return result + "deg";
       };
 
       var el = this.el;
-      var rotateBtn = document.querySelector('.skeleton__rotate');
+      var rotateBtn = document.querySelector(".skeleton__rotate");
       rotateBtn.onmousedown = dragMouseDown;
     };
 
@@ -764,9 +766,9 @@ const Box = function () {
         let scaleX = Math.abs(mouseX - centerX) * 2 / originWidth;
         let scaleY = Math.abs(mouseY - centerY) * 2 / originHeight;
 
-        this.scale = scaleX < scaleY ? scaleY : scaleX;
+        scale = scaleX < scaleY ? scaleY : scaleX;
 
-        this.updateEl();
+        this.updateEl({ scale });
       };
 
       const closeDragElement = () => {
@@ -775,51 +777,61 @@ const Box = function () {
         document.onmousemove = null;
       };
 
-      let resizeBtns = document.querySelectorAll('.skeleton__resize');
+      let resizeBtns = document.querySelectorAll(".skeleton__resize");
 
       Array.from(resizeBtns, function (btn) {
         btn.onmousedown = dragMouseDown;
       });
     };
 
-    this.updateEl = (showSkeletonBtn = true) => {
-      let { el, text, top, left, rotate, scale, zIndex, type, style } = this;
+    this.updateEl = (newData = {}, showSkeletonBtn = true) => {
+      const { el } = this;
+      this.data = Object.assign({}, this.data, newData);
+      const {
+        type,
+        text,
+        top,
+        left,
+        rotate,
+        scale,
+        zIndex,
+        color,
+        fontFamily,
+        fontSize,
+        fontWeight,
+        fontStyle
+      } = this.data;
 
-      el.style.top = top + 'px';
-      el.style.left = left + 'px';
+      el.style.top = top + "px";
+      el.style.left = left + "px";
       el.style.zIndex = zIndex;
       el.style.transform = `scale(${scale}) rotate(${rotate})`;
 
       // text style
-      if (type === 'text') {
-        el.style.color = style.color;
-        el.style.fontFamily = style.fontFamily;
-        el.style.fontSize = style.fontSize;
-        el.style.fontWeight = style.fontWeight;
-        el.style.fontStyle = style.fontStyle;
+      if (type === "text") {
+        el.style.color = color;
+        el.style.fontFamily = fontFamily;
+        el.style.fontSize = fontSize;
+        el.style.fontWeight = fontWeight;
+        el.style.fontStyle = fontStyle;
 
         this.textEl.innerText = text;
-      } else if (type === 'background') {
-        el.style.background = style.color;
+      } else if (type === "background") {
+        el.style.background = color;
       }
 
-      this.updateSkeleton(showSkeletonBtn && this.type !== 'background');
+      this.updateSkeleton(showSkeletonBtn && this.type !== "background");
     };
+
+    this.getData = () => this.data;
 
     this.delete = () => {
       this.board.deleteBox(this.id);
     };
 
-    this.changeStyle = (style = {}) => {
-      this.style = Object.assign({}, this.style, style);
-
-      this.updateEl();
-    };
-
-    this.getType = () => this.type;
-
     this.updateSkeleton = (hasBtns = false) => {
-      const { el, rotate, scale } = this;
+      const { el } = this;
+      const { rotate, scale } = this.data;
       const { width, height } = el.getBoundingClientRect();
       const coords = getCoords(el);
 
@@ -834,57 +846,64 @@ const Box = function () {
   };
 }();
 
+let design, colorPicker, bgPicker;
+
 $(function () {
-  $('.js-search-toggle').on('click', function (e) {
+  $(".js-search-toggle").on("click", function (e) {
     e.preventDefault();
     e.stopPropagation();
-    $('.js-search').slideToggle();
+    $(".js-search").slideToggle();
   });
 
-  $('.js-search').on('click', function (e) {
+  $(".js-search").on("click", function (e) {
     e.stopPropagation();
   });
 
-  $('html, body').on('click', function (e) {
-    $('.js-search').slideUp();
+  $("html, body").on("click", function (e) {
+    $(".js-search").slideUp();
   });
 });
 
 $(function () {
-  $('.js-payment-type').on('change', function () {
-    var isChecked = $('.js-bank-select').prop('checked');
+  $(".js-payment-type").on("change", function () {
+    var isChecked = $(".js-bank-select").prop("checked");
 
     if (isChecked) {
-      $('.bank-select').slideDown();
+      $(".bank-select").slideDown();
     } else {
-      $('.bank-select').slideUp();
+      $(".bank-select").slideUp();
     }
   });
 });
 
 $(function () {
-  $('.js-download-link').on('click', function (e) {
+  $(".js-download-link").on("click", function (e) {
     e.preventDefault();
-    var title = $(this).data('title');
-    var id = $(this).data('id');
+    var title = $(this).data("title");
+    var id = $(this).data("id");
 
-    $('.js-download-title').html(title);
-    $('.js-download-id').val(id);
-    $('.md-download').modal('show');
+    $(".js-download-title").html(title);
+    $(".js-download-id").val(id);
+    $(".md-download").modal("show");
   });
 });
 
-// init design
 $(function () {
-  let design = new Design();
+  const $design = $(".design");
 
-  $('.design__btn').on('click', function () {
+  if (!$design.length) {
+    return;
+  }
+
+  const data = $design.data("design");
+
+  design = new Design(data);
+
+  $(".design__btn").on("click", function () {
     design.addBoard(new Board());
   });
 
-  design.addBoard(new Board());
-
-  $('.js-box-float').on('click', function (e) {
+  $(".js-box-float").on("click", function (e) {
     e.stopPropagation();
 
     if (design.focusBox) {
@@ -892,7 +911,7 @@ $(function () {
     }
   });
 
-  $('.js-box-delete').on('click', function (e) {
+  $(".js-box-delete").on("click", function (e) {
     e.stopPropagation();
 
     if (design.focusBox) {
@@ -900,32 +919,41 @@ $(function () {
     }
   });
 
-  $('.js-add-item').on('click', function (e) {
+  $(".js-add-item").on("click", function (e) {
     e.stopPropagation();
-    let data = $(this).data('item');
+    let data = $(this).data("item");
 
     addItem(design, data);
   });
 
-  $(document).on('keydown', e => {
+  $(".js-add-template").on("click", function (e) {
+    e.preventDefault();
+    const data = $(this).data("design");
+    design = new Design(data);
+  });
+
+  $(document).on("keydown", e => {
     if (e.keyCode === 46 && design.focusBox) {
       design.focusBox.delete();
     }
   });
 
-  $('.design__content').on('click', function () {
+  $(".design__content").on("click", function () {
     design.focusBox = null;
-    $('.js-text-btn').text('Thêm');
-    $('.js-text-input').val('');
+    $(".js-text-btn").text("Thêm");
+    $(".js-text-input").val("");
+    $(".js-font-family").prop("selectedIndex", 0);
+    $(".js-font-size").prop("selectedIndex", 0);
+    $(".js-font-style").prop("selectedIndex", 0);
 
     removeSkeleton();
   });
 
-  const bgPicker = Pickr.create({
-    el: '.bg-picker',
-    theme: 'monolith', // or 'monolith', or 'nano'
+  bgPicker = Pickr.create({
+    el: ".bg-picker",
+    theme: "monolith", // or 'monolith', or 'nano'
 
-    swatches: ['#FF5757', '#FF66C4', '#CB6CE6', '#8C52FF', '#5271FF', '#38B6FF', '#5CE1E6', '#7ED957', '#C9E265', '#FFDE59', '#FF914D'],
+    swatches: ["#FF5757", "#FF66C4", "#CB6CE6", "#8C52FF", "#5271FF", "#38B6FF", "#5CE1E6", "#7ED957", "#C9E265", "#FFDE59", "#FF914D"],
 
     components: {
       // Main components
@@ -947,11 +975,10 @@ $(function () {
     }
   });
 
-  bgPicker.on('change', function (color, instance) {
-    let hexaColor = color.toHEXA().toString();
-
-    let bg = new Box({
-      type: 'background',
+  bgPicker.on("change", function (color, instance) {
+    const hexaColor = color.toHEXA().toString();
+    const bg = new Box({
+      type: "background",
       color: hexaColor
     });
 
@@ -960,11 +987,11 @@ $(function () {
     }
   });
 
-  const colorPicker = Pickr.create({
-    el: '.color-picker',
-    theme: 'monolith', // or 'monolith', or 'nano'
+  colorPicker = Pickr.create({
+    el: ".color-picker",
+    theme: "monolith", // or 'monolith', or 'nano'
 
-    swatches: ['#FF5757', '#FF66C4', '#CB6CE6', '#8C52FF', '#5271FF', '#38B6FF', '#5CE1E6', '#7ED957', '#C9E265', '#FFDE59', '#FF914D'],
+    swatches: ["#FF5757", "#FF66C4", "#CB6CE6", "#8C52FF", "#5271FF", "#38B6FF", "#5CE1E6", "#7ED957", "#C9E265", "#FFDE59", "#FF914D"],
 
     components: {
       // Main components
@@ -986,44 +1013,42 @@ $(function () {
     }
   });
 
-  colorPicker.on('click', function (e) {
+  colorPicker.on("click", function (e) {
     e.stopPropagation();
   });
 
-  colorPicker.on('change', function (color, instance) {
+  colorPicker.on("change", function (color, instance) {
     let hexaColor = color.toHEXA().toString();
 
-    console.log(hexaColor);
-
-    if (design.focusBox && design.focusBox.getType() === 'text') {
-      design.focusBox.changeStyle({
+    if (design.focusBox && design.focusBox.getData().type === "text") {
+      design.focusBox.updateEl({
         color: hexaColor
       });
     }
   });
 
-  $('.js-upload-image-input').on('change', function () {
+  $(".js-upload-image-input").on("change", function () {
     let input = this;
 
     if (input.files && input.files[0]) {
       var reader = new FileReader();
 
       reader.onload = function (e) {
-        let designItem = document.createElement('div');
-        let img = document.createElement('img');
+        let designItem = document.createElement("div");
+        let img = document.createElement("img");
         let data = {
-          type: 'image',
+          type: "image",
           url: e.target.result
         };
 
         img.src = e.target.result;
-        designItem.classList.add('design-item');
-        designItem.classList.add('js-add-item');
+        designItem.classList.add("design-item");
+        designItem.classList.add("js-add-item");
         designItem.append(img);
 
-        $('.js-upload-images').append(designItem);
+        $(".js-upload-images").append(designItem);
 
-        designItem.addEventListener('click', function (e) {
+        designItem.addEventListener("click", function (e) {
           addItem(design, data);
         });
       };
@@ -1032,28 +1057,28 @@ $(function () {
     }
   });
 
-  $('.js-upload-bg-input').on('change', function () {
+  $(".js-upload-bg-input").on("change", function () {
     let input = this;
 
     if (input.files && input.files[0]) {
       var reader = new FileReader();
 
       reader.onload = function (e) {
-        let designItem = document.createElement('div');
-        let img = document.createElement('img');
+        let designItem = document.createElement("div");
+        let img = document.createElement("img");
         let data = {
-          type: 'background',
+          type: "background",
           url: e.target.result
         };
 
         img.src = e.target.result;
-        designItem.classList.add('design-item');
-        designItem.classList.add('js-add-item');
+        designItem.classList.add("design-item");
+        designItem.classList.add("js-add-item");
         designItem.append(img);
 
-        $('.js-upload-bgs').append(designItem);
+        $(".js-upload-bgs").append(designItem);
 
-        designItem.addEventListener('click', function (e) {
+        designItem.addEventListener("click", function (e) {
           addItem(design, data);
         });
       };
@@ -1062,108 +1087,112 @@ $(function () {
     }
   });
 
-  $('.js-text-btn').on('click', function (e) {
+  $(".js-text-btn").on("click", function (e) {
     e.stopPropagation();
 
-    let text = $('.js-text-input').val();
+    let text = $(".js-text-input").val();
 
-    if (design.focusBox && design.focusBox.type === 'text') {
+    if (design.focusBox && design.focusBox.type === "text") {
       design.focusBox.text = text;
       design.focusBox.updateEl();
     } else {
       addItem(design, {
-        type: 'text',
+        type: "text",
         text: text
       });
     }
   });
 
-  $('.design__content').on('scroll', function () {
+  $(".design__content").on("scroll", function () {
     if (design.focusBox) {
       design.focusBox.updateEl();
     }
   });
 
-  $('.js-font-style, .js-font-size, .js-font-family').on('click', function (e) {
+  $(".js-font-style, .js-font-size, .js-font-family").on("click", function (e) {
     e.stopPropagation();
   });
 
-  $('.js-font-size').on('change', function () {
+  $(".js-font-size").on("change", function () {
     let val = $(this).val();
 
-    if (design.focusBox && design.focusBox.getType() === 'text') {
-      design.focusBox.changeStyle({
+    if (design.focusBox && design.focusBox.getData().type === "text") {
+      design.focusBox.updateEl({
         fontSize: val
       });
     }
   });
 
-  $('.js-font-family').on('change', function () {
+  $(".js-font-family").on("change", function () {
     let val = $(this).val();
 
-    if (design.focusBox && design.focusBox.getType() === 'text') {
-      design.focusBox.changeStyle({
+    if (design.focusBox && design.focusBox.getData().type === "text") {
+      design.focusBox.updateEl({
         fontFamily: val
       });
     }
   });
 
-  $('.js-font-style').on('change', function () {
-    if (design.focusBox && design.focusBox.getType() === 'text') {
+  $(".js-font-style").on("change", function () {
+    if (design.focusBox && design.focusBox.getData().type === "text") {
       let val = $(this).val();
       let style = {};
 
       switch (val) {
-        case 'bold':
+        case "bold":
           style = {
             fontWeight: 700,
-            fontStyle: 'normal'
+            fontStyle: "normal"
           };
           break;
-        case 'italic':
+        case "italic":
           style = {
             fontWeight: 400,
-            fontStyle: 'italic'
+            fontStyle: "italic"
           };
           break;
-        case 'bolditalic':
+        case "bolditalic":
           style = {
             fontWeight: 700,
-            fontStyle: 'italic'
+            fontStyle: "italic"
           };
           break;
         default:
           style = {
             fontWeight: 400,
-            fontStyle: 'normal'
+            fontStyle: "normal"
           };
           break;
       }
 
-      design.focusBox.changeStyle(style);
+      design.focusBox.updateEl(style);
     }
   });
 
-  $('.js-design-download').on('click', function (e) {
+  $(".js-design-download").on("click", function (e) {
     e.stopPropagation();
 
-    convert2Image(design, download);
+    convert2Image(download);
   });
 
-  $('.js-design-addcart').on('click', function (e) {
+  $(".js-design-addcart").on("click", function (e) {
     e.stopPropagation();
 
     if (window.addCart) {
-      convert2Image(design, window.addCart);
+      convert2Image(window.addCart);
     }
   });
 });
 
 function addItem(design, data) {
-  design.addBox(new Box(data));
+  design.focusBoard.addBox(new Box(data));
 }
 
-function convert2Image(design, cb) {
+function convert2Image(cb) {
+  if (!design) {
+    return;
+  }
+
   (async function () {
     let images = await Promise.all(design.boards.map(function (board) {
       return domtoimage.toPng(board.bodyEl);
@@ -1175,11 +1204,29 @@ function convert2Image(design, cb) {
 
 function download(images) {
   images.map(function (image) {
-    let link = document.createElement('a');
+    let link = document.createElement("a");
     link.href = image;
-    link.download = 'Download.jpg';
+    link.download = "Download.jpg";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   });
+}
+
+function getExportData() {
+  if (!design) {
+    return false;
+  }
+
+  const data = {
+    boards: design.boards.map(function (board) {
+      return {
+        boxes: board.boxes.map(function (box) {
+          return box.data;
+        })
+      };
+    })
+  };
+
+  return JSON.stringify(data);
 }
