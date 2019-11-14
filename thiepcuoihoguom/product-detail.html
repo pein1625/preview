@@ -1,0 +1,414 @@
+<!-- socials-->
+<!-- sticky widgets-->
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- vendor style-->
+        <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./vendor/swiper/css/swiper.min.css" />
+        <link rel="stylesheet" href="./vendor/slick-carousel/slick.min.css" />
+        <link rel="stylesheet" href="./vendor/pickr/classic.min.css" />
+        <link rel="stylesheet" href="./vendor/pickr/monolith.min.css" />
+        <link rel="stylesheet" href="./vendor/pickr/nano.min.css" />
+        <!-- custom style-->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                        <div class="header__elements">
+                            <section class="navbar js-navbar">
+                                <div class="navbar__backdrop js-navbar-close"></div>
+                                <div class="navbar__wrapper">
+                                    <div class="navbar__header">
+                                        <div class="navbar__title">Navigation</div>
+                                        <button class="navbar__close js-navbar-close"></button>
+                                    </div>
+                                    <div class="navbar__body">
+                                        <ul class="menu menu-root">
+                                            <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
+                                            </li>
+                                            <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Sản phẩm</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                <ul class="menu menu-sub">
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Thiệp cưới hiện đại miền nam</a>
+                                                    </li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Thiệp cưới hiện đại miền bắc</a>
+                                                    </li>
+                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Thiệp cưới trẻ trung</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <ul class="menu menu-sub menu-sub-2">
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Gấp đôi</a></li>
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Gấp ba</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Thiệp cưới cổ điển</a>
+                                                    </li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Thiệp cổ điển pha hiện đại</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Thiết kế online</a>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Tin tức - sự kiện</a>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Tải mẫu</a>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="./contact.html">Liên hệ</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="menu h-menu">
+                                            <li class="menu-item"><a class="menu-link" href="#!"><i class="fa fa-fw fa-phone text-primary mr-2"></i>09.71.71.71.91</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!"><i class="fa fa-fw fa-phone text-primary mr-2"></i>(024).71.06.07.08</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!"><i class="fa fa-fw fa-envelope-o text-primary mr-2"></i>kinhdoanh@inhoguom.com</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!"><i class="fa fa-fw fa-skype text-primary mr-2"></i>inhoguom1</a></li>
+                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!"><i class="fa fa-fw fa-user text-primary mr-2"></i>Tài khoản</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                <ul class="menu menu-sub">
+                                                    <li class="menu-item"><a class="menu-link" href="#!"></a></li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!"><i class="fa fa-fw fa-user mr-2"></i>Thông tin tài khoản</a></li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!"><i class="fa fa-fw fa-sign-in mr-2"></i>Đăng nhập</a></li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!"><i class="fa fa-fw fa-sign-out mr-2"></i>Đăng xuất</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="header__btns"><a class="header__btn" href="#!"><img src="./images/icon-cart-red.png" alt="" /></a><a class="header__btn js-search-toggle" href="#!"><i class="fa fa-search"></i></a><a class="header__btn d-xl-none js-navbar-open" href="#!"><i class="fa fa-bars"></i></a></div>
+                            <form class="search js-search">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" placeholder="Tìm kiếm..." />
+                                    <div class="input-group-append">
+                                        <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <nav>
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Sản phẩm</a></li>
+                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Thiệp cưới trẻ trung</a></li>
+                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Gấp đôi</a></li>
+                            <li class="breadcrumb-item active">Thiệp cưới 01</li>
+                        </ol>
+                    </div>
+                </nav>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 mb-30">
+                                <article class="preview">
+                                    <div class="preview__main">
+                                        <div class="preview-slider">
+                                            <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="preview-slider__frame"><img src="./images/grid-img-1.jpg" alt="" /></div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="preview-slider__frame"><img src="./images/grid-img-1.jpg" alt="" /></div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="preview-slider__frame"><img src="./images/grid-img-1.jpg" alt="" /></div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="preview-slider__frame"><img src="./images/grid-img-1.jpg" alt="" /></div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="preview-slider__frame"><img src="./images/grid-img-1.jpg" alt="" /></div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="preview-slider__frame"><img src="./images/grid-img-1.jpg" alt="" /></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="preview__thumbs">
+                                        <div class="thumb-slider">
+                                            <div class="thumb-slider__prev"><i class="fa fa-angle-left"></i></div>
+                                            <div class="thumb-slider__next"><i class="fa fa-angle-right"></i></div>
+                                            <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-slider__frame"><img src="./images/grid-img-1.jpg" alt="" /></div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-slider__frame"><img src="./images/grid-img-1.jpg" alt="" /></div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-slider__frame"><img src="./images/grid-img-1.jpg" alt="" /></div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-slider__frame"><img src="./images/grid-img-1.jpg" alt="" /></div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-slider__frame"><img src="./images/grid-img-1.jpg" alt="" /></div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-slider__frame"><img src="./images/grid-img-1.jpg" alt="" /></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-6 mb-30">
+                                <section class="pd-info">
+                                    <h1 class="pd-info__title">Thiệp cưới 01</h1>
+                                    <div class="pd-info__btns"><img src="./images/social-btns.png" alt=""></div>
+                                    <hr class="pd-info__hr">
+                                    <div class="pd-info__desc">
+                                        <p class="text-uppercase">Mô tả sản phẩm</p>
+                                        <p>Mã sản phẩm: TCTT01</p>
+                                        <p>Kích thước: 13x18 cm</p>
+                                        <p>Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <hr class="pd-info__hr">
+                                    <div class="d-flex align-items-center mb-20">
+                                        <div class="mr-10">Số lượng</div>
+                                        <div>
+                                            <div class="input-group input-group-sm product-quantity js-quantity"><span class="input-group-prepend js-quantity-btn" data-plus="-10">
+                                                    <button class="input-group-text"><i class="fa fa-minus fa-fw"></i></button></span>
+                                                <input class="form-control js-quantity-value js-detail-input" type="text" value="10" data-price="[6000,5000,4500,4000,3500]"><span class="input-group-append js-quantity-btn" data-plus="10">
+                                                    <button class="input-group-text"><i class="fa fa-plus fa-fw"></i></button></span>
+                                            </div>
+                                        </div>
+                                        <div class="pd-info__price"><span class="js-detail-price">60,000</span> VNĐ</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="mb-2">
+                                            <label class="radio-styled">
+                                                <input class="radio-styled__input js-paper-type" type="radio" name="paper-type" value="0" checked><span class="radio-styled__icon"></span>Giấy C300 hoặc Giấy Ốp 250
+                                            </label>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="radio-styled">
+                                                <input class="radio-styled__input js-paper-type" type="radio" name="paper-type" value="4000"><span class="radio-styled__icon"></span>Giấy Gango
+                                            </label>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="radio-styled">
+                                                <input class="radio-styled__input js-paper-type" type="radio" name="paper-type" value="6000"><span class="radio-styled__icon"></span>Giấy Ánh trai
+                                            </label>
+                                        </div>
+                                    </div><a class="pd-info__btn" href="#!">Chọn mẫu</a>
+                                    <hr class="pd-info__hr">
+                                    <div class="pd-info__hotline"><i class="fa fa-phone text-primary mr-2"></i>Gọi ngay <a href="#!">09.71.71.71.91</a> để được tư vấn và đặt hàng nhanh chóng</div>
+                                    <div class="d-flex align-items-center mt-20"><span class="mr-3">Chấp nhận thanh toán:</span>
+                                        <nav class="payments"><a class="payments__item" href="#!"><img src="./images/payment-1.jpg" alt=""></a><a class="payments__item" href="#!"><img src="./images/payment-2.jpg" alt=""></a><a class="payments__item" href="#!"><img src="./images/payment-3.jpg" alt=""></a><a class="payments__item" href="#!"><img src="./images/payment-4.jpg" alt=""></a></nav>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <section class="pd-detail">
+                            <h2 class="pd-detail__title">THÔNG TIN CHI TIẾT</h2>
+                            <div class="pd-detail__content">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </section>
+                        <div class="facebook-comments">
+                            <!-- put right after body opening tag-->
+                            <div id="fb-root"></div>
+                            <script async="async" defer="defer" crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&amp;version=v3.2&amp;appId=599359267157821&amp;autoLogAppEvents=1"></script>
+                            <!-- put this place-->
+                            <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+                            <div class="d-flex align-items-center mt-2">
+                                <div class="mr-3">
+                                    <div class="star-input">
+                                        <input type="radio" name="star-input" value="5" checked="checked" /><span></span>
+                                        <input type="radio" name="star-input" value="4" /><span></span>
+                                        <input type="radio" name="star-input" value="3" /><span></span>
+                                        <input type="radio" name="star-input" value="2" /><span></span>
+                                        <input type="radio" name="star-input" value="1" /><span></span>
+                                    </div>
+                                    <div class="text-center text-muted text-12">5(100%) 1 vote</div>
+                                </div>
+                                <div><img src="./images/social-btns.png" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="section__title">Sản phẩm liên quan</h2>
+                    <div class="container">
+                        <div class="product-slider">
+                            <div class="product-slider__prev"><i class="fa fa-angle-left"></i></div>
+                            <div class="product-slider__next"><i class="fa fa-angle-right"></i></div>
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="#!"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="#!">Gagro - Mẫu 1</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="#!"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="#!">Gagro - Mẫu 1</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="#!"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="#!">Gagro - Mẫu 1</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="#!"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="#!">Gagro - Mẫu 1</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="footer__map embed-responsive"><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.276387059152!2d105.7890845153546!3d21.021624293396805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab50f898373b%3A0xf94978347b40462!2zMjEwIFRydW5nIEvDrW5oLCBZw6puIEhvw6AsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1555514478680!5m2!1svi!2s' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe></div>
+                <div class="footer__light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 mb-30">
+                                <h2 class="footer__title">Đăng ký nhận tin mới</h2>
+                                <form class="f-form">
+                                    <div class="f-form__label">Để nhận tin khuyến mại mới nhất từ In Hồ Gươm</div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Nhập email của bạn" />
+                                    </div>
+                                    <button class="button" type="button"><i class="fa fa-paper-plane mr-2"></i>Gửi ngay</button>
+                                </form>
+                            </div>
+                            <div class="col-lg-2 mb-30">
+                                <h2 class="footer__title">Về chúng tôi</h2>
+                                <ul class="f-menu">
+                                    <li class="f-menu__item"><a class="f-menu__link" href="#!">Giới thiệu</a></li>
+                                    <li class="f-menu__item"><a class="f-menu__link" href="#!">Sản phẩm- dịch vụ</a></li>
+                                    <li class="f-menu__item"><a class="f-menu__link" href="#!">Thiết kế online</a></li>
+                                    <li class="f-menu__item"><a class="f-menu__link" href="#!">Tin tức - Sự kiện</a></li>
+                                    <li class="f-menu__item"><a class="f-menu__link" href="#!">Tải mẫu</a></li>
+                                    <li class="f-menu__item"><a class="f-menu__link" href="#!">Tuyển dụng</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2 mb-30">
+                                <h2 class="footer__title">Chính sách</h2>
+                                <ul class="f-menu">
+                                    <li class="f-menu__item"><a class="f-menu__link" href="#!">Quy định chung</a></li>
+                                    <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách bảo mật</a></li>
+                                    <li class="f-menu__item"><a class="f-menu__link" href="#!">Hỏi đáp về dịch vụ</a></li>
+                                    <li class="f-menu__item"><a class="f-menu__link" href="#!">Hướng dẫn đặt hàng</a></li>
+                                    <li class="f-menu__item"><a class="f-menu__link" href="#!">Hướng dẫn thanh toán</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 mb-30">
+                                <div class="f-hotline">
+                                    <div class="f-hotline__label"><i class="fa fa-lg fa-phone mr-2"></i>Hotline: <a href="#!">09.71.71.71.91</a> - <a href="#!">09.41.31.33.35</a></div>
+                                    <div class="f-hotline__content">Điện thoại: (024).71.06.07.08<br />Email: kinhdoanh@inhoguom.com<br />Skype: inhoguom1<br />8h - 19h hàng ngày</div>
+                                </div>
+                                <ul class="f-socials mt-10">
+                                    <li class="f-socials__item"><a class="f-socials__link" href="#!"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="f-socials__item"><a class="f-socials__link" href="#!"><i class="fa fa-youtube-play"></i></a></li>
+                                    <li class="f-socials__item"><a class="f-socials__link" href="#!"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="f-socials__item"><a class="f-socials__link" href="#!"><i class="fa fa-envelope-o"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__dark">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2 class="footer__title-2">Thông tin liên hệ</h2>
+                                <div class="row gutter-20">
+                                    <div class="col-sm-6 mb-20">
+                                        <div class="f-contact">
+                                            <div class="f-contact__label">Cơ sở 1</div>
+                                            <div class="f-contact__item"><i class="fa fa-fw fa-map-marker mr-2"></i>41 Giải Phóng, Hà Nội, Việt Nam</div>
+                                            <div class="f-contact__item"><i class="fa fa-fw fa-phone mr-2"></i>ĐT: 05678910.29 ,(024).71.06.07.08</div>
+                                            <div class="f-contact__item"><i class="fa fa-fw fa-clock-o mr-2"></i>8h - 19h hàng ngày CN 9h - 19h</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 mb-20">
+                                        <div class="f-contact">
+                                            <div class="f-contact__label">Cơ sở 2</div>
+                                            <div class="f-contact__item"><i class="fa fa-fw fa-map-marker mr-2"></i>31 Giải Phóng, Hà Nội, Việt Nam</div>
+                                            <div class="f-contact__item"><i class="fa fa-fw fa-phone mr-2"></i>ĐT: 05678910.31 (024).3.6283499</div>
+                                            <div class="f-contact__item"><i class="fa fa-fw fa-clock-o mr-2"></i>8h - 20h hàng ngày</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 mb-20">
+                                        <div class="f-contact">
+                                            <div class="f-contact__label">Cơ sở 3</div>
+                                            <div class="f-contact__item"><i class="fa fa-fw fa-map-marker mr-2"></i>99 Trần Đại Nghĩa, Hà Nội, Việt Nam</div>
+                                            <div class="f-contact__item"><i class="fa fa-fw fa-phone mr-2"></i>ĐT: 05678910.28 , (024).71.06.07.08</div>
+                                            <div class="f-contact__item"><i class="fa fa-fw fa-clock-o mr-2"></i>8h - 18h hàng ngày</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 mb-20">
+                                        <div class="f-contact">
+                                            <div class="f-contact__label">Cơ sở 1</div>
+                                            <div class="f-contact__item"><i class="fa fa-fw fa-map-marker mr-2"></i>65 Bà Triệu, Hà Nội, Việt Nam</div>
+                                            <div class="f-contact__item"><i class="fa fa-fw fa-phone mr-2"></i>ĐT: 05678910.26 , (024).71.06.07.08</div>
+                                            <div class="f-contact__item"><i class="fa fa-fw fa-clock-o mr-2"></i>8h - 18h hàng ngày</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-30">
+                                <h2 class="footer__title-2">Tài khoản</h2>
+                                <div class="footer__content">
+                                    <p>1. Nguyễn Trí Hùng TK 103000001677 ngân hàng Công Thương chi nhánh Hai Bà Trưng-Hà Nội.</p>
+                                    <p>2. Nguyễn Bích Liên TK 0011000218678 ngân hàng Vietcombank chi nhánh Phương Mai-Hà Nội.</p>
+                                    <p>3. Nguyễn Trí Hùng TK 12110000887888 ngân hàng BIDV chi nhánh Hà Nội</p>
+                                    <p>4. Nguyễn Trí Hùng STK 00973807001 ngân hàng Tiên Phong chi nhánh Hà Nội</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 mb-30">
+                                <h2 class="footer__title-2">QR CODE</h2><img src="./images/qr-code.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <div class="md-video modal fade" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body md-video__body">
+                            <button class="md-video__close" data-dismiss="modal"></button>
+                            <div class="embed-responsive embed-responsive-16by9"><iframe src='' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- javascript library-->
+        <!-- vendor script-->
+        <script src="./vendor/jquery/jquery-3.3.1.min.js"></script>
+        <script src="./vendor/popper/popper.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./vendor/swiper/js/swiper.min.js"></script>
+        <script src="./vendor/slick-carousel/slick.min.js"></script>
+        <script src="./vendor/dom2image/dom2image.min.js"></script>
+        <script src="./vendor/irojs/iro.min.js"></script>
+        <script src="./vendor/pickr/pickr.min.js"></script>
+        <script src="./vendor/pickr/pickr.es5.min.js"></script>
+        <!-- custom script-->
+        <script src="./js/globals.js"></script>
+    </body>
+</html>
