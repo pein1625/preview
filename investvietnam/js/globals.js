@@ -78,5 +78,7 @@ function addSwiper(selector, options = {}) {
 
 // common.js
 $(function () {
-  $('meta[name="viewport"]').prop("content", "width=1366");
+  if ($(window).width() > 1200) {
+    $('meta[name="viewport"]').prop("content", "width=1366");
+  }
 });
