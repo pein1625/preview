@@ -76,6 +76,47 @@ function addSwiper(selector, options = {}) {
   });
 }
 
+// youtube video api
+
+// This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement("script");
+var firstScriptTag = document.getElementsByTagName("script")[0];
+var player;
+
+tag.src = "https://www.youtube.com/iframe_api";
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+function onYouTubeIframeAPIReady() {
+  var homeVideo = document.getElementById("home-video");
+
+  if (!homeVideo) {
+    return;
+  }
+
+  var videoId = homeVideo.dataset.videoId;
+
+  player = new YT.Player("home-video", {
+    height: "322",
+    width: "573",
+    videoId: videoId,
+    playerVars: {
+      rel: false,
+      controls: true,
+      playsinline: "1",
+      allowfullscreen: false
+    },
+    events: {
+      onStateChange: onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.ENDED) {
+    player.stopVideo();
+  }
+}
+
 // common.js
 $(function () {
   if ($(window).width() > 1200) {
@@ -100,3 +141,97 @@ $(function () {
     }
   });
 });
+
+// calendar news&events page
+(function () {
+  var $calendar = $("#my-calendar");
+
+  if (!$calendar.length) {
+    return;
+  }
+
+  var events = [{
+    date: "2019-12-10",
+    title: "Persian Kitten Auction",
+    url: "#!"
+  }, {
+    date: "2019-12-11",
+    title: "Persian Kitten Auction1",
+    url: "#!"
+  }, {
+    date: "2019-12-12",
+    title: "Persian Kitten Auction2",
+    url: "#!"
+  }, {
+    date: "2019-12-12",
+    title: "Persian Kitten Auction3",
+    url: "#!"
+  }, {
+    date: "2019-12-12",
+    title: "Persian Kitten Auction 2",
+    url: "#!"
+  }, {
+    date: "2019-14-12",
+    title: "Persian Kitten Auction 3",
+    url: "#!"
+  }, {
+    date: "2019-14-12",
+    title: "Cat Frisbee",
+    url: "#!"
+  }, {
+    date: "2019-13-12",
+    title: "Kitten Demonstration",
+    url: "#!"
+  }, {
+    date: "2019-13-12",
+    title: "Small Cat Photo Session",
+    url: "#!"
+  }];
+  var calendarEvent = $calendar.html();
+
+  $(document).on("click", ".js-close-event", function () {
+    $(".calendar-event").removeClass("show");
+  });
+
+  $calendar.clndr({
+    events: events,
+    clickEvents: {
+      click: function (target) {
+        if (target.events.length) {
+          changeEvent(target.events);
+          $(".calendar-event").addClass("show");
+        }
+      }
+    },
+    adjacentDaysChangeMonth: true
+  });
+
+  function changeEvent(events) {
+    var ul = document.createElement("ul");
+    ul.classList = "list-unstyled mb-0";
+    events.map(item => {
+      var a = document.createElement("a");
+      a.classList = "text-default";
+      a.href = item.url;
+      var li = document.createElement("li");
+      li.classList = "py-1";
+      var wrap = document.createElement("div");
+      wrap.classList = "p-2 border";
+      var small = document.createElement("small");
+      small.classList = "text-muted";
+      var dateText = document.createTextNode(item.date);
+      small.appendChild(dateText);
+      var text = document.createElement("div");
+      var titleText = document.createTextNode(item.title);
+      a.appendChild(titleText);
+      text.appendChild(a);
+      wrap.appendChild(small);
+      wrap.appendChild(text);
+      li.appendChild(wrap);
+      ul.appendChild(li);
+    });
+    $(".js-calendar-content").html(ul);
+  }
+
+  $calendar.append(calendarEvent);
+})();
