@@ -34,6 +34,23 @@ $(function () {
 });
 
 $(function () {
+  var aboutSlider = addSwiper(".about-slider", {
+    init: false,
+    slidesPerView: 1.6,
+    spaceBetween: 8,
+    speed: 1000,
+    navigation: true,
+    centeredSlides: true
+  })[0];
+
+  aboutSlider.on("init", function () {
+    aboutSlider.slideTo(1, 0);
+  });
+
+  aboutSlider.init();
+});
+
+$(function () {
   addSwiper(".banner-slider", {
     effect: "fade",
     speed: 1000,
@@ -152,40 +169,58 @@ $(function () {
 
   var events = [{
     date: "2019-12-10",
-    title: "Persian Kitten Auction",
-    url: "#!"
+    title: "AEON MALL Hadong to be launched in late November",
+    location: "Ha Noi",
+    showDate: "12",
+    showMonth: "DEC",
+    showFullDate: "10.11.2019 - 10.12.2019",
+    inVietnam: true,
+    url: "./event-detail.html"
+  }, {
+    date: "2019-12-10",
+    title: "AEON MALL Hadong to be launched in late November",
+    location: "Ho Chi Minh City",
+    showDate: "10-11",
+    showMonth: "DEC",
+    showFullDate: "10.12.2019 - 11.12.2019",
+    inVietnam: true,
+    url: "./event-detail.html"
   }, {
     date: "2019-12-11",
-    title: "Persian Kitten Auction1",
-    url: "#!"
+    title: "AEON MALL Hadong to be launched in late November",
+    location: "Ho Chi Minh City",
+    showDate: "10-11",
+    showMonth: "DEC",
+    showFullDate: "10.12.2019 - 11.12.2019",
+    inVietnam: true,
+    url: "./event-detail.html"
+  }, {
+    date: "2019-12-10",
+    title: "AEON MALL Hadong to be launched in late November",
+    location: "Singapore",
+    showDate: "10-12",
+    showMonth: "DEC",
+    showFullDate: "10.12.2019 - 12.12.2019",
+    inVietnam: false,
+    url: "./event-detail.html"
+  }, {
+    date: "2019-12-11",
+    title: "AEON MALL Hadong to be launched in late November",
+    location: "Singapore",
+    showDate: "10-12",
+    showMonth: "DEC",
+    showFullDate: "10.12.2019 - 12.12.2019",
+    inVietnam: false,
+    url: "./event-detail.html"
   }, {
     date: "2019-12-12",
-    title: "Persian Kitten Auction2",
-    url: "#!"
-  }, {
-    date: "2019-12-12",
-    title: "Persian Kitten Auction3",
-    url: "#!"
-  }, {
-    date: "2019-12-12",
-    title: "Persian Kitten Auction 2",
-    url: "#!"
-  }, {
-    date: "2019-14-12",
-    title: "Persian Kitten Auction 3",
-    url: "#!"
-  }, {
-    date: "2019-14-12",
-    title: "Cat Frisbee",
-    url: "#!"
-  }, {
-    date: "2019-13-12",
-    title: "Kitten Demonstration",
-    url: "#!"
-  }, {
-    date: "2019-13-12",
-    title: "Small Cat Photo Session",
-    url: "#!"
+    title: "AEON MALL Hadong to be launched in late November",
+    location: "Singapore",
+    showDate: "10-12",
+    showMonth: "DEC",
+    showFullDate: "10.12.2019 - 12.12.2019",
+    inVietnam: false,
+    url: "./event-detail.html"
   }];
   var calendarEvent = $calendar.html();
 
@@ -210,23 +245,25 @@ $(function () {
     var ul = document.createElement("ul");
     ul.classList = "list-unstyled mb-0";
     events.map(item => {
-      var a = document.createElement("a");
-      a.classList = "text-default";
-      a.href = item.url;
       var li = document.createElement("li");
       li.classList = "py-1";
       var wrap = document.createElement("div");
       wrap.classList = "p-2 border";
-      var small = document.createElement("small");
-      small.classList = "text-muted";
-      var dateText = document.createTextNode(item.date);
-      small.appendChild(dateText);
-      var text = document.createElement("div");
-      var titleText = document.createTextNode(item.title);
-      a.appendChild(titleText);
-      text.appendChild(a);
-      wrap.appendChild(small);
-      wrap.appendChild(text);
+
+      var content = `
+<a class="event media text-default d-flex" href="${item.url}" >
+  <div class="event__time ${item.inVietnam ? "bg-primary" : "bg-info"}">
+    <div>${item.showDate}</div>
+    <div>${item.showMonth}</div>
+  </div>
+  <div class="event__body media-body">
+    <h3 class="event__title"><span class="text-600 ${item.inVietnam ? "text-primary" : "text-info"}">${item.location}</span> | ${item.showFullDate}</h3>
+    <div class="event__desc">${item.title}</div>
+  </div>
+</a>
+`;
+
+      wrap.innerHTML = content;
       li.appendChild(wrap);
       ul.appendChild(li);
     });
@@ -235,3 +272,30 @@ $(function () {
 
   $calendar.append(calendarEvent);
 })();
+
+// file input
+$(function () {
+  $(".js-file-input").on("change", function () {
+    var fileName = $(this).val().split(/\\|\//).pop();
+
+    $(this).closest(".js-file").find(".js-file-text").text(fileName);
+
+    var target = $(this).data("target");
+    if (target) {
+      readURL(this, target);
+    }
+  });
+
+  function readURL(input, target) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        $(target).show();
+        $(target).attr("src", e.target.result);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+});
