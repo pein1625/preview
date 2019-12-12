@@ -43,6 +43,10 @@ $(function () {
     centeredSlides: true
   })[0];
 
+  if (!aboutSlider) {
+    return;
+  }
+
   aboutSlider.on("init", function () {
     aboutSlider.slideTo(1, 0);
   });
