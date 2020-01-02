@@ -4,7 +4,7 @@
         <title>Title</title>
         <meta charset="utf-8" />
         <meta name="description" content="Description" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=1400, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <!-- vendor style-->
         <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="./vendor/swiper/swiper.min.css" />
@@ -60,43 +60,97 @@
                                     <form>
                                         <div class="row gutter-8">
                                             <div class="col-6 mb-2">
-                                                <input class="form-control" type="text" placeholder="First name *">
+                                                <div class="required">
+                                                    <input class="required__input form-control" type="text" />
+                                                    <div class="required__placeholder">First name
+
+                                                        <span class="text-red">*</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="col-6 mb-2">
-                                                <input class="form-control" type="text" placeholder="Last name *">
+                                                <div class="required">
+                                                    <input class="required__input form-control" type="text" />
+                                                    <div class="required__placeholder">Last name
+
+                                                        <span class="text-red">*</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="col-12 mb-2">
-                                                <input class="form-control" type="text" placeholder="Company name">
+                                                <div class="required">
+                                                    <input class="required__input form-control" type="text" />
+                                                    <div class="required__placeholder">Company name
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="col-6 mb-2">
-                                                <input class="form-control" type="text" placeholder="Business phone *">
+                                                <div class="required">
+                                                    <input class="required__input form-control" type="text" />
+                                                    <div class="required__placeholder">Business phone
+
+                                                        <span class="text-red">*</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="col-6 mb-2">
-                                                <input class="form-control" type="text" placeholder="E-mail *">
+                                                <div class="required">
+                                                    <input class="required__input form-control" type="text" />
+                                                    <div class="required__placeholder">E-mail
+
+                                                        <span class="text-red">*</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="col-6 mb-2">
-                                                <select class="form-control">
-                                                    <option>Business type *</option>
-                                                    <option>Business type *</option>
-                                                    <option>Business type *</option>
-                                                </select>
+                                                <div class="required">
+                                                    <select class="required__select custom-select">
+                                                        <option value="" selected="selected" disabled="disabled" hidden="hidden">&nbsp;</option>
+                                                        <option value="1">Business type 1</option>
+                                                        <option value="2">Business type 2</option>
+                                                        <option value="2">Business type 2</option>
+                                                    </select>
+                                                    <div class="required__placeholder">Business type
+
+                                                        <span class="text-red">*</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="col-6 mb-2">
-                                                <select class="form-control">
-                                                    <option>Country/Region *</option>
-                                                    <option>Country/Region *</option>
-                                                    <option>Country/Region *</option>
-                                                </select>
+                                                <div class="required">
+                                                    <select class="required__select custom-select">
+                                                        <option value="" selected="selected" disabled="disabled" hidden="hidden">&nbsp;</option>
+                                                        <option value="1">Country/Region 1</option>
+                                                        <option value="2">Country/Region 2</option>
+                                                        <option value="2">Country/Region 2</option>
+                                                    </select>
+                                                    <div class="required__placeholder">Country/Region
+
+                                                        <span class="text-red">*</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="col-12">
-                                                <textarea class="form-control" rows="6" placeholder="Your message *"></textarea>
+                                                <div class="required">
+                                                    <textarea class="required__textarea form-control" rows="6"></textarea>
+                                                    <div class="required__placeholder">Your message
+
+                                                        <span class="text-red">*</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="my-2">
                                             <div class="captcha">
                                                 <div class="captcha__wrapper">
                                                     <div class="captcha__left">
-                                                        <input class="form-control" type="text" placeholder="Enter the code shown *" />
+                                                        <div class="required">
+                                                            <input class="required__input form-control" type="text" />
+                                                            <div class="required__placeholder">Enter the code shown
+
+                                                                <span class="text-red">*</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div class="captcha__text">G3xY</div>
                                                 </div>

@@ -34,6 +34,30 @@ $(function () {
 });
 
 $(function () {
+  addSwiper(".card-slider", {
+    navigation: true,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    }
+  });
+});
+
+$(function () {
+  addSwiper(".card-slider-2", {
+    navigation: true,
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 24,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    }
+  });
+});
+
+$(function () {
   var aboutSlider = addSwiper(".about-slider", {
     init: false,
     slidesPerView: 1.6,
@@ -302,4 +326,30 @@ $(function () {
       reader.readAsDataURL(input.files[0]);
     }
   }
+});
+
+$(function () {
+  $(".required__input, .required__textarea").on("change blur", function () {
+    const val = $(this).val();
+    const $placeholder = $(this).siblings(".required__placeholder");
+
+    if (val === "") {
+      $placeholder.show();
+    } else {
+      $placeholder.hide();
+    }
+  }).on("keydown", function () {
+    $(this).siblings(".required__placeholder").hide();
+  });
+
+  $(".required__select").on("change", function () {
+    const val = $(this).val();
+    const $placeholder = $(this).siblings(".required__placeholder");
+
+    if (val === "") {
+      $placeholder.show();
+    } else {
+      $placeholder.hide();
+    }
+  });
 });
