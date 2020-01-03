@@ -164,8 +164,8 @@ function onPlayerStateChange(event) {
 
 // common.js
 $(function () {
-  if ($(window).width() > 1200) {
-    $('meta[name="viewport"]').prop("content", "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no");
+  if ($(window).width() < 1200) {
+    $('meta[name="viewport"]').prop("content", "width=1400, initial-scale=0.1, maximum-scale=1, user-scalable=no");
   }
 });
 
