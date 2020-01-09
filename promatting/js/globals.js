@@ -69,15 +69,14 @@ $(function () {
 });
 
 $(function () {
-  addSwiper(".gallery-slider", {
-    navigation: true,
-    slidesPerView: 4,
-    spaceBetween: 8,
-    breakpoints: {
-      767: {
-        slidesPerView: 3
-      }
-    }
+  addSwiper(".news-slider-2", {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    pagination: true
   });
 });
 
