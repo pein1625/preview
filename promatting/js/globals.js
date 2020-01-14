@@ -197,3 +197,14 @@ $(function () {
     }, 800);
   });
 });
+
+$(function () {
+  $(".js-zoom").each(function () {
+    const $el = $(this);
+    const url = $el.data("img");
+
+    $el.zoom({
+      url: url
+    });
+  });
+});
