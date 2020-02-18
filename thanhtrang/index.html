@@ -96,7 +96,7 @@
                         </div>
                     </div>
                 </article>
-                <section class="py-30 bg-light">
+                <section class="py-30 bg-light overflow-hidden">
                     <div class="container">
                         <section class="section-menu">
                             <h2 class="section-menu__title">Danh mục</h2>
@@ -210,167 +210,337 @@
                             </div>
                         </section>
                         <section class="section section--flash">
-                            <div class="section__header">
-                                <h2 class="section__title">Flash sale</h2>
-                                <div class="countdown" id="js-deadline" data-deadline="2020,02,16 09:00:00">
-                                    <div class="countdown__number">10</div>
-                                    <div class="countdown__divider">:</div>
-                                    <div class="countdown__number">37</div>
-                                    <div class="countdown__divider">:</div>
-                                    <div class="countdown__number">59</div>
+                            <div class="section__header mb-0">
+                                <div class="section__inner">
+                                    <h2 class="section__title"><img src="./images/icon-flashsale.png" alt=""></h2><span class="section__header-text"><i class="fa fa-lg fa-clock-o mr-2"></i><span>KẾT THÚC SAU:</span></span>
+                                    <div class="countdown" id="js-deadline" data-deadline="2020,02,20 09:00:00">
+                                        <div class="countdown__number">00</div>
+                                        <div class="countdown__divider">:</div>
+                                        <div class="countdown__number">00</div>
+                                        <div class="countdown__divider">:</div>
+                                        <div class="countdown__number">00</div>
+                                    </div>
                                 </div><a class="section__more" href="#!"><span>Xem tất cả</span><i class="fa fa-angle-right ml-2"></i></a>
-                            </div>
-                            <div class="product-slider">
-                                <div class="product-slider__prev"><i class="fa fa-angle-left"></i></div>
-                                <div class="product-slider__next"><i class="fa fa-angle-right"></i></div>
-                                <div class="swiper-container product-slider__container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                                <div class="product__saleoff">-35%</div>
-                                                <div class="product__body">
-                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                                    <div class="product__price"><span>₫250.000</span>
-                                                        <del>₫350.000</del>
+                            </div><a class="d-block shine" href="#!"><img class="d-block w-100" src="./images/flashsale-banner.jpg" alt="flash-sale-banner"></a>
+                            <ul class="flash-tabs nav">
+                                <li class="nav-item"><a class="nav-link js-flash-tab active" href="#tab-1" data-toggle="tab">Đang diễn ra</a></li>
+                                <li class="nav-item"><a class="nav-link js-flash-tab" href="#tab-2" data-toggle="tab">Sắp diễn ra</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab-1">
+                                    <div class="product-slider">
+                                        <div class="product-slider__prev"><i class="fa fa-angle-left"></i></div>
+                                        <div class="product-slider__next"><i class="fa fa-angle-right"></i></div>
+                                        <div class="swiper-container product-slider__container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="product__sold">
-                                                        <div class="product__sold-text">Đã bán 27</div>
-                                                        <div class="product__sold-progress" style="width: 60%"></div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                                <div class="product__saleoff">-35%</div>
-                                                <div class="product__body">
-                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                                    <div class="product__price"><span>₫250.000</span>
-                                                        <del>₫350.000</del>
-                                                    </div>
-                                                    <div class="product__sold">
-                                                        <div class="product__sold-text">Đã bán 27</div>
-                                                        <div class="product__sold-progress" style="width: 60%"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                                <div class="product__saleoff">-35%</div>
-                                                <div class="product__body">
-                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                                    <div class="product__price"><span>₫250.000</span>
-                                                        <del>₫350.000</del>
-                                                    </div>
-                                                    <div class="product__sold">
-                                                        <div class="product__sold-text">Đã bán 27</div>
-                                                        <div class="product__sold-progress" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab-2">
+                                    <div class="product-slider">
+                                        <div class="product-slider__prev"><i class="fa fa-angle-left"></i></div>
+                                        <div class="product-slider__next"><i class="fa fa-angle-right"></i></div>
+                                        <div class="swiper-container product-slider__container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                                <div class="product__saleoff">-35%</div>
-                                                <div class="product__body">
-                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                                    <div class="product__price"><span>₫250.000</span>
-                                                        <del>₫350.000</del>
-                                                    </div>
-                                                    <div class="product__sold">
-                                                        <div class="product__sold-text">Đã bán 27</div>
-                                                        <div class="product__sold-progress" style="width: 60%"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                                <div class="product__saleoff">-35%</div>
-                                                <div class="product__body">
-                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                                    <div class="product__price"><span>₫250.000</span>
-                                                        <del>₫350.000</del>
-                                                    </div>
-                                                    <div class="product__sold">
-                                                        <div class="product__sold-text">Đã bán 27</div>
-                                                        <div class="product__sold-progress" style="width: 60%"></div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                                <div class="product__saleoff">-35%</div>
-                                                <div class="product__body">
-                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                                    <div class="product__price"><span>₫250.000</span>
-                                                        <del>₫350.000</del>
-                                                    </div>
-                                                    <div class="product__sold">
-                                                        <div class="product__sold-text">Đã bán 27</div>
-                                                        <div class="product__sold-progress" style="width: 60%"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                                <div class="product__saleoff">-35%</div>
-                                                <div class="product__body">
-                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                                    <div class="product__price"><span>₫250.000</span>
-                                                        <del>₫350.000</del>
-                                                    </div>
-                                                    <div class="product__sold">
-                                                        <div class="product__sold-text">Đã bán 27</div>
-                                                        <div class="product__sold-progress" style="width: 60%"></div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                                <div class="product__saleoff">-35%</div>
-                                                <div class="product__body">
-                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                                    <div class="product__price"><span>₫250.000</span>
-                                                        <del>₫350.000</del>
-                                                    </div>
-                                                    <div class="product__sold">
-                                                        <div class="product__sold-text">Đã bán 27</div>
-                                                        <div class="product__sold-progress" style="width: 60%"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                                <div class="product__saleoff">-35%</div>
-                                                <div class="product__body">
-                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                                    <div class="product__price"><span>₫250.000</span>
-                                                        <del>₫350.000</del>
-                                                    </div>
-                                                    <div class="product__sold">
-                                                        <div class="product__sold-text">Đã bán 27</div>
-                                                        <div class="product__sold-progress" style="width: 60%"></div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                                <div class="product__saleoff">-35%</div>
-                                                <div class="product__body">
-                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                                    <div class="product__price"><span>₫250.000</span>
-                                                        <del>₫350.000</del>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="product__sold">
-                                                        <div class="product__sold-text">Đã bán 27</div>
-                                                        <div class="product__sold-progress" style="width: 60%"></div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product product--special"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                        <div class="product__saleoff">-35%</div>
+                                                        <div class="product__body">
+                                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                            <div class="product__price"><span>₫250.000</span>
+                                                                <del>₫350.000</del>
+                                                            </div>
+                                                            <div class="product__sold">
+                                                                <div class="product__sold-text">Đã bán 27</div>
+                                                                <div class="product__sold-progress" style="width: 60%"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -380,8 +550,8 @@
                             </div>
                         </section>
                         <div class="row no-gutters mb-30">
-                            <div class="col-8"><a href="#!"><img class="d-block w-100" src="./images/banner-left.jpg" alt="" /></a></div>
-                            <div class="col-4"><a href="#!"><img class="d-block w-100" src="./images/banner-right.jpg" alt="" /></a></div>
+                            <div class="col-8"><a class="block shine" href="#!"><img class="d-block w-100" src="./images/banner-left.jpg" alt="" /></a></div>
+                            <div class="col-4"><a class="block shine" href="#!"><img class="d-block w-100" src="./images/banner-right.jpg" alt="" /></a></div>
                         </div>
                         <section class="mb-30">
                             <h2 class="text-16 text-600 text-uppercase mb-1">Từ khoá hot</h2>
@@ -409,295 +579,307 @@
                                 <h2 class="section__title">Sản phẩm nổi bật</h2><a class="section__more" href="#!"><span>Xem tất cả</span><i class="fa fa-angle-right ml-2"></i></a>
                             </div>
                             <div class="pd-grid">
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
+                                <div class="pd-grid__aside"><a class="pd-grid__banner" href="#!"><img class="d-block w-100" src="./images/banner-aside.jpg" alt="" /></a></div>
+                                <div class="pd-grid__body">
+                                    <div class="pd-grid__products">
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__aside"><a class="d-block" href="#!"><img class="d-block w-100" src="./images/banner-aside.jpg" alt="" /></a></div>
                             </div>
                         </section>
                         <div class="row no-gutters mb-30">
-                            <div class="col-8"><a href="#!"><img class="d-block w-100" src="./images/banner-left.jpg" alt="" /></a></div>
-                            <div class="col-4"><a href="#!"><img class="d-block w-100" src="./images/banner-right.jpg" alt="" /></a></div>
+                            <div class="col-8"><a class="block shine" href="#!"><img class="d-block w-100" src="./images/banner-left.jpg" alt="" /></a></div>
+                            <div class="col-4"><a class="block shine" href="#!"><img class="d-block w-100" src="./images/banner-right.jpg" alt="" /></a></div>
                         </div>
                         <section class="section">
                             <div class="section__header">
                                 <h2 class="section__title">Chăm sóc da cơ bản</h2><a class="section__more" href="#!"><span>Xem tất cả</span><i class="fa fa-angle-right ml-2"></i></a>
                             </div>
                             <div class="pd-grid">
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
+                                <div class="pd-grid__aside"><a class="pd-grid__banner" href="#!"><img class="d-block w-100" src="./images/banner-aside.jpg" alt="" /></a></div>
+                                <div class="pd-grid__body">
+                                    <div class="pd-grid__products">
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__aside"><a class="d-block" href="#!"><img class="d-block w-100" src="./images/banner-aside.jpg" alt="" /></a></div>
                             </div>
                         </section>
                         <div class="row no-gutters mb-30">
-                            <div class="col-8"><a href="#!"><img class="d-block w-100" src="./images/banner-left.jpg" alt="" /></a></div>
-                            <div class="col-4"><a href="#!"><img class="d-block w-100" src="./images/banner-right.jpg" alt="" /></a></div>
+                            <div class="col-8"><a class="block shine" href="#!"><img class="d-block w-100" src="./images/banner-left.jpg" alt="" /></a></div>
+                            <div class="col-4"><a class="block shine" href="#!"><img class="d-block w-100" src="./images/banner-right.jpg" alt="" /></a></div>
                         </div>
                         <section class="section">
                             <div class="section__header">
                                 <h2 class="section__title">Trang điểm &amp; BDY</h2><a class="section__more" href="#!"><span>Xem tất cả</span><i class="fa fa-angle-right ml-2"></i></a>
                             </div>
                             <div class="pd-grid">
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
+                                <div class="pd-grid__aside"><a class="pd-grid__banner" href="#!"><img class="d-block w-100" src="./images/banner-aside.jpg" alt="" /></a></div>
+                                <div class="pd-grid__body">
+                                    <div class="pd-grid__products">
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
+                                                <div class="product__saleoff">-35%</div>
+                                                <div class="product__body">
+                                                    <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
+                                                    <div class="product__price"><span>₫250.000</span>
+                                                        <del>₫350.000</del>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__col">
-                                    <div class="product"><a class="product__frame" href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào."><img src="./images/product-img.jpg" alt="product image" /></a>
-                                        <div class="product__saleoff">-35%</div>
-                                        <div class="product__body">
-                                            <h3 class="product__title"><a href="./product-detail.html" title="[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME  thơm... cực lâu Mùi ngọt ngào">[Mocxi] Nước hoa nữ LA VI E - Nước hoa Nữ LACÔME thơm... cực lâu Mùi ngọt ngào.</a></h3>
-                                            <div class="product__price"><span>₫250.000</span>
-                                                <del>₫350.000</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pd-grid__aside"><a class="d-block" href="#!"><img class="d-block w-100" src="./images/banner-aside.jpg" alt="" /></a></div>
                             </div>
                         </section>
                     </div>

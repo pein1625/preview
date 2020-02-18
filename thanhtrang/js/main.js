@@ -34,8 +34,6 @@ $(function () {
 });
 
 // sliders
-
-
 // horizontal preview sync slider
 $(function () {
   if (!$('.preview-slider, .thumb-slider').length) {
@@ -104,21 +102,21 @@ $(function () {
 });
 
 $(function () {
-  addSwiper('.product-slider', {
+  const productSliders = addSwiper('.product-slider', {
     navigation: true,
-    slidesPerView: 5,
-    spaceBetween: 20,
+    slidesPerView: 6,
+    spaceBetween: 16,
     breakpoints: {
       1199: {
-        spaceBetween: 20,
-        slidesPerView: 4
+        spaceBetween: 16,
+        slidesPerView: 5
       },
       991: {
-        spaceBetween: 20,
-        slidesPerView: 3
+        spaceBetween: 16,
+        slidesPerView: 4
       },
       767: {
-        spaceBetween: 20,
+        spaceBetween: 16,
         slidesPerView: 2
       },
       575: {
@@ -126,6 +124,12 @@ $(function () {
         slidesPerView: 2
       }
     }
+  });
+
+  $('.js-flash-tab').on('shown.bs.tab', function () {
+    productSliders.map(function (slider) {
+      slider.update();
+    });
   });
 });
 
@@ -321,6 +325,12 @@ function getTimeRemaining(endtime) {
   if (days > 99) {
     days = 99;
   }
+
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  hours = hours < 10 ? "0" + hours : hours;
+  days = days < 10 ? "0" + days : days;
+
   return {
     total: t,
     days: days,
