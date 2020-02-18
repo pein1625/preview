@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- vendor style-->
+        <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./vendor/swiper/swiper.min.css" />
+        <link rel="stylesheet" href="./vendor/fancybox/jquery.fancybox.min.css" />
+        <!-- custom style-->
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="header__logo" href="#!"><img src="./images/logo.png" alt="" /></a>
+                            <section class="navbar js-navbar">
+                                <div class="navbar__backdrop js-navbar-close"></div>
+                                <div class="navbar__wrapper">
+                                    <div class="navbar__header"><a class="navbar__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                        <button class="navbar__close js-navbar-close"></button>
+                                    </div>
+                                    <div class="navbar__body">
+                                        <form class="search">
+                                            <div class="input-group">
+                                                <input class="form-control" type="text" placeholder="Tìm sản phẩm, thương hiệu và tên shop" />
+                                                <div class="input-group-append">
+                                                    <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="search__keys"><a class="search__key" href="#!">Nước Hoa Hồng</a><a class="search__key" href="#!">Son Môi</a><a class="search__key" href="#!">Tắm Trắng</a><a class="search__key" href="#!">Mỹ Phẩm</a><a class="search__key" href="#!">Da Thâm Sẹo</a><a class="search__key" href="#!">Tẩy Tế Bào Chết</a><a class="search__key" href="#!">Mặt Nạ</a><a class="search__key" href="#!">Sữa Rửa Mặt</a>
+                                            </div>
+                                        </form>
+                                        <ul class="topnav">
+                                            <li class="topnav__item"><a class="topnav__link" href="tel:02422396688"><i class="fa fa-fw fa-lg fa-phone mr-2"></i><span>0242239.6688</span></a></li>
+                                            <li class="topnav__item"><a class="topnav__link" href="mailto:thanhtrangpharma.com@gmail.com"><i class="fa fa-fw fa-lg fa-envelope mr-2"></i><span>thanhtrangpharma.com@gmail.com</span></a></li>
+                                            <li class="topnav__item"><span>Kết nối:</span><a class="topnav__social" href="#!"><i class="fa fa-fw fa-facebook-square fa-lg"></i></a><a class="topnav__social" href="#!"><i class="fa fa-fw fa-instagram fa-lg"></i></a></li>
+                                            <li class="topnav__item"><a class="topnav__link" href="#!"><i class="fa fa-fw fa-lg fa-bell-o mr-2"></i><span>Thông báo</span></a></li>
+                                            <li class="topnav__item"><a class="topnav__link" href="#!"><i class="fa fa-fw fa-lg fa-question-circle-o mr-2"></i><span>Trợ giúp</span></a></li>
+                                            <li class="topnav__item"><a class="topnav__btn" href="#md-register" data-toggle="modal">Đăng ký</a><a class="topnav__btn" href="#md-login" data-toggle="modal">Đăng nhập</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section><a class="h-follow" href="#!"><img src="./images/icon-follow.png" alt="" />
+                                <div class="media-body">
+                                    <div>Theo dõi</div>
+                                    <div>đơn hàng</div>
+                                </div>
+                            </a><a class="cart-btn" href="#!"><img class="cart-btn__icon" src="./images/icon-cart.png" alt="icon cart" /><span class="cart-btn__text">Giỏ hàng</span><span class="cart-btn__number">0</span></a>
+                            <button class="header__btn btn btn-default js-navbar-open"><i class="fa fa-bars"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <section class="bg-light pt-30">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-xl-9 mb-30 order-lg-1">
+                                <section class="acc-section">
+                                    <div class="acc-section__header">
+                                        <div class="acc-section__header-inner">
+                                            <div class="acc-section__header-title">
+                                                <h2 class="acc-section__title">Nhập số điện thoại</h2>
+                                                <div class="acc-section__subtitle">Để bảo mật tốt hơn, vui lòng làm theo những bước dưới đây để nhập số điện thoại.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="acc-section__body">
+                                        <div class="acc-form acc-form--short">
+                                            <div class="form-row gutter-20 mb-20">
+                                                <label class="acc-form__label col-form-label col-md-3">Số điện thoại mới</label>
+                                                <div class="col-md-9">
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-row gutter-20 mb-20">
+                                                <label class="acc-form__label col-form-label col-md-3">Mã xác minh</label>
+                                                <div class="col-md-9">
+                                                    <div class="input-group">
+                                                        <input class="form-control" type="text">
+                                                        <div class="input-group-append">
+                                                            <button class="input-group-text" type="button">Gửi mã xác minh</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row gutter-20">
+                                                <div class="col-md-9 ml-auto">
+                                                    <button class="button" type="submit">Xác nhận</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 mb-30">
+                                <aside>
+                                    <div class="as-info media"><a class="as-info__frame" href="#!"><img src="https://i.pravatar.cc/655" alt="" /></a>
+                                        <div class="media-body">
+                                            <div class="as-info__name">Phukoj92</div><a class="as-info__edit" href="#!"><i class="fa fa-pencil mr-2"></i><span>Sửa hồ sơ</span></a>
+                                        </div>
+                                    </div>
+                                    <ul class="acc-menu">
+                                        <li class="acc-menu__item"><a class="acc-menu__link" href="./account.html"><img src="./images/icon-user-yellow.png" alt="" /><span>Tài khoản của tôi</span></a>
+                                            <ul class="acc-menu__sub">
+                                                <li class="acc-menu__item"><a class="acc-menu__link active" href="./account.html">Hồ sơ</a></li>
+                                                <li class="acc-menu__item"><a class="acc-menu__link" href="./account-address.html">Địa chỉ</a></li>
+                                                <li class="acc-menu__item"><a class="acc-menu__link" href="./account-add-password.html">Thêm mật khẩu</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="acc-menu__item"><a class="acc-menu__link" href="#!"><img src="./images/icon-history-blue.png" alt="" /><span>Lịch sử mua hàng</span></a></li>
+                                        <li class="acc-menu__item"><a class="acc-menu__link" href="./announcement.html"><img src="./images/icon-bell-red.png" alt="" /><span>Thông báo</span></a></li>
+                                    </ul>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="f-grid">
+                        <div class="f-grid__col">
+                            <h2 class="footer__title">Chăm sóc khách hàng</h2>
+                            <ul class="f-menu">
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Trung Tâm Trợ Giúp</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Hướng Dẫn Mua Hàng</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Hướng Dẫn Bán Hàng</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Thanh Toán</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Vận Chuyển</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Trả Hàng &amp; Hoàn Tiền</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chăm Sóc Khách Hàng</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính Sách Bảo Hành</a></li>
+                            </ul>
+                        </div>
+                        <div class="f-grid__col">
+                            <h2 class="footer__title">Về Thanh Trang</h2>
+                            <ul class="f-menu">
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Giới Thiệu</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Tuyển Dụng</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Điều Khoản</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính Sách Bảo Mật</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính Hãng</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Kênh Người Bán</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Flash Sales</a></li>
+                            </ul>
+                        </div>
+                        <div class="f-grid__col">
+                            <h2 class="footer__title">Thanh toán</h2>
+                            <ul class="f-payment">
+                                <li class="f-payment__item"><span class="f-payment__frame"><img src="./images/visa.png" alt="" /></span></li>
+                                <li class="f-payment__item"><span class="f-payment__frame"><img src="./images/mastercard.png" alt="" /></span></li>
+                                <li class="f-payment__item"><span class="f-payment__frame"><img src="./images/jcb.png" alt="" /></span></li>
+                                <li class="f-payment__item"><span class="f-payment__frame"><img src="./images/banktransfer.png" alt="" /></span></li>
+                                <li class="f-payment__item"><span class="f-payment__frame"><img src="./images/ship-cod.png" alt="" /></span></li>
+                                <li class="f-payment__item"><span class="f-payment__frame"><img src="./images/installment.png" alt="" /></span></li>
+                            </ul>
+                            <h2 class="footer__title">Đơn vị vận chuyển</h2>
+                            <ul class="f-transfer">
+                                <li class="f-transfer__item"><span class="f-transfer__frame"><img src="./images/f-express.png" alt="" /></span></li>
+                                <li class="f-transfer__item"><span class="f-transfer__frame"><img src="./images/ghn-express.png" alt="" /></span></li>
+                                <li class="f-transfer__item"><span class="f-transfer__frame"><img src="./images/viettel-post.png" alt="" /></span></li>
+                                <li class="f-transfer__item"><span class="f-transfer__frame"><img src="./images/vietnam-post.png" alt="" /></span></li>
+                                <li class="f-transfer__item"><span class="f-transfer__frame"><img src="./images/j&amp;t-express.png" alt="" /></span></li>
+                                <li class="f-transfer__item"><span class="f-transfer__frame"><img src="./images/grap-express.png" alt="" /></span></li>
+                            </ul>
+                        </div>
+                        <div class="f-grid__col">
+                            <h2 class="footer__title">Kết nối với chúng tôi</h2>
+                            <ul class="f-social">
+                                <li class="f-social__item"><a class="f-social__link" href="#!"><i class="fa fa-fw fa-lg fa-facebook-square mr-3"></i><span>Facebook</span></a></li>
+                                <li class="f-social__item"><a class="f-social__link" href="#!"><i class="fa fa-fw fa-lg fa-instagram mr-3"></i><span>Instagram</span></a></li>
+                                <li class="f-social__item"><a class="f-social__link" href="#!"><i class="fa fa-fw fa-lg fa-linkedin-square mr-3"></i><span>Linkedin</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="f-grid__col">
+                            <h2 class="footer__title">Tải ứng dụng ngay thôi</h2>
+                            <div class="f-app media">
+                                <div class="f-app__left"><img src="./images/qrcode.png" alt="" /></div>
+                                <div class="media-body">
+                                    <div class="f-app__item"><a href="#!"><img src="./images/app-store.png" alt="" /></a></div>
+                                    <div class="f-app__item"><a href="#!"><img src="./images/google-play.png" alt="" /></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">© 2020 ThanhTrang. Tất cả các quyền được bảo lưu.</div>
+                </div>
+                <div class="endpage">
+                    <div class="container">
+                        <nav class="endpage__nav"><a class="endpage__nav-item" href="#!">Chính sách bảo mật</a><a class="endpage__nav-item" href="#!">Quy chế hoạt động</a><a class="endpage__nav-item" href="#!">Chính sách vận chuyển</a><a class="endpage__nav-item" href="#!">Chính sách trả hàng và hoàn tiền</a>
+                        </nav>
+                        <nav class="endpage__logo"><a class="endpage__logo-item" href="#!"><img src="./images/trademark.png" alt="" /></a><a class="endpage__logo-item" href="#!"><img src="./images/f-logo.png" alt="" /></a></nav>
+                        <div class="endpage__content">
+                            <p>CÔNG TY TNHH XUẤT NHẬP KHẨU DƯỢC MỸ PHẨM THANH TRANG</p>
+                            <p>Trụ sở tại Hà Nội: Tầng 3, Tòa nhà N02, Ngõ 259 Yên Hòa, Quận Cầu Giấy, Hà Nội - Số ĐT: 0242239.6688- 02462751051<br />Văn phòng chi nhánh Miền Nam: Phòng 509, Lô A, Khu chung cư Khang Gia, Đường số 45 Phan Huy Ích, P14, Q. Gò Vấp, TP. HCM - Hotline: 098.330.2828- 098.5511.928<br />Email: xnkthanhtrang@gmail.com - thanhtrangpharma.com@gmail.com<br />© 2020 - Bản quyền thuộc về Công ty TNHH XUẤT NHẬP KHẨU DƯỢC MỸ PHẨM THANH TRANG</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <div class="md-form modal fade" id="md-register" tabindex="-1">
+                <div class="modal-dialog">
+                    <form class="modal-content">
+                        <div class="modal-body">
+                            <div class="md-form__header">
+                                <h2 class="md-form__title">Đăng ký</h2><a class="md-form__switch js-modal-switch" href="#md-login">Đăng nhập</a>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Số điện thoại" />
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" placeholder="Nhập mã ngẫu nhiên/mã hiển thị ở bên phải" />
+                                    <div class="input-group-append"><span class="input-group-text">MMK2</span></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" placeholder="Số điện thoại" />
+                                    <div class="input-group-append"><a class="md-form__sendcode input-group-text" href="#!">Gửi mã xác minh</a></div>
+                                </div>
+                            </div>
+                            <div class="md-form__text">Bằng việc đăng kí, bạn đã đồng ý với ThanhTrang về <a href="#!">Điều khoản dịch vụ</a> & <a href="#!">Chính sách bảo mật</a></div>
+                            <div class="md-form__btns">
+                                <button class="md-form__btn" type="button" data-dismiss="modal">Trở lại</button>
+                                <button class="md-form__btn md-form__btn--primary" type="submit">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="md-form__footer">
+                            <div class="form-row">
+                                <div class="col-6"><a class="md-form__social md-form__social--facebook" href="#!"><img src="./images/icon-facebook-square-white.png" alt="" /><span>Kết nối với Facebook</span></a></div>
+                                <div class="col-6"><a class="md-form__social" href="#!"><img src="./images/icon-google-colorful.png" alt="" /><span>Kết nối với Google</span></a></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="md-form modal fade" id="md-login" tabindex="-1">
+                <div class="modal-dialog">
+                    <form class="modal-content">
+                        <div class="modal-body">
+                            <div class="md-form__header">
+                                <h2 class="md-form__title">Đăng nhập</h2><a class="md-form__switch js-modal-switch" href="#md-register">Đăng ký</a>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Email/Số điện thoại/Tên đăng nhập" />
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="password" placeholder="Mật khẩu" />
+                            </div>
+                            <div class="md-form__helper mb-40"><a class="md-form__helper-btn text-danger js-modal-switch" href="#md-recovery">Quyên mật khẩu</a><a class="md-form__helper-btn" href="#!">Cần trợ giúp?</a></div>
+                            <div class="md-form__btns">
+                                <button class="md-form__btn" type="button" data-dismiss="modal">Trở lại</button>
+                                <button class="md-form__btn md-form__btn--primary" type="submit">Đăng nhập</button>
+                            </div>
+                        </div>
+                        <div class="md-form__footer">
+                            <div class="form-row">
+                                <div class="col-6"><a class="md-form__social md-form__social--facebook" href="#!"><img src="./images/icon-facebook-square-white.png" alt="" /><span>Kết nối với Facebook</span></a></div>
+                                <div class="col-6"><a class="md-form__social" href="#!"><img src="./images/icon-google-colorful.png" alt="" /><span>Kết nối với Google</span></a></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="md-form modal fade" id="md-recovery" tabindex="-1">
+                <div class="modal-dialog">
+                    <form class="modal-content">
+                        <div class="modal-body">
+                            <div class="md-form__header">
+                                <h2 class="md-form__title">Đặt lại mật khẩu</h2>
+                            </div>
+                            <div class="form-group">Vui lòng nhập địa chỉ email hoặc số điện thoại bạn đã đăng ký trên Shopee</div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Email/Số điện thoại" />
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" placeholder="Nhập mã ngẫu nhiên/mã hiển thị ở bên phải" />
+                                    <div class="input-group-append"><span class="input-group-text">MMK2</span></div>
+                                </div>
+                            </div>
+                            <div class="md-form__btns">
+                                <button class="md-form__btn" type="button" data-dismiss="modal">Trở lại</button>
+                                <button class="md-form__btn md-form__btn--primary" type="submit">Tiếp tục</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- javascript library-->
+        <!-- vendor script-->
+        <script src="./vendor/jquery/jquery-3.3.1.min.js"></script>
+        <script src="./vendor/popper/popper.min.js"></script>
+        <script src="./vendor/bootstrap/bootstrap.min.js"></script>
+        <script src="./vendor/swiper/swiper.min.js"></script>
+        <script src="./vendor/jquery-zoom/jquery.zoom.min.js"></script>
+        <script src="./vendor/fancybox/jquery.fancybox.min.js"></script>
+        <!-- custom script-->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
