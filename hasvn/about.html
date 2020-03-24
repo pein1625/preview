@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./vendor/lettering/TweenMax.min.js" defer="defer"></script>
+        <script src="./vendor/lettering/jquery.lettering.min.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <section class="navbar js-navbar">
+                                <div class="navbar__backdrop js-navbar-close"></div>
+                                <div class="navbar__wrapper">
+                                    <div class="navbar__header">
+                                        <div class="navbar__title">Navigation</div>
+                                        <button class="navbar__close js-navbar-close"></button>
+                                    </div>
+                                    <div class="navbar__body">
+                                        <form class="search">
+                                            <div class="input-group">
+                                                <input class="form-control" type="text" placeholder="Tìm kiếm..." />
+                                                <div class="input-group-append">
+                                                    <button class="input-group-text" type="submit"><i class="fa fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <ul class="menu menu-root">
+                                            <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Giới thiệu</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                <ul class="menu menu-sub">
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                    </li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                    </li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                    </li>
+                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <ul class="menu menu-sub menu-sub-2">
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-group"><a class="menu-link" href="./fields-of-activity.html">Lĩnh vực hoạt động</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                <ul class="menu menu-sub">
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                    </li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                    </li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                    </li>
+                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <ul class="menu menu-sub menu-sub-2">
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="./projects.html">Dự án</a>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="./news.html">Tin tức</a>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="./shareholder-relations.html">Quan hệ cổ đông</a>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="./contact.html">Liên hệ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="header__elements">
+                                <button class="header__btn btn btn-default d-xl-none js-navbar-open"><i class="fa fa-bars"></i></button>
+                                <button class="header__btn btn btn-default d-none d-lg-inline-block js-search-toggle"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="banner"><img class="banner__bg" src="./images/banner-news-detail.jpg" alt="" />
+                    <div class="container">
+                        <div class="banner__title">Giới thiệu</div>
+                        <div class="banner__breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Trang chủ</a></li>
+                                <li class="breadcrumb-item active">Giới thiệu</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pt-50">
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-9 mb-30">
+                            <article class="about">
+                                <h1 class="text-16 text-700 text-uppercase mb-3">thư ngỏ</h1>
+                                <p>Kính gửi: Quý Khách hàng và Quý đối tác!</p>
+                                <p>Lời đầu tiên, Công ty Cổ phần Hacisco xin gửi lời chúc sức khoẻ và lời chào trân trọng nhất đến Quý khách hàng, Quý đối tác!</p>
+                                <p>Chúc Quý khách hàng, Quý đối tác nhiều sức khỏe, hạnh phúc, thành công và thịnh vượng!</p>
+                                <p>Công ty Cổ phần Hacisco cũng xin gửi lời cảm ơn chân thành nhất tới Quý khách hàng, Quý đối tác, đồng nghiệp đã và đang đồng hành, tin tưởng và ủng hộ chúng tôi trong suốt thời gian qua.</p>
+                                <p>Công ty Cổ phần Hacisco là doanh nghiệp Cổ phần có vốn góp của Tập đoàn Bưu chính Viễn thông Việt Nam, hoạt động theo Luật doanh nghiệp được Sở KH - ĐT Hà Nội cấp giấy phép kinh doanh số 0101116096 ngày 25/07/2013 (đăng ký thay đổi lần thứ 16).</p>
+                                <p>Công ty Cổ phần Hacisco tiền thân là một Đội xây dựng công trình được thành lập từ năm 1979 đến năm 1996. Để phù hợp với định hướng phát triển của Tổng Công ty Bưu chính Viễn thông Việt Nam, Đội xây dựng công trình đã được đổi tên thành Công ty Xây lắp Bưu điện Hà Nội, nay là Công ty Cổ phần Hacisco.</p>
+                                <p>Trải qua hơn 40 hình thành và phát triển với sự tâm huyết của đội ngũ lãnh đạo trẻ, năng động, sáng tạo cùng với bề dày năng lực và kinh nghiệm tích lũy được, Công ty Cổ phần Hacisco đã trở thành một đơn vị độc lập, lớn mạnh, và phát triển hoạt động sản xuất kinh doanh đa ngành nghề, đa lĩnh vực. Bằng nỗ lực của mình, từng bước công ty đã khẳng định được được vị thế trên thị trường cũng như dành được sự yêu mến và niềm tin của khách hàng. Bên cạnh ngành nghề hoạt động kinh doanh chính của công ty là thiết kế, thi công xây lắp và kinh doanh thương mại lĩnh vực Viễn thông, chúng tôi còn phát triển hoạt động kinh doanh trên nhiều lĩnh vực như Điện lực, Y tế, Giáo dục, Xây dựng dân dụng; Giao thông; Thủy lợi,… với địa bàn hoạt động trải dài trên cả nước.
+                                    <p>Với Slogan của chúng tôi là “Uy tín - Khác biệt - Thành công” thể hiện mong muốn, tâm huyết của công ty gửi tới các Quý khách hàng, Quý đối tác: HACISCO luôn coi Uy tín là nhiệm vụ hàng đầu, thể hiện qua chất lượng sản phẩm dịch vụ, tiến độ và các cam kết với khách hàng. Không ngừng đổi mới, tạo ra những giá trị Khác biệt trong công việc để dành được ấn tượng tốt đẹp, đem lại hài lòng, tin tưởng tới Quý khách hàng, đối tác. Chính điều đó là chìa khóa tạo nên cơ hội Thành công cho chúng tôi.</p>
+                                </p>
+                                <p>HACISCO cam kết sẽ tiếp tục đổi mới, nâng cao chất lượng sản phẩm, dịch vụ để thương hiệu HACISCO ngày càng được khẳng định và phát triển, thực sự là người bạn đồng hành của các Quý khách hàng, đối tác.</p>
+                                <p>HACISCO mong nhận được sự quan tâm, chia sẻ, ủng hộ và tạo điều kiện của Quý khách hàng, Quý đối tác để chúng tôi ngày càng phát triển hơn.</p>
+                                <p>Một lần nữa trân trọng cảm ơn Quý Khách hàng, Quý đối tác và những đồng nghiệp.</p>
+                                <p>Chúc sự hợp tác ngày càng bền chặt và cùng nhau thành công, phát triển!</p>
+                                <p><span class="text-700">Tóm tắt về Công ty :</span><br>Tên Công ty: Công ty Cổ phần HACISCO<br>Tên viết tắt: HACISCO<br>Tên giao dịch quốc tế: HACISCO Joint Stock Company<br>Địa chỉ trụ sở chính: Số 51 - Vũ Trọng Phụng - Phường Thanh Xuân Trung - Quận Thanh Xuân - TP Hà Nội.<br>Điện thoại: 04 38581087- 04 38583965<br>FAX: 04 38585563 – 04 38584907<br>Email: hacisco@has.vn</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 mb-30">
+                            <ul class="as-menu">
+                                <li class="as-menu__item"><a class="as-menu__link active" href="#!">Giới thiệu chung</a></li>
+                                <li class="as-menu__item"><a class="as-menu__link" href="#!">Văn hoá doanh nghiệp</a></li>
+                                <li class="as-menu__item"><a class="as-menu__link" href="#!">Sơ đồ tổ chức</a></li>
+                                <li class="as-menu__item"><a class="as-menu__link" href="#!">Lịch sử hình thành và phát triển</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="partners">
+                <div class="container">
+                    <div class="partners__inner">
+                        <div class="partners__label">Đối tác</div>
+                        <div class="partners__body">
+                            <div class="partner-slider">
+                                <div class="partner-slider__container swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><a class="partner-slider__item" href="#!"><img src="./images/partner-1.png" alt="" /></a></div>
+                                        <div class="swiper-slide"><a class="partner-slider__item" href="#!"><img src="./images/partner-2.png" alt="" /></a></div>
+                                        <div class="swiper-slide"><a class="partner-slider__item" href="#!"><img src="./images/partner-3.png" alt="" /></a></div>
+                                        <div class="swiper-slide"><a class="partner-slider__item" href="#!"><img src="./images/partner-4.png" alt="" /></a></div>
+                                        <div class="swiper-slide"><a class="partner-slider__item" href="#!"><img src="./images/partner-5.png" alt="" /></a></div>
+                                        <div class="swiper-slide"><a class="partner-slider__item" href="#!"><img src="./images/partner-6.png" alt="" /></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__grid">
+                            <div class="footer__col">
+                                <h2 class="footer__title">Trụ sở chính</h2>
+                                <ul class="f-contact">
+                                    <li class="f-contact__item"><i class="fa fa-building-o fa-fw"></i>
+                                        <div>51 Vũ Trọng Phụng, Thanh Xuân Trung, Thanh Xuân, Hà Nội</div>
+                                    </li>
+                                    <li class="f-contact__item"><i class="fa fa-phone fa-fw"></i>
+                                        <div>Tel: 024.3858.1087</div>
+                                    </li>
+                                    <li class="f-contact__item"><i class="fa fa-envelope-o fa-fw"></i>
+                                        <div>hacisco@has.vn</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__col">
+                                <h2 class="footer__title">Chi nhánh miền Trung</h2>
+                                <ul class="f-contact">
+                                    <li class="f-contact__item"><i class="fa fa-building-o fa-fw"></i>
+                                        <div>Số 524 Nguyễn Lương Bằng, Q. Liên chiểu, TP. Đà Nẵng</div>
+                                    </li>
+                                    <li class="f-contact__item"><i class="fa fa-phone fa-fw"></i>
+                                        <div>Tel: 023.6377.4333</div>
+                                    </li>
+                                    <li class="f-contact__item"><i class="fa fa-envelope-o fa-fw"></i>
+                                        <div>hacisco@has.vn</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__col">
+                                <h2 class="footer__title">Chi nhánh miền Nam</h2>
+                                <ul class="f-contact">
+                                    <li class="f-contact__item"><i class="fa fa-building-o fa-fw"></i>
+                                        <div>51 Vũ Trọng Phụng, Thanh Xuân Trung, Thanh Xuân, Hà Nội</div>
+                                    </li>
+                                    <li class="f-contact__item"><i class="fa fa-phone fa-fw"></i>
+                                        <div>Tel: 024.3858.1087</div>
+                                    </li>
+                                    <li class="f-contact__item"><i class="fa fa-envelope-o fa-fw"></i>
+                                        <div>hacisco@has.vn</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__col">
+                                <nav class="f-social">
+                                    <div class="f-social__label">Social Media</div>
+                                    <div class="f-social__list"><a class="f-social__item" href="#!"><i class="fa fa-facebook fa-lg fa-fw"></i></a><a class="f-social__item" href="#!"><i class="fa fa-instagram fa-lg fa-fw"></i></a><a class="f-social__item" href="#!"><i class="fa fa-youtube-play fa-lg fa-fw"></i></a></div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+        </div>
+    </body>
+</html>
