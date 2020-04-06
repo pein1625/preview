@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <section class="navbar js-navbar">
+                                <div class="navbar__backdrop js-navbar-close"></div>
+                                <div class="navbar__wrapper">
+                                    <div class="navbar__header">
+                                        <div class="navbar__title">Navigation</div>
+                                        <button class="navbar__close js-navbar-close"></button>
+                                    </div>
+                                    <div class="navbar__body">
+                                        <ul class="menu menu-root">
+                                            <li class="menu-item menu-item-group"><a class="menu-link js-show-popup" href="#!" data-target="#popup-product">Giới thiệu</a>
+                                            </li>
+                                            <li class="menu-item menu-item-group"><a class="menu-link js-show-popup" href="#!" data-target="#popup-product">Sản phẩm</a>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="./news.html">Tin tức</a>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="./videos.html">Video</a>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="./contact.html">Liên hệ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="header__elements">
+                                <button class="header__btn js-show-popup d-xl-none" data-target="#popup-product"><img src="./images/icon-thicbars.png" alt="" /></button>
+                                <button class="header__btn js-show-popup" data-target="#popup-search"><img src="./images/icon-search.png" alt="" /></button>
+                                <button class="header__btn js-show-popup" data-target="#popup-lang"><img src="./images/icon-globe.png" alt="" /></button>
+                                <button class="header__btn js-show-popup" data-target="#popup-user"><img src="./images/icon-user.png" alt="" /></button>
+                                <button class="header__btn js-show-popup" data-target="#popup-cart"><span>1</span><img src="./images/icon-cart.png" alt="" /></button><a class="header__btn" href="#!"><img src="./images/icon-heart.png" alt="" /></a>
+                                <button class="header__btn js-show-popup" data-target="#popup-brand"><img src="./images/icon-grid.png" alt="" /></button>
+                                <button class="header__btn js-navbar-open d-xl-none"><img src="./images/icon-bars.png" alt="" /></button>
+                            </div>
+                            <div class="header__dropdowns">
+                                <!-- Search popup-->
+                                <div class="h-dropdown" id="popup-search">
+                                    <div class="h-dropdown__bar"></div>
+                                    <div class="h-dropdown__body">
+                                        <form class="search">
+                                            <div class="input-group">
+                                                <input class="form-control" type="text" placeholder="Tìm kiếm" />
+                                                <div class="input-group-append">
+                                                    <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="h-dropdown__bar"></div>
+                                </div>
+                                <!-- Language popup-->
+                                <div class="h-dropdown h-dropdown--max" id="popup-lang">
+                                    <div class="h-dropdown__bar"></div>
+                                    <div class="h-dropdown__body">
+                                        <div class="lang"><a class="lang__item active" href="#!">Tiếng Việt</a><a class="lang__item" href="#!">English</a></div>
+                                    </div>
+                                    <div class="h-dropdown__bar"></div>
+                                </div>
+                                <!-- User login/Register btns-->
+                                <div class="h-dropdown h-dropdown--max" id="popup-user">
+                                    <div class="h-dropdown__bar"></div>
+                                    <div class="h-dropdown__body">
+                                        <div class="user-btns"><a class="user-btns__btn js-show-popup" href="#!" data-target="#popup-login" data-hold-target="true">Đăng nhập</a><a class="user-btns__btn js-show-popup" href="#!" data-target="#popup-register" data-hold-target="true">Đăng ký</a></div>
+                                    </div>
+                                    <div class="h-dropdown__bar"></div>
+                                </div>
+                                <!-- User login Popup-->
+                                <div class="h-dropdown h-dropdown--max" id="popup-login">
+                                    <div class="h-dropdown__bar"></div>
+                                    <div class="h-dropdown__body">
+                                        <form class="login-form">
+                                            <div class="login-form__title">Đăng nhập</div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><img src="./images/icon-envelope-o.png" alt="" /></div>
+                                                    </div>
+                                                    <input class="form-control" type="text" placeholder="Email" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><img src="./images/icon-key.png" alt="" /></div>
+                                                    </div>
+                                                    <input class="form-control" type="text" placeholder="Mật khẩu" />
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-block btn-primary text-700" type="submit">Đăng nhập</button>
+                                            <div class="form-text mt-1"><a class="js-show-popup" href="#!" data-target="#popup-forgot-password" data-hold-target="true">Quên mật khẩu?</a> hoặc <a class="js-show-popup" href="#!" data-target="#popup-register" data-hold-target="true">Đăng ký</a></div>
+                                        </form>
+                                    </div>
+                                    <div class="h-dropdown__bar"></div>
+                                </div>
+                                <!-- User Register Popup-->
+                                <div class="h-dropdown h-dropdown--max" id="popup-register">
+                                    <div class="h-dropdown__bar"></div>
+                                    <div class="h-dropdown__body">
+                                        <form class="login-form">
+                                            <div class="login-form__title">Đăng ký</div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><img src="./images/icon-user.png" alt="" /></div>
+                                                    </div>
+                                                    <input class="form-control" type="text" placeholder="Họ" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><img src="./images/icon-user.png" alt="" /></div>
+                                                    </div>
+                                                    <input class="form-control" type="text" placeholder="Tên" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><img src="./images/icon-envelope-o.png" alt="" /></div>
+                                                    </div>
+                                                    <input class="form-control" type="text" placeholder="Email" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><img src="./images/icon-key.png" alt="" /></div>
+                                                    </div>
+                                                    <input class="form-control" type="text" placeholder="Mật khẩu" />
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-block btn-primary text-700" type="submit">Đăng ký</button>
+                                            <div class="form-text mt-1"><a class="text-default" href="./index.html"><i class="fa fa-long-arrow-left mr-2"></i><span>Quay lại trang chủ</span></a></div>
+                                        </form>
+                                    </div>
+                                    <div class="h-dropdown__bar"></div>
+                                </div>
+                                <!-- Cart popup-->
+                                <div class="h-dropdown h-dropdown--max" id="popup-cart">
+                                    <div class="h-dropdown__bar">
+                                        <div class="h-dropdown__btn js-scroll-up"><i class="fa fa-angle-double-up"></i></div>
+                                    </div>
+                                    <div class="h-dropdown__body hide-scrollbar js-scroll-target">
+                                        <div class="cart">
+                                            <div class="cart__list">
+                                                <div class="cart__item">
+                                                    <div class="product-4 media"><a class="product-4__frame" href="#!"><img src="./images/product-img.jpg" alt="" /></a>
+                                                        <div class="media-body">
+                                                            <h3 class="product-4__title"><a href="#!">Tranh in canvas - B26</a></h3>
+                                                            <div class="product-4__subtitle">70x70 / Khung màu đen</div>
+                                                            <div class="d-flex align-items-center">
+                                                                <input class="product-4__quantity js-number-input" type="text" value="1" />
+                                                                <div class="product-4__price">620,000 ₫</div>
+                                                            </div><a class="product-4__close" href="#!">&times;</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart__item">
+                                                    <div class="product-4 media"><a class="product-4__frame" href="#!"><img src="./images/product-img.jpg" alt="" /></a>
+                                                        <div class="media-body">
+                                                            <h3 class="product-4__title"><a href="#!">Tranh in canvas - B26</a></h3>
+                                                            <div class="product-4__subtitle">70x70 / Khung màu đen</div>
+                                                            <div class="d-flex align-items-center">
+                                                                <input class="product-4__quantity js-number-input" type="text" value="1" />
+                                                                <div class="product-4__price">620,000 ₫</div>
+                                                            </div><a class="product-4__close" href="#!">&times;</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart__price"><span class="text-uppercase">Tổng tiền:</span><span>1.240,000 ₫</span></div>
+                                            <div class="cart__footer"><a class="cart__btn js-show-popup" href="#!" data-target="#popup-cart-detail" data-hold-target="true">Xem giỏ hàng</a><a class="cart__btn cart__btn--dark js-show-popup" href="#!" data-target="#popup-payment" data-hold-target="true">Thanh toán</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="h-dropdown__bar">
+                                        <div class="h-dropdown__btn js-scroll-down"><i class="fa fa-angle-double-down"></i></div>
+                                    </div>
+                                </div>
+                                <!-- Cart detail popup-->
+                                <div class="h-dropdown" id="popup-cart-detail">
+                                    <div class="h-dropdown__bar">
+                                        <div class="h-dropdown__btn js-scroll-up"><i class="fa fa-angle-double-up"></i></div>
+                                    </div>
+                                    <div class="h-dropdown__body hide-scrollbar js-scroll-target">
+                                        <div class="cart-detail">
+                                            <div class="cart-detail__title">Giỏ hàng</div>
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Tên sản phẩm</th>
+                                                            <th>Số lượng</th>
+                                                            <th>Giá tiền</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                <div class="media"><a class="cart-detail__frame" href="#!"><img src="./images/product-img.jpg" alt="" /></a>
+                                                                    <div class="media-body">
+                                                                        <div class="text-700">Tranh sơn dầu hoa cỏ - SDHb178</div>
+                                                                        <div class="font-italic">80x80 / Xacxi không khung</div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="quantity">
+                                                                    <div class="quantity__btn" data-plus="-1"></div>
+                                                                    <input class="quantity__input" type="text" value="1" />
+                                                                    <div class="quantity__btn" data-plus="1"></div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-nowrap">620,000 ₫</td>
+                                                            <td><a class="text-default" href="#!">Xoá</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left">
+                                                                <div class="media"><a class="cart-detail__frame" href="#!"><img src="./images/product-img.jpg" alt="" /></a>
+                                                                    <div class="media-body">
+                                                                        <div class="text-700">Tranh sơn dầu hoa cỏ - SDHb178</div>
+                                                                        <div class="font-italic">80x80 / Xacxi không khung</div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="quantity">
+                                                                    <div class="quantity__btn" data-plus="-1"></div>
+                                                                    <input class="quantity__input" type="text" value="1" />
+                                                                    <div class="quantity__btn" data-plus="1"></div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-nowrap">620,000 ₫</td>
+                                                            <td><a class="text-default" href="#!">Xoá</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td class="text-nowrap text-700">Tổng cộng</td>
+                                                            <td class="text-nowrap text-700">1,240,000 ₫</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6">
+                                                    <div class="media">
+                                                        <div class="text-700 mr-12">Ghi chú</div>
+                                                        <div class="media-body">
+                                                            <textarea class="form-control" rows="4"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="cart-detail__btns"><a class="cart-detail__btn" href="./products.html">Tiếp tục mua hàng</a><a class="cart-detail__btn js-show-popup" href="#!" data-target="#popup-payment" data-hold-target="true">Thanh toán</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="h-dropdown__bar">
+                                        <div class="h-dropdown__btn js-scroll-down"><i class="fa fa-angle-double-down"></i></div>
+                                    </div>
+                                </div>
+                                <!-- Brands popup-->
+                                <div class="h-dropdown h-dropdown--max" id="popup-brand">
+                                    <div class="h-dropdown__bar">
+                                        <div class="h-dropdown__btn js-scroll-up"><i class="fa fa-angle-double-up"></i></div>
+                                    </div>
+                                    <div class="h-dropdown__body hide-scrollbar js-scroll-target">
+                                        <div class="brands">
+                                            <div class="brands__item"><a class="brands__frame" href="#!"><img src="./images/logo.png" alt="" /></a></div>
+                                            <div class="brands__item"><a class="brands__frame" href="#!"><img src="./images/logo.png" alt="" /></a></div>
+                                            <div class="brands__item"><a class="brands__frame" href="#!"><img src="./images/logo.png" alt="" /></a></div>
+                                            <div class="brands__item"><a class="brands__frame" href="#!"><img src="./images/logo.png" alt="" /></a></div>
+                                            <div class="brands__item"><a class="brands__frame" href="#!"><img src="./images/logo.png" alt="" /></a></div>
+                                            <div class="brands__item"><a class="brands__frame" href="#!"><img src="./images/logo.png" alt="" /></a></div>
+                                            <div class="brands__item"><a class="brands__frame" href="#!"><img src="./images/logo.png" alt="" /></a></div>
+                                            <div class="brands__item"><a class="brands__frame" href="#!"><img src="./images/logo.png" alt="" /></a></div>
+                                            <div class="brands__item"><a class="brands__frame" href="#!"><img src="./images/logo.png" alt="" /></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="h-dropdown__bar">
+                                        <div class="h-dropdown__btn js-scroll-down"><i class="fa fa-angle-double-down"></i></div>
+                                    </div>
+                                </div>
+                                <!-- Payment popup-->
+                                <div class="h-dropdown" id="popup-payment">
+                                    <div class="h-dropdown__bar">
+                                        <div class="h-dropdown__btn js-scroll-up"><i class="fa fa-angle-double-up"></i></div>
+                                    </div>
+                                    <div class="h-dropdown__body p-0 hide-scrollbar js-scroll-target">
+                                        <div class="payment">
+                                            <div class="payment__grid">
+                                                <div class="payment__col">
+                                                    <div class="payment__title">LEHAIS Art</div>
+                                                    <div class="payment__breadcrumb">
+                                                        <div class="payment__breadcrumb-item"><a class="js-show-popup" href="#!" data-target="#popup-cart-detail" data-hold-target="true">Giỏ hàng</a></div>
+                                                        <div class="payment__breadcrumb-item">Thông tin giao hàng</div>
+                                                    </div>
+                                                    <div class="payment__subtitle">Thông tin giao hàng</div>
+                                                    <form>
+                                                        <div class="text-muted mb-1">Bạn đã có toàn khoản? <a class="js-show-popup" href="#!" data-target="#popup-login" data-hold-target="true">Đăng nhập</a></div>
+                                                        <div class="form-group">
+                                                            <input class="form-control" type="text" placeholder="Họ và tên" />
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col-lg-8">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" type="text" placeholder="Email" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" type="text" placeholder="Số điện thoại" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input class="form-control" type="text" placeholder="Địa chỉ" />
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <select class="custom-select">
+                                                                        <option>Tỉnh / Thành</option>
+                                                                        <option>Tỉnh / Thành</option>
+                                                                        <option>Tỉnh / Thành</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <select class="custom-select">
+                                                                        <option>Quận / Huyện</option>
+                                                                        <option>Quận / Huyện</option>
+                                                                        <option>Quận / Huyện</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="payment__subtitle">Phương thức vận chuyển</div>
+                                                    <div class="radio-group">
+                                                        <div class="radio-group__item">
+                                                            <label class="radio-group__btn radio-styled">
+                                                                <input class="radio-styled__input js-radio-group-btn" type="radio" name="transfer-method" checked="checked" /><span class="radio-styled__icon"></span>
+                                                                <div class="media-body">Đóng Gói + Giao Hàng Tận Nơi</div><span class="ml-2">0₫</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="payment__subtitle">Phương thức thanh toán</div>
+                                                    <div class="radio-group">
+                                                        <div class="radio-group__item">
+                                                            <label class="radio-group__btn radio-styled">
+                                                                <input class="radio-styled__input js-radio-group-btn" type="radio" name="transfer-method" checked="checked" /><span class="radio-styled__icon"></span>
+                                                                <div class="media-body">Thanh toán khi giao hàng (COD)</div>
+                                                            </label>
+                                                            <div class="radio-group__desc">
+                                                                <div>- Miễn phí thanh toán COD đối với Khách hàng tại Hà Nội</div>
+                                                                <div>- Đơn hàng ở các tỉnh thành khác có thể sẽ mất phí khi lựa chọn hình thức này, chúng tôi sẽ báo cho quý khách khi quý khách hoàn tất đơn hàng.</div>
+                                                                <div>- Liên Hệ: 0966311551</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-group__item">
+                                                            <label class="radio-group__btn radio-styled">
+                                                                <input class="radio-styled__input js-radio-group-btn" type="radio" name="transfer-method" /><span class="radio-styled__icon"></span>
+                                                                <div class="media-body">Chuyển khoản qua ngân hàng</div>
+                                                            </label>
+                                                            <div class="radio-group__desc">
+                                                                <div>NGÂN HÀNG NGOẠI THƯƠNG VIỆT NAM - VIETCOMBANK</div>
+                                                                <div>Số tài khoản: 0541000232917</div>
+                                                                <div>Chủ tài khoản: Phan Thị Như Quỳnh</div>
+                                                                <div>Phòng GD: Vĩnh Hoàng, Hoàng Mai - Hà Nội.</div>
+                                                                <div>--------------------------------------------------</div>
+                                                                <div>NGÂN HÀNG Á CHÂU ACB</div>
+                                                                <div>Số tài khoản: 227861239</div>
+                                                                <div>Chủ tài khoản: Phan Thị Như Quỳnh</div>
+                                                                <div>Chi Nhánh: Hà Thành - Hà Nội.</div>
+                                                                <div>--------------------------------------------------</div>
+                                                                <div>Sau khi nhận chuyển khoản chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất</div>
+                                                                <div>Hoặc Liên Hệ: 0966311551</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-group__item">
+                                                            <label class="radio-group__btn radio-styled">
+                                                                <input class="radio-styled__input js-radio-group-btn" type="radio" name="transfer-method" /><span class="radio-styled__icon"></span>
+                                                                <div class="media-body">Thanh toán online qua ví Ngân Lượng</div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio-group__item">
+                                                            <label class="radio-group__btn radio-styled">
+                                                                <input class="radio-styled__input js-radio-group-btn" type="radio" name="transfer-method" /><span class="radio-styled__icon"></span>
+                                                                <div class="media-body">Thanh toán online qua cổng PayPal</div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="payment__footer mt-4"><a href="#!"><i class="fa fa-angle-left mr-2"></i><span>Giỏ hàng</span></a><a class="payment__btn" href="#!">Hoàn tất đơn hàng</a></div>
+                                                </div>
+                                                <div class="payment__col">
+                                                    <div class="mb-12">
+                                                        <div class="product-5 media">
+                                                            <div class="position-relative mr-12"><a class="product-5__frame" href="#!"><img src="./images/product-img-2.jpg" alt="" /></a><span class="product-5__quantity">1</span></div>
+                                                            <div class="media-body">
+                                                                <h3 class="text-14 mb-0"><a href="#!">Tranh in canvas - B26</a></h3>
+                                                                <div class="text-muted">70x70 / Khung màu đen</div>
+                                                            </div>
+                                                            <div class="ml-10 text-nowrap">620,000 ₫</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-12">
+                                                        <div class="product-5 media">
+                                                            <div class="position-relative mr-12"><a class="product-5__frame" href="#!"><img src="./images/product-img-2.jpg" alt="" /></a><span class="product-5__quantity">1</span></div>
+                                                            <div class="media-body">
+                                                                <h3 class="text-14 mb-0"><a href="#!">Tranh in canvas - B26</a></h3>
+                                                                <div class="text-muted">70x70 / Khung màu đen</div>
+                                                            </div>
+                                                            <div class="ml-10 text-nowrap">620,000 ₫</div>
+                                                        </div>
+                                                    </div>
+                                                    <form class="payment__code">
+                                                        <div class="input-group">
+                                                            <input class="form-control" type="text" placeholder="Mã giảm giá" />
+                                                            <div class="input-group-append">
+                                                                <button class="input-group-text" type="submit">Sử dụng</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="payment__price"><span>Tạm tính</span><span>3,715,000₫</span></div>
+                                                    <div class="payment__price"><span>Phí vận chuyển</span><span>Miễn phí</span></div>
+                                                    <div class="payment__total"><span class="text-16 mr-auto">Tổng cộng</span><span class="text-12 text-muted mr-12">VND</span><span class="text-24">1,240,000₫</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="h-dropdown__bar">
+                                        <div class="h-dropdown__btn js-scroll-down"><i class="fa fa-angle-double-down"></i></div>
+                                    </div>
+                                </div>
+                                <!-- Product popup-->
+                                <div class="h-dropdown" id="popup-product">
+                                    <div class="h-dropdown__bar">
+                                        <div class="h-dropdown__btn h-dropdown__btn--1per3 js-scroll-up"><i class="fa fa-angle-double-up"></i></div>
+                                    </div>
+                                    <div class="h-dropdown__body p-0 js-scroll-target">
+                                        <ul class="pd-menu">
+                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!"><span>Tranh sơn dầu</span><span class="pd-menu__toggle"><i class="fa fa-angle-double-down"></i></span></a>
+                                                <ul class="pd-menu__sub">
+                                                    <li class="pd-menu__item"><a class="pd-menu__link" href="#!"><span>Tranh sơn dầu hoa mẫu đơn</span><span class="pd-menu__toggle"><i class="fa fa-angle-double-down"></i></span></a>
+                                                        <ul class="pd-menu__sub pd-menu__sub--scroll hide-scrollbar">
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="pd-menu__item"><a class="pd-menu__link" href="#!"><span>Tranh sơn mài</span><span class="pd-menu__toggle"><i class="fa fa-angle-double-down"></i></span></a>
+                                                        <ul class="pd-menu__sub pd-menu__sub--scroll hide-scrollbar">
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="pd-menu__item"><a class="pd-menu__link" href="#!"><span>Tranh sơn dầu bộ</span><span class="pd-menu__toggle"><i class="fa fa-angle-double-down"></i></span></a>
+                                                        <ul class="pd-menu__sub pd-menu__sub--scroll hide-scrollbar">
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="pd-menu__item"><a class="pd-menu__link" href="#!"><span>Tranh sơn dầu con vật</span><span class="pd-menu__toggle"><i class="fa fa-angle-double-down"></i></span></a>
+                                                        <ul class="pd-menu__sub pd-menu__sub--scroll hide-scrollbar">
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!"><span>Tranh tường</span><span class="pd-menu__toggle"><i class="fa fa-angle-double-down"></i></span></a>
+                                                <ul class="pd-menu__sub">
+                                                    <li class="pd-menu__item"><a class="pd-menu__link" href="#!"><span>Tranh sơn dầu hoa mẫu đơn</span><span class="pd-menu__toggle"><i class="fa fa-angle-double-down"></i></span></a>
+                                                        <ul class="pd-menu__sub pd-menu__sub--scroll hide-scrollbar">
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="pd-menu__item"><a class="pd-menu__link" href="#!"><span>Tranh sơn mài</span><span class="pd-menu__toggle"><i class="fa fa-angle-double-down"></i></span></a>
+                                                        <ul class="pd-menu__sub pd-menu__sub--scroll hide-scrollbar">
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="pd-menu__item"><a class="pd-menu__link" href="#!"><span>Tranh sơn dầu bộ</span><span class="pd-menu__toggle"><i class="fa fa-angle-double-down"></i></span></a>
+                                                        <ul class="pd-menu__sub pd-menu__sub--scroll hide-scrollbar">
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="pd-menu__item"><a class="pd-menu__link" href="#!"><span>Tranh sơn dầu con vật</span><span class="pd-menu__toggle"><i class="fa fa-angle-double-down"></i></span></a>
+                                                        <ul class="pd-menu__sub pd-menu__sub--scroll hide-scrollbar">
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                            <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Vẽ tranh tường 3D tại thành phố Lạng Sơn</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="h-dropdown__bar">
+                                        <div class="h-dropdown__btn h-dropdown__btn--1per3 js-scroll-down"><i class="fa fa-angle-double-down"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="container pt-1 pb-30">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Tin tức</a></li>
+                        <li class="breadcrumb-item active">Ý nghĩa của bức tranh sơn dầu bát mã</li>
+                    </ol>
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-9 mb-30 order-lg-1">
+                            <article class="post mb-30">
+                                <h1 class="post-title">Ý nghĩa của bức tranh sơn dầu bát mã</h1>
+                                <h2 class="post-sapo">Tư vấn thiết kế nội thất mang phong cách hiện đại cho khách hàng có nhu cầu thiết kế nội thất chung cư</h2>
+                                <div class="post-content">
+                                    <p>Ở phần này chúng ta sẽ bắt đầu bằng việc tìm hiểu ý nghĩa bức tranh sơn dầu " bát mã" hay còn gọi là tranh " mã đáo thành công".</p>
+                                    <p>Bức tranh sơn dầu bát mã như một món quà dành cho những người đang làm ăn kinh doanh buôn bán, hay phải đi làm ăn xa. Ngựa là con vật trung thành gần gũi với con người, mang hình ảnh kiên trì bền bỉ lâu dài may mắn mang lại tài lộc. Con ngựa đứng hàng thứ 7 trong 12 con giáp mang lại nguồn tài lộc thành công trong công việc đại sự hệ trọng, kinh doanh phát đạt, sự nhanh nhạy và tăng tiến trong tiền tài, khiến những công việc dự định mau chóng hoàn thành hơn dự kiến. Thời xưa mỗi khi phải đi đâu làm ăn xa hay phải ra trận phương tiện để sử dụng đi lại đó là con ngựa. Thời đó đi xa và thường đi lâu ngày mới quay về, nên bức tranh có ý nghĩa nói " Mã đáo thành công " mang sự may mắn thành công trở về.</p>
+                                    <p>Ý nghĩa của bức tranh sơn dầu bát mã:</p>
+                                    <p class="text-center"><img src="./images/post-img-1.jpg" alt="" /></p>
+                                    <p class="text-center"><img src="./images/post-img-2.jpg" alt="" /></p>
+                                    <p class="text-center"><img src="./images/post-img-3.jpg" alt="" /></p>
+                                </div>
+                                <div class="mt-20"><img src="./images/social-btns.jpg" alt="" /></div>
+                            </article>
+                            <div class="facebook-comments mb-40">
+                                <!-- put right after body opening tag-->
+                                <div id="fb-root"></div>
+                                <script async="async" defer="defer" crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&amp;version=v3.2&amp;appId=599359267157821&amp;autoLogAppEvents=1"></script>
+                                <!-- put this place-->
+                                <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+                            </div>
+                            <section class="section-2">
+                                <h2 class="section-2__title"><span>Tin tức liên quan</span></h2>
+                                <ul class="relate-post">
+                                    <li class="relate-post__item"><a class="relate-post__link" href="#!">Phố cổ Hà Nội được tái hiện qua những bức tranh sơn dầu</a></li>
+                                    <li class="relate-post__item"><a class="relate-post__link" href="#!">Ý nghĩa phong thủy trong cách chọn tranh sơn dầu</a></li>
+                                    <li class="relate-post__item"><a class="relate-post__link" href="#!">Trang trí nội ngoại thất bằng cách treo tranh sơn dầu</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 mb-30">
+                            <section class="aside">
+                                <h2 class="aside__title"><i class="fa fa-bars mr-3"></i><span>Danh mục tin tức</span></h2>
+                                <ul class="as-menu">
+                                    <li class="as-menu__item"><a class="as-menu__link" href="./news-detail.html">Tin tức</a><span class="as-menu__toggle"><i class="fa fa-angle-right"></i></span>
+                                        <ul class="as-menu__sub">
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="as-menu__item"><a class="as-menu__link" href="./news-detail.html">Trang trí nội thất</a><span class="as-menu__toggle"><i class="fa fa-angle-right"></i></span>
+                                        <ul class="as-menu__sub">
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="as-menu__item"><a class="as-menu__link" href="./news-detail.html">Chuyên ngành</a><span class="as-menu__toggle"><i class="fa fa-angle-right"></i></span>
+                                        <ul class="as-menu__sub">
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="as-menu__item"><a class="as-menu__link" href="./news-detail.html">Demo</a><span class="as-menu__toggle"><i class="fa fa-angle-right"></i></span>
+                                        <ul class="as-menu__sub">
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="#!">Submenu item</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="section-2">
+                                <h2 class="section-2__title"><span>Tin mới nhất</span></h2>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-1.jpg" alt="" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-2__title"><a href="#!">Trang trí nội ngoại thất bằng cách treo tranh...</a></h3>
+                                                <div class="news-2__info"><i class="fa fa-clock-o mr-2"></i><span>09/10/2019</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list__item">
+                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-1.jpg" alt="" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-2__title"><a href="#!">Trang trí nội ngoại thất bằng cách treo tranh...</a></h3>
+                                                <div class="news-2__info"><i class="fa fa-clock-o mr-2"></i><span>09/10/2019</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list__item">
+                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-1.jpg" alt="" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-2__title"><a href="#!">Trang trí nội ngoại thất bằng cách treo tranh...</a></h3>
+                                                <div class="news-2__info"><i class="fa fa-clock-o mr-2"></i><span>09/10/2019</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__grid">
+                        <div class="footer__col">
+                            <h2 class="footer__title">LEHAIS Art</h2>
+                            <div class="footer__contact">
+                                <p>Hotline: 0934 020 989</p>
+                                <p>Mail: arts.lehais@gmail.com</p>
+                                <p>Website: www.lehais.com</p>
+                                <p>Showroom: Tầng 4 - APEX HH2D - Xuân Mai<br />Corp - Hà Đông - Hà Nội</p>
+                            </div>
+                            <ul class="f-social">
+                                <li class="f-social__item"><a class="f-social__link" href="#!"><i class="fa fa-youtube"></i><span>Youtube</span></a></li>
+                                <li class="f-social__item"><a class="f-social__link" href="#!"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>
+                                <li class="f-social__item"><a class="f-social__link" href="#!"><i class="fa fa-linkedin"></i><span>Linkedin</span></a></li>
+                                <li class="f-social__item"><a class="f-social__link" href="#!"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+                                <li class="f-social__item"><a class="f-social__link" href="#!"><i class="fa fa-pinterest-p"></i><span>Pinterest</span></a></li>
+                                <li class="f-social__item"><a class="f-social__link" href="#!"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h2 class="footer__title">Facebook fanpage</h2><img src="./images/fanpage.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="footer__copyright media"><img src="./images/logo.png" alt="" />
+                        <div class="media-body">LEHAIS product copyright © 2020</div>
+                    </div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+        </div>
+    </body>
+</html>
