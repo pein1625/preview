@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner">
+                            <button class="navbar-toggle d-xl-none js-navbar-open"><i class="fa fa-bars"></i></button><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__slogan">
+                                <div class="header__text-1">CÔNG TY CỔ PHẦN ĐẦU TƯ PHÁT TRIỂN TM & SX THÁI HOÀNG</div>
+                                <div class="header__text-2">Thương hiệu của gia đình hàng đầu Việt Nam</div>
+                            </div>
+                            <div class="header__hotline"><span>Hotline</span><img src="./images/icon-phone-circle.png" alt="" /><a href="tel:0818 195 195">0818 195 195</a></div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navigation">
+                    <div class="container">
+                        <div class="navigation__inner">
+                            <section class="navbar js-navbar">
+                                <div class="navbar__backdrop js-navbar-close"></div>
+                                <div class="navbar__wrapper">
+                                    <div class="container">
+                                        <div class="navbar__header">
+                                            <button class="navbar-toggle js-navbar-close"><i class="fa fa-bars"></i></button><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="navbar__body">
+                                        <form class="search" action="#!">
+                                            <div class="input-group">
+                                                <input class="form-control" type="text" placeholder="Search..." />
+                                                <div class="input-group-append">
+                                                    <button class="input-group-text">Tìm kiếm</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <ul class="menu menu-root">
+                                            <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
+                                            </li>
+                                            <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Giới thiệu</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                <ul class="menu menu-sub">
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                    </li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                    </li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                    </li>
+                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <ul class="menu menu-sub menu-sub-2">
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="./products.html">Sản phẩm</a>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="./constructions.html">Công trình thi công</a>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="./news.html">Bảo hành sửa chữa</a>
+                                            </li>
+                                            <li class="menu-item"><a class="menu-link" href="./news.html">Tuyển dụng</a>
+                                            </li>
+                                            <li class="menu-item menu-item-group"><a class="menu-link" href="./contact.html">Liên hệ</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                <ul class="menu menu-sub">
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                    </li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                    </li>
+                                                    <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                    </li>
+                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <ul class="menu menu-sub menu-sub-2">
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="bg-light pb-60">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Trang chủ</a></li>
+                            <li class="breadcrumb-item active">Tin tức</li>
+                        </ol>
+                        <div class="grid">
+                            <div class="grid__main">
+                                <div class="bg-white p-3 p-sm-30 mb-30">
+                                    <div class="grid-2">
+                                        <div class="grid-2__main">
+                                            <article class="post mb-40">
+                                                <h1 class="post-title">Cửa kính cường lực phòng khách, phòng ngủ đẹp, sang trọng và hiện đại nhất</h1>
+                                                <div class="post-info">
+                                                    <div class="mr-3">2020-01-07 14:36:00</div>
+                                                    <div><img src="./images/like-share-btns.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <h2 class="post-sapo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque beatae consequuntur delectus deleniti dolores eaque earum expedita facilis, maiores maxime nemo numquam placeat porro repellendus, vero voluptatum. Repellat, velit.</h2>
+                                                <div class="post-content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida vel magna eget auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida vel magna eget auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris cursus quam enim, quis sodales purus pretium eu. Sed sagittis mi eget arcu varius, vitae sagittis turpis mattis. Nam arcu libero, sollicitudin id sagittis nec, porttitor in velit. Sed sodales odio sit amet nisl volutpat molestie. Morbi egestas ante lorem, ut convallis nunc viverra vitae.</p>
+                                                    <p>Nullam laoreet enim et nisl iaculis, eget dignissim purus pulvinar. Morbi imperdiet aliquet urna, non lobortis metus hendrerit quis. Mauris ac augue lorem. Cras sit amet augue interdum, tempus orci et, cursus eros. Nam mattis velit vehicula dui interdum accumsan quis nec lectus. Fusce est dui, ullamcorper in lacinia et, aliquam vestibulum diam. Suspendisse blandit, orci sagittis dictum rutrum, orci arcu sollicitudin est, ut fringilla dui ligula et dolor. Nulla mattis, dui in sollicitudin hendrerit, tellus ante maximus metus, vulputate bibendum lectus felis vel mi. Curabitur at ligula a metus finibus pellentesque.</p>
+                                                    <p class="text-center"><img src="https://placeimg.com/611/411/any" alt="" />
+                                                    </p>
+                                                    <p>Sed dictum in arcu ut scelerisque. In non mattis magna, vel consequat elit. Duis mattis tincidunt molestie. Fusce auctor, ante vel posuere hendrerit, mi nisi ultrices velit, in rutrum urna nunc vitae ante. Proin a egestas nisl, vitae pretium quam. Nunc lobortis lectus et nisl egestas, scelerisque bibendum sapien finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam quis mi quis lorem cursus consequat. Nam egestas nec ipsum eu ornare. Vestibulum pulvinar pharetra libero at pharetra. Ut id condimentum arcu, a pulvinar urna.</p>
+                                                    <p>Aenean volutpat lectus vitae hendrerit dignissim. Fusce eu fermentum tellus, ut rutrum ex. Nulla suscipit, purus eu placerat suscipit, eros dolor pharetra libero, eget mattis lorem sapien porta neque.Nam sollicitudin laoreet dui sit amet semper. Nullam eu neque porttitor, fringilla sapien nec, semper risus. Nam blandit ex vitae metus suscipit varius. Morbi ullamcorper interdum arcu non pharetra. Etiam porttitor turpis quis neque consequat sagittis.</p>
+                                                </div>
+                                            </article>
+                                            <div class="facebook-comments mb-40">
+                                                <!-- put right after body opening tag-->
+                                                <div id="fb-root"></div>
+                                                <script async="async" defer="defer" crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&amp;version=v3.2&amp;appId=599359267157821&amp;autoLogAppEvents=1"></script>
+                                                <!-- put this place-->
+                                                <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+                                            </div>
+                                            <section class="relate-post">
+                                                <h2 class="relate-post__title"><span>Bài viết liên quan</span></h2>
+                                                <ul class="relate-post__list">
+                                                    <li class="relate-post__item"><a class="relate-post__link" href="#!">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                                    <li class="relate-post__item"><a class="relate-post__link" href="#!">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                                    <li class="relate-post__item"><a class="relate-post__link" href="#!">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                                </ul>
+                                            </section>
+                                        </div>
+                                        <div class="grid-2__col">
+                                            <section class="aside">
+                                                <h2 class="aside__title">Tin tức nổi bật</h2>
+                                                <div class="list">
+                                                    <div class="list__item">
+                                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Lorem ipsum dolor sit amet, sectetur" /></a>
+                                                            <div class="media-body">
+                                                                <h3 class="news-2__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, sectetur</a></h3>
+                                                                <div class="news-2__time">2020-01-07</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list__item">
+                                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Lorem ipsum dolor sit amet, sectetur" /></a>
+                                                            <div class="media-body">
+                                                                <h3 class="news-2__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, sectetur</a></h3>
+                                                                <div class="news-2__time">2020-01-07</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list__item">
+                                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Lorem ipsum dolor sit amet, sectetur" /></a>
+                                                            <div class="media-body">
+                                                                <h3 class="news-2__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, sectetur</a></h3>
+                                                                <div class="news-2__time">2020-01-07</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list__item">
+                                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Lorem ipsum dolor sit amet, sectetur" /></a>
+                                                            <div class="media-body">
+                                                                <h3 class="news-2__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, sectetur</a></h3>
+                                                                <div class="news-2__time">2020-01-07</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list__item">
+                                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Lorem ipsum dolor sit amet, sectetur" /></a>
+                                                            <div class="media-body">
+                                                                <h3 class="news-2__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, sectetur</a></h3>
+                                                                <div class="news-2__time">2020-01-07</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__col">
+                                <ul class="pd-menu">
+                                    <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Cửa nhôm kính</a>
+                                        <ul class="pd-menu__sub">
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Cửa nhôm kính</a></li>
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Cửa nhôm Xingfa chính hãng</a></li>
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Cửa nhôm Hawking chính hãng</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Cửa gỗ Huge</a>
+                                        <ul class="pd-menu__sub">
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Duratek</a></li>
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Solitek</a></li>
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Skitek</a></li>
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Lamitek</a></li>
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Spetek</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="pd-menu__item"><a class="pd-menu__link" href="#!">Cửa kính cường lực, lan can</a>
+                                        <ul class="pd-menu__sub">
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Cửa kính cường lực</a></li>
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Cửa kính thuỷ lực</a></li>
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Cửa kính cường lực lùa</a></li>
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Cửa kính thuỷ lực khung nhôm</a></li>
+                                            <li class="pd-menu__sub-item"><a class="pd-menu__sub-link" href="#!">Vách kính, cabin tắm</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <section class="aside">
+                                    <h2 class="aside__title">Hỗ trợ trực tuyến</h2>
+                                    <div class="as-support">
+                                        <div class="as-support__item media">
+                                            <div class="as-support__thumb"><a class="as-support__frame" href="#!"><img src="./images/support-girl.png" alt="" /></a></div>
+                                            <div class="media-body">
+                                                <div class="as-support__content">
+                                                    <div>Tư vấn: Mr. Thúy</div>
+                                                    <div>Call: 0999 999 999</div>
+                                                </div>
+                                                <nav class="as-support__social"><a class="as-support__link" href="#!"><img src="./images/icon-gmail.png" alt="" /></a><a class="as-support__link" href="#!"><img src="./images/icon-skype.png" alt="" /></a><a class="as-support__link" href="#!"><img src="./images/icon-zalo.png" alt="" /></a></nav>
+                                            </div>
+                                        </div>
+                                        <div class="as-support__item media">
+                                            <div class="as-support__thumb"><a class="as-support__frame" href="#!"><img src="./images/support-girl.png" alt="" /></a></div>
+                                            <div class="media-body">
+                                                <div class="as-support__content">
+                                                    <div>Tư vấn: Mr. Thúy</div>
+                                                    <div>Call: 0999 999 999</div>
+                                                </div>
+                                                <nav class="as-support__social"><a class="as-support__link" href="#!"><img src="./images/icon-gmail.png" alt="" /></a><a class="as-support__link" href="#!"><img src="./images/icon-skype.png" alt="" /></a><a class="as-support__link" href="#!"><img src="./images/icon-zalo.png" alt="" /></a></nav>
+                                            </div>
+                                        </div>
+                                        <div class="as-support__item media">
+                                            <div class="as-support__thumb"><a class="as-support__frame" href="#!"><img src="./images/support-girl.png" alt="" /></a></div>
+                                            <div class="media-body">
+                                                <div class="as-support__content">
+                                                    <div>Tư vấn: Mr. Thúy</div>
+                                                    <div>Call: 0999 999 999</div>
+                                                </div>
+                                                <nav class="as-support__social"><a class="as-support__link" href="#!"><img src="./images/icon-gmail.png" alt="" /></a><a class="as-support__link" href="#!"><img src="./images/icon-skype.png" alt="" /></a><a class="as-support__link" href="#!"><img src="./images/icon-zalo.png" alt="" /></a></nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="aside">
+                                    <h2 class="aside__title">Xu hướng thiết kế</h2>
+                                    <div class="list">
+                                        <div class="list__item">
+                                            <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Lorem ipsum dolor sit amet, sectetur" /></a>
+                                                <div class="media-body">
+                                                    <h3 class="news-2__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, sectetur</a></h3>
+                                                    <div class="news-2__time">2020-01-07</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list__item">
+                                            <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Lorem ipsum dolor sit amet, sectetur" /></a>
+                                                <div class="media-body">
+                                                    <h3 class="news-2__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, sectetur</a></h3>
+                                                    <div class="news-2__time">2020-01-07</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list__item">
+                                            <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Lorem ipsum dolor sit amet, sectetur" /></a>
+                                                <div class="media-body">
+                                                    <h3 class="news-2__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, sectetur</a></h3>
+                                                    <div class="news-2__time">2020-01-07</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list__item">
+                                            <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Lorem ipsum dolor sit amet, sectetur" /></a>
+                                                <div class="media-body">
+                                                    <h3 class="news-2__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, sectetur</a></h3>
+                                                    <div class="news-2__time">2020-01-07</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list__item">
+                                            <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Lorem ipsum dolor sit amet, sectetur" /></a>
+                                                <div class="media-body">
+                                                    <h3 class="news-2__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, sectetur</a></h3>
+                                                    <div class="news-2__time">2020-01-07</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="f-contact">
+                    <div class="container">
+                        <div class="f-contact__inner"><img class="f-contact__icon" src="./images/icon-headphone.png" alt="" />
+                            <div class="f-contact__text">Nếu bạn có bất kỳ câu hỏi nào xin vui lòng gọi cho chúng tôi</div>
+                            <div class="f-contact__number"><a class="text-default" href="#!">0988-301-236</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="footer__content">
+                        <p>Công ty Cổ phần đầu tư phát triển Sản xuất và Thương mại Thái Hoàng<br /><span style="font-weight: 700; color: #ED1C24;">- Trụ sở chính:</span> 16-VKD, Khu đô thị Văn Phú, Phú La, Quận Hà Đông, TP. Hà Nội<br /><span style="font-weight: 700; color: #ED1C24;">- Chi nhánh tại Hà Nam:</span> Số 27, Nguyễn Phúc Lai, P. Liêm Chính, TP. Phủ Lý<br /><span style="font-weight: 700; color: #ED1C24;">- Chi nhánh tại Vĩnh Phúc:</span> Số 61, Nguyễn Tất Thành, P. Liên Bảo, Tp. Vĩnh Yên<br /><span style="font-weight: 700; color: #ED1C24;">- Chi nhánh tại Ninh Bình:</span> Số 9A, Trần Hưng Đạo, Tp. Ninh Bình<br /><span style="font-weight: 700; color: #ED1C24;">- Chi nhánh tại Thái Nguyên:</span> số 78, Việt Bắc, P. Đồng Quang, Tp. Thái Nguyên TT. Phố Dầu, Tiên Hội, H. Đại Từ<br /><span style="font-weight: 700; color: #ED1C24;">- Xưởng sản xuất:</span> Km 16, Đại lộ Thăng Long, T. Quốc Oai, H. Quốc Oai, Tp Hà Nội.<br /><span style="font-weight: 700; color: #ED1C24;">- Website:</span> thaihoang.net<br /><span style="font-weight: 700; color: #ED1C24;">- Hotline:</span> 0918 195 195<br /><span style="font-weight: 700; color: #ED1C24;">- Email:</span> info@granddoor.vn</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-20 col-md-4 mb-30">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.276132266639!2d105.78908421533202!3d21.021634493396395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1587606986563!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                            <div class="footer__map-title">Trụ sở chính</div>
+                        </div>
+                        <div class="col-lg-20 col-md-4 mb-30">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.276132266639!2d105.78908421533202!3d21.021634493396395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1587606986563!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                            <div class="footer__map-title">Chi nhánh tại Hà Nam</div>
+                        </div>
+                        <div class="col-lg-20 col-md-4 mb-30">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.276132266639!2d105.78908421533202!3d21.021634493396395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1587606986563!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                            <div class="footer__map-title">Chi nhánh tại Vĩnh Phúc</div>
+                        </div>
+                        <div class="col-lg-20 col-md-4 mb-30">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.276132266639!2d105.78908421533202!3d21.021634493396395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1587606986563!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                            <div class="footer__map-title">Chi nhánh tại Ninh Bình</div>
+                        </div>
+                        <div class="col-lg-20 col-md-4 mb-30">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.276132266639!2d105.78908421533202!3d21.021634493396395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1587606986563!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                            <div class="footer__map-title">Chi nhánh tại Thái Nguyên</div>
+                        </div>
+                    </div>
+                    <div class="footer__end">
+                        <nav class="f-social">
+                            <div class="f-social__label">Kết nối cùng chúng tôi:</div>
+                            <div class="f-social__list"><a class="f-social__item" href="#!"><i class="fa fa-facebook"></i></a><a class="f-social__item" href="#!"><i class="fa fa-google-plus"></i></a><a class="f-social__item" href="#!"><i class="fa fa-twitter"></i></a><a class="f-social__item" href="#!"><i class="fa fa-instagram"></i></a></div>
+                        </nav>
+                    </div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <button class="btn btn-movetop"><i class="fa fa-arrow-up"></i></button><a class="phone-ring" href="#!"><span class="phone-ring__icon"><i class="fa fa-phone"></i></span><span class="phone-ring__text">0123.456.789</span></a>
+        </div>
+    </body>
+</html>
