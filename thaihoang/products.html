@@ -457,7 +457,45 @@
                 </div>
             </footer>
             <!-- modals + sticky widgets-->
-            <button class="btn btn-movetop"><i class="fa fa-arrow-up"></i></button><a class="phone-ring" href="#!"><span class="phone-ring__icon"><i class="fa fa-phone"></i></span><span class="phone-ring__text">0123.456.789</span></a>
+            <div class="md-map modal fade" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.276132266639!2d105.78908421533202!3d21.021634493396395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1587606986563!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md-contact modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="text -size-20 -weight-700 -uppercase -center mb-3">ĐỂ LẠI LỜI NHẮN</div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Nhập số điện thoại" />
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Nhập họ và tên" />
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="4" placeholder="Nhập tin nhắn"></textarea>
+                            </div>
+                            <button class="btn btn-block btn-primary font-weight-bold text-uppercase" type="submit">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-movetop"><i class="fa fa-arrow-up"></i></button>
+            <ul class="sticky-btns">
+                <li class="sticky-btns__item"><a class="sticky-btns__link" href="#!"><span class="sticky-btns__icon"><i class="fa fa-phone"></i></span><span class="sticky-btns__text"><span>0999.999.999</span></span></a></li>
+                <li class="sticky-btns__item"><a class="sticky-btns__link" href="#!"><span class="sticky-btns__icon"><img src="./images/icon-messenger.png" alt="" /></span><span class="sticky-btns__text"><span>Facebook</span></span></a></li>
+                <li class="sticky-btns__item"><a class="sticky-btns__link" href="#!"><span class="sticky-btns__icon"><img src="./images/icon-zalo-chat-white.png" alt="" /></span><span class="sticky-btns__text"><span>Nhắn tin Zalo</span></span></a></li>
+                <li class="sticky-btns__item"><a class="sticky-btns__link" href="#!"><span class="sticky-btns__icon"><i class="fa fa-envelope"></i></span><span class="sticky-btns__text"><span>Gửi Mail</span></span></a></li>
+                <li class="sticky-btns__item"><a class="sticky-btns__link" href=".md-map" data-toggle="modal"><span class="sticky-btns__icon"><i class="fa fa-map-marker"></i></span><span class="sticky-btns__text"><span>Địa chỉ công tin</span></span></a></li>
+                <li class="sticky-btns__item"><a class="sticky-btns__link" href=".md-contact" data-toggle="modal"><span class="sticky-btns__icon"><i class="fa fa-print"></i></span><span class="sticky-btns__text"><span>Để lại tin nhắn</span></span></a></li>
+            </ul>
         </div>
     </body>
 </html>
