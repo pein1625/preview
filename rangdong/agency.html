@@ -1,0 +1,362 @@
+<!-- Dự án-->
+<!-- Tin tức-->
+<!-- Sản phẩm-->
+<!-- Công nghệ-->
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="n-header">
+                <div class="n-top">
+                    <div class="container">
+                        <div class="n-top__inner">
+                            <form class="n-search">
+                                <div class="n-search__group">
+                                    <input class="n-search__input" type="text" placeholder="Bạn muốn tìm gì?" />
+                                    <button class="n-search__btn" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                            <div class="n-lang"><a class="n-lang__item" href="#!"><img src="./images/vn.svg" alt="" /></a><a class="n-lang__item" href="#!"><img src="./images/gb.svg" alt="" /></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="n-header__wrapper">
+                    <div class="container">
+                        <div class="n-header__inner"><a class="n-header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="n-header__elements">
+                                <section class="n-navbar js-navbar">
+                                    <div class="n-navbar__backdrop js-navbar-close"></div>
+                                    <div class="n-navbar__wrapper">
+                                        <div class="n-navbar__header">
+                                            <div class="n-navbar__title">Menu</div>
+                                            <button class="n-navbar__close js-navbar-close"></button>
+                                        </div>
+                                        <div class="n-navbar__body">
+                                            <ul class="n-menu n-menu-root">
+                                                <li class="n-menu-item"><a class="n-menu-link active" href="./index.html">Trang chủ</a>
+                                                </li>
+                                                <li class="n-menu-item n-menu-item-group"><a class="n-menu-link" href="./about.html">Giới thiệu</a><span class="n-menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="n-menu n-menu-sub">
+                                                        <li class="n-menu-item"><a class="n-menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="n-menu-item"><a class="n-menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="n-menu-item"><a class="n-menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="n-menu-item n-menu-item-group"><a class="n-menu-link" href="#!">Dropdown</a><span class="n-menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="n-menu n-menu-sub n-menu-sub-2">
+                                                                <li class="n-menu-item"><a class="n-menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="n-menu-item"><a class="n-menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="n-menu-item"><a class="n-menu-link" href="#!">Dropdown</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="n-menu-item"><a class="n-menu-link" href="./products.html">Sản phẩm</a>
+                                                </li>
+                                                <li class="n-menu-item"><a class="n-menu-link" href="./news.html">Tin tức</a>
+                                                </li>
+                                                <li class="n-menu-item"><a class="n-menu-link" href="./agency.html">Điểm mua hàng</a>
+                                                </li>
+                                            </ul>
+                                            <nav class="n-topnav"><a class="n-topnav__item" href="#!">Tài liệu</a><a class="n-topnav__item" href="#!">Thông tin cổ đông</a><a class="n-topnav__item" href="#!">Liên hệ</a><a class="n-topnav__item" href="#!">Mua trực tuyến</a></nav>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="n-btns"><a class="n-btns__item" href="#!"><img src="./images/icon-user-circle.png" alt="" /></a><a class="n-btns__item" href="#!"><img src="./images/icon-cart-circle.png" alt="" /></a>
+                                    <button class="n-btns__item n-btns__item--mobile js-navbar-open" type="button"><i class="fa fa-bars"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <nav class="bg-light">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Trang chủ</a></li>
+                            <li class="breadcrumb-item active">Điểm mua hàng</li>
+                        </ol>
+                    </div>
+                </nav>
+                <div class="container pt-30">
+                    <section class="section-5">
+                        <h2 class="section-5__title">HỆ THỐNG PHÂN PHỐI SẢN PHẨM</h2>
+                        <div class="agency-filter">
+                            <div class="row">
+                                <div class="col-lg-4 mb-3">
+                                    <div class="form-row">
+                                        <label class="col-form-label col-xl-4">Miền</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-control">
+                                                <option>Tất cả</option>
+                                                <option>Bắc</option>
+                                                <option>Trung</option>
+                                                <option>Nam</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-3">
+                                    <div class="form-row">
+                                        <label class="col-form-label col-xl-4">Tỉnh / TP</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-control">
+                                                <option>Tất cả</option>
+                                                <option>Tất cả</option>
+                                                <option>Tất cả</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-3">
+                                    <div class="form-row">
+                                        <label class="col-form-label col-xl-4">Quận / Huyện</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-control">
+                                                <option>Tất cả</option>
+                                                <option>Tất cả</option>
+                                                <option>Tất cả</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table agency-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Tên</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Điện thoại</th>
+                                    <th>Bản đồ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td>Cửa hàng Hải Minh</td>
+                                    <td>Số 526 đường Lĩnh Nam, quận Hoàng Mai, thành phố Hà Nội</td>
+                                    <td>02436444042</td>
+                                    <td><a href="#modal-map-1" data-toggle="modal">Xem bản đồ</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <nav class="d-flex justify-content-center">
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a class="page-link" href="#!"><i class="fa fa-angle-double-left"></i></a></li>
+                                <li class="page-item active"><a class="page-link" href="#!">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#!"><i class="fa fa-angle-double-right"></i></a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+                <div class="map-modal modal" id="modal-map-1" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button class="modal-close" type="button" data-dismiss="modal"></button>
+                                <div class="embed-responsive embed-responsive-4by3"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.276132266639!2d105.78908421535448!3d21.021634493396395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab50f898373b%3A0xf94978347b40462!2zMjEwIFRydW5nIEvDrW5oLCBZw6puIEhvw6AsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1590198213193!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-->
+            <footer class="n-footer">
+                <div class="container">
+                    <div class="n-footer__grid">
+                        <div class="n-footer__col">
+                            <nav class="n-social">
+                                <h2 class="n-social__label">Theo dõi chúng tôi qua các kênh</h2>
+                                <div class="n-social__list"><a class="n-social__item" href="#!"><i class="fa fa-facebook"></i></a><a class="n-social__item" href="#!"><i class="fa fa-google-plus"></i></a><a class="n-social__item" href="#!"><i class="fa fa-youtube"></i></a><a class="n-social__item" href="#!"><i class="fa fa-twitter"></i></a></div>
+                            </nav>
+                            <div class="n-trademark mt-20"><img src="./images/trademark.png" alt="" /></div>
+                        </div>
+                        <div class="n-footer__col">
+                            <div class="n-footer__logo-wrap"><a class="n-footer__logo" href="#!"><img src="./images/logo-white.png" alt="" /></a></div>
+                        </div>
+                        <div class="n-footer__col">
+                            <form class="n-form" action="#!">
+                                <h2 class="n-form__title">Đăng ký nhận email</h2>
+                                <div class="n-form__desc">Nhập email để theo dõi tin tức từ Rạng Đông nhanh nhất</div>
+                                <div class="n-form__group">
+                                    <input class="n-form__input" type="text" placeholder="Enter email" />
+                                    <div class="n-form__append">
+                                        <button class="n-form__text"><img src="./images/icon-share-o.png" alt="" /></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <nav class="n-fnav"><a class="n-fnav__item" href="#!">Trang chủ Rạng Đông</a><a class="n-fnav__item" href="#!">Khám phá gói giải pháp</a><a class="n-fnav__item" href="#!">Điều khoản sử dụng</a><a class="n-fnav__item" href="#!">Chính sách bảo mật</a></nav>
+                    <div class="n-footer__text">
+                        <div>GPĐKKD số: 0103004893 do Sở KHĐT TP Hà Nội cấp ngày 15/07/2004</div>
+                        <div>Copyright ©2019 - Công ty CP Bóng đèn Phích nước Rạng Đông. Số 87 - 89 Hạ Đình, Thanh Xuân, Hà Nội.</div>
+                    </div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <button class="btn btn-movetop"><i class="fa fa-arrow-up"></i></button>
+            <div class="md-video modal fade" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body md-video__body">
+                            <button class="md-video__close" data-dismiss="modal"></button>
+                            <div class="md-video__frame"><iframe src='' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
