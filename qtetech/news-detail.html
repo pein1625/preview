@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="toppage">
+                    <div class="container">
+                        <div class="toppage__inner">
+                            <nav class="lang"><a class="lang__item" href="#!"><img src="./images/cn.svg" alt="" /></a><a class="lang__item" href="#!"><img src="./images/gb.svg" alt="" /></a><a class="lang__item" href="#!"><img src="./images/jp.svg" alt="" /></a><a class="lang__item" href="#!"><img src="./images/kr.svg" alt="" /></a><a class="lang__item" href="#!"><img src="./images/vn.svg" alt="" /></a></nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner">
+                            <button class="navbar-toggle d-xl-none js-navbar-open"><i class="fa fa-bars"></i></button><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navigation">
+                    <div class="navigation__wrapper">
+                        <div class="container">
+                            <div class="navigation__inner">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-close"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header">
+                                            <button class="navbar-toggle js-navbar-close"><i class="fa fa-bars"></i></button><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link" href="./index.html">Trang chủ</a></li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Giới thiệu</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Giới thiệu chung</a></li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Giới thiệu riêng</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-group menu-item-mega"><a class="menu-link" href="./products.html">Sản phẩm</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <div class="menu-mega">
+                                                        <ul class="menu menu-sub">
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab active" href="#!">B</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">C</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">D</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">E</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">G</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">H</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">K</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">L</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">N</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">P</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">Q</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">R</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">S</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">T</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">V</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a class="menu-link js-menu-tab" href="#!">Y</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt dầu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể rửa siêu âm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn soi UV</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể gia nhiệt cho thuốc thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bể ổn nhiệt có khuấy thử</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bàn sấy lam</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">Tin tức</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Khuyến mại</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="./contact.html">Liên hệ</a></li>
+                                            </ul>
+                                            <div class="top-info"><span>We Ship Worldwide.</span><span>Email: info@qtetech.com.vn</span><span>Hotline: <a href="tel:(+84) 935 486 698">(+84) 935 486 698</a> - <a href="tel:(+84) 988 012 484">(+84) 988 012 484</a></span></div>
+                                            <div class="h-pros">
+                                                <div class="h-pros__item media">
+                                                    <div class="h-pros__icon"><img src="./images/icon-thumb-up.png" alt="" /></div>
+                                                    <div class="h-pros__text media-body">Cam kết chất lượng</div>
+                                                </div>
+                                                <div class="h-pros__item media">
+                                                    <div class="h-pros__icon"><img src="./images/icon-refresh.png" alt="" /></div>
+                                                    <div class="h-pros__text media-body">Bảo hành chính hãng</div>
+                                                </div>
+                                                <div class="h-pros__item media">
+                                                    <div class="h-pros__icon"><img src="./images/icon-delivery.png" alt="" /></div>
+                                                    <div class="h-pros__text media-body">Giao hàng toàn quốc An toàn, nhanh chóng</div>
+                                                </div>
+                                                <div class="h-pros__item media">
+                                                    <div class="h-pros__icon"><img src="./images/icon-airplane.png" alt="" /></div>
+                                                    <div class="h-pros__text media-body">Giao dịch thuận tiện, linh hoạt Hỗ trợ khách hàng tốt nhất</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="navigation__widgets">
+                                    <form class="search">
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" placeholder="Tìm kiếm sản phẩm và nhà sản xuất, cung cấp..." />
+                                            <div class="input-group-append">
+                                                <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="cart-btn js-cart-open"><img class="mr-2" src="./images/icon-cart.png" alt="" /><strong>Cart</strong><span class="text-muted mx-2">|</span><span>1,000,000 VND</span><i class="fa fa-angle-down ml-2"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="container mb-20">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Tin tức</a></li>
+                        <li class="breadcrumb-item active">Mettler Toledo đào tạo, training sản phẩm máy đo pH/mV tại Việt Nam</li>
+                    </ol>
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-9 mb-30">
+                            <article class="post mb-40">
+                                <h1 class="post-title">Mettler Toledo đào tạo, training sản phẩm máy đo pH/mV tại Việt Nam</h1>
+                                <div class="post-info">
+                                    <div class="mr-3">2020-01-07 14:36:00</div>
+                                    <div><img src="./images/like-share-btns.png" alt="" />
+                                    </div>
+                                </div>
+                                <h2 class="post-sapo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque beatae consequuntur delectus deleniti dolores eaque earum expedita facilis, maiores maxime nemo numquam placeat porro repellendus, vero voluptatum. Repellat, velit.</h2>
+                                <div class="post-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida vel magna eget auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida vel magna eget auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris cursus quam enim, quis sodales purus pretium eu. Sed sagittis mi eget arcu varius, vitae sagittis turpis mattis. Nam arcu libero, sollicitudin id sagittis nec, porttitor in velit. Sed sodales odio sit amet nisl volutpat molestie. Morbi egestas ante lorem, ut convallis nunc viverra vitae.</p>
+                                    <p>Nullam laoreet enim et nisl iaculis, eget dignissim purus pulvinar. Morbi imperdiet aliquet urna, non lobortis metus hendrerit quis. Mauris ac augue lorem. Cras sit amet augue interdum, tempus orci et, cursus eros. Nam mattis velit vehicula dui interdum accumsan quis nec lectus. Fusce est dui, ullamcorper in lacinia et, aliquam vestibulum diam. Suspendisse blandit, orci sagittis dictum rutrum, orci arcu sollicitudin est, ut fringilla dui ligula et dolor. Nulla mattis, dui in sollicitudin hendrerit, tellus ante maximus metus, vulputate bibendum lectus felis vel mi. Curabitur at ligula a metus finibus pellentesque.</p>
+                                    <p class="text-center"><img src="./images/news-img.jpg" alt="" /></p>
+                                    <p>Sed dictum in arcu ut scelerisque. In non mattis magna, vel consequat elit. Duis mattis tincidunt molestie. Fusce auctor, ante vel posuere hendrerit, mi nisi ultrices velit, in rutrum urna nunc vitae ante. Proin a egestas nisl, vitae pretium quam. Nunc lobortis lectus et nisl egestas, scelerisque bibendum sapien finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam quis mi quis lorem cursus consequat. Nam egestas nec ipsum eu ornare. Vestibulum pulvinar pharetra libero at pharetra. Ut id condimentum arcu, a pulvinar urna.</p>
+                                    <p>Aenean volutpat lectus vitae hendrerit dignissim. Fusce eu fermentum tellus, ut rutrum ex. Nulla suscipit, purus eu placerat suscipit, eros dolor pharetra libero, eget mattis lorem sapien porta neque.Nam sollicitudin laoreet dui sit amet semper. Nullam eu neque porttitor, fringilla sapien nec, semper risus. Nam blandit ex vitae metus suscipit varius. Morbi ullamcorper interdum arcu non pharetra. Etiam porttitor turpis quis neque consequat sagittis.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 mb-30">
+                            <section class="aside">
+                                <h2 class="aside__title">Tin tức nổi bật</h2>
+                                <div class="list-2">
+                                    <div class="list-2__item">
+                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Kecheng và dòng máy ly tâm" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-2__title"><a href="./news-detail.html">Kecheng và dòng máy ly tâm</a></h3>
+                                                <div class="news-2__info">2020-01-07</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-2__item">
+                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Kecheng và dòng máy ly tâm" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-2__title"><a href="./news-detail.html">Kecheng và dòng máy ly tâm</a></h3>
+                                                <div class="news-2__info">2020-01-07</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-2__item">
+                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Kecheng và dòng máy ly tâm" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-2__title"><a href="./news-detail.html">Kecheng và dòng máy ly tâm</a></h3>
+                                                <div class="news-2__info">2020-01-07</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-2__item">
+                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Kecheng và dòng máy ly tâm" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-2__title"><a href="./news-detail.html">Kecheng và dòng máy ly tâm</a></h3>
+                                                <div class="news-2__info">2020-01-07</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-2__item">
+                                        <div class="news-2 media"><a class="news-2__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="Kecheng và dòng máy ly tâm" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-2__title"><a href="./news-detail.html">Kecheng và dòng máy ly tâm</a></h3>
+                                                <div class="news-2__info">2020-01-07</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="register">
+                <div class="container">
+                    <div class="register__title">Đăng ký nhận bản tin - cơ hội nhận khuyến mãi</div>
+                    <form class="register__form">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Nhập email nhận tin..." />
+                            <div class="input-group-append">
+                                <button class="input-group-text" type="submit">Đăng ký nhận tin<i class="fa fa-angle-double-right ml-2"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mb-30">
+                            <h2 class="footer__title">CÔNG TY TNHH KỸ THUẬT QTE</h2>
+                            <div class="footer__contact">
+                                <p><strong>Trụ sở chính:</strong><br />Địa chỉ: Số 25 Ngách 3/1 Phố Cù Chính Lan, P. Khương Mai, Q. Thanh Xuân, TP. Hà Nội, Việt Nam<br />Điện thoại: +84 24 62541636/ +84 24 63274624<br />Hotline: +84 935 486 698/ +84 988 012 484<br />Email: sales@qtetech.com.vn; info@qtetech.com.vn<br />Website: www.qtetech.com.vn</p>
+                                <p><strong>VPGD tại Hà Nội:</strong><br />Địa chỉ: Căn 907 - B Tower - VC2 Golden Heart – Số 01 Đường Nghiêm Xuân Yêm – P. Đại Kim – Q. Hoàng Mai – TP. Hà Nội - Việt Nam<br />Điện thoại: +84 24 62541636/ +84 24 63274624<br />Hotline: +84 935 486 698/ +84 988 012 484<br />Email: sales@qtetech.com.vn; info@qtetech.com.vn<br />Website: www.qtetech.com.vn</p>
+                                <p><strong>VPGD tại Tp.HCM:</strong><br />Địa chỉ: Số 58/2 Bùi Thế Mỹ – Phường 10 – Quận Tân Bình – Tp. HCM – Việt Nam<br />Điện thoại: +84 24 62541636/ +84 24 63274624<br />Hotline: +84 935 486 698/ +84 988 012 484<br />Email: sales@qtetech.com.vn; info@qtetech.com.vn<br />Website: www.qtetech.com.vn</p>
+                                <p><strong>VPGD tại Đà Nẵng:</strong><br />Địa chỉ:Tầng 9 - Tòa nhà Lighthouse - 1254 Xô Viết Nghệ Tĩnh - P. Hòa Cường Nam - Q. Hải Châu - Tp. Đà Nẵng - Việt Nam<br />Điện thoại: +84 24 62541636/ +84 24 63274624<br />Hotline: +84 935 486 698/ +84 988 012 484<br />Email: sales@qtetech.com.vn; info@qtetech.com.vn<br />Website: www.qtetech.com.vn</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-30">
+                            <h2 class="footer__title">KẾT NỐI VỚI CHÚNG TÔI</h2>
+                            <nav class="f-social"><a class="f-social__item" href="#!"><i class="fa fa-facebook"></i></a><a class="f-social__item" href="#!"><i class="fa fa-twitter"></i></a><a class="f-social__item" href="#!"><i class="fa fa-google-plus"></i></a><a class="f-social__item" href="#!"><i class="fa fa-youtube-play"></i></a></nav>
+                            <h2 class="footer__title">Liên kết</h2>
+                            <ul class="f-menu">
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Giới thiệu</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách bảo mật</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Liên hệ chúng tôi</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Catalogue thiết bị điện tử</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Hướng dẫn đặt hàng</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Sứ mệnh &amp; Tầm nhìn</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Catalogue thiết bị thí nghiệm, môi trường</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Hướng dẫn thanh toán</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách với nhà sản xuất</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách vận chuyển</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách bảo hành</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách đại lý</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Tuyển Dụng</a></li>
+                            </ul>
+                            <div class="mt-50"><img src="./images/da-thong-bao.png" alt="" /></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <article class="cart js-cart">
+                <div class="cart__backdrop js-cart-close"></div>
+                <div class="cart__wrapper">
+                    <div class="cart__header">
+                        <div class="cart__title">GIỎ HÀNG</div>
+                        <button class="cart__close js-cart-close"></button>
+                    </div>
+                    <div class="cart__body">
+                        <ul class="cart__list">
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="./product-detail.html"><img src="https://placeimg.com/683/483/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="./product-detail.html">Thiết bị đếm bụi Met One Instruments BT-620</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="./product-detail.html"><img src="https://placeimg.com/684/484/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="./product-detail.html">Thiết bị đếm bụi Met One Instruments BT-620</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="./product-detail.html"><img src="https://placeimg.com/621/421/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="./product-detail.html">Thiết bị đếm bụi Met One Instruments BT-620</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="./product-detail.html"><img src="https://placeimg.com/672/472/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="./product-detail.html">Thiết bị đếm bụi Met One Instruments BT-620</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="./product-detail.html"><img src="https://placeimg.com/677/477/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="./product-detail.html">Thiết bị đếm bụi Met One Instruments BT-620</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="./product-detail.html"><img src="https://placeimg.com/651/451/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="./product-detail.html">Thiết bị đếm bụi Met One Instruments BT-620</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="./product-detail.html"><img src="https://placeimg.com/670/470/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="./product-detail.html">Thiết bị đếm bụi Met One Instruments BT-620</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="./product-detail.html"><img src="https://placeimg.com/635/435/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="./product-detail.html">Thiết bị đếm bụi Met One Instruments BT-620</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="./product-detail.html"><img src="https://placeimg.com/663/463/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="./product-detail.html">Thiết bị đếm bụi Met One Instruments BT-620</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="./product-detail.html"><img src="https://placeimg.com/681/481/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="./product-detail.html">Thiết bị đếm bụi Met One Instruments BT-620</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cart__footer">
+                        <div class="cart__total"><span class="text-uppercase">Tổng</span><span class="text-danger ml-auto js-cart-product-total">1,000,000</span><span class="text-danger ml-1">VNĐ</span></div><a class="btn btn-block btn-primary rounded-18 text-uppercase text-700" href="#!">ĐẶT HÀNG</a>
+                    </div>
+                </div>
+            </article>
+            <button class="btn btn-movetop"><i class="fa fa-arrow-up"></i></button>
+        </div>
+    </body>
+</html>
