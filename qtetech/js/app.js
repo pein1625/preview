@@ -258,3 +258,18 @@ $(function () {
     }
   });
 });
+
+$(function () {
+  $(".js-currency-toggle").on("click", function (e) {
+    e.stopPropagation();
+    $(".js-currency-dropdown").toggle();
+  });
+
+  $(".js-currency-dropdown").on("click", function (e) {
+    e.stopPropagation();
+  });
+
+  $("html, body").on("click", function () {
+    $(".js-currency-dropdown").hide();
+  });
+});
