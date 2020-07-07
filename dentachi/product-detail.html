@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__elements">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-close"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                            <button class="navbar-toggle js-navbar-close ml-auto"><i class="fa fa-bars"></i></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <form class="search">
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" placeholder="Search..." />
+                                                    <div class="input-group-append">
+                                                        <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link active" href="./index.html">Home</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Company Information</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./products-2.html">Product Info</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">News</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./download.html">Download Catalog</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./contact.html">Contact Us</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./download.html">Language Menu</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">English</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Japaneses</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Chinese</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Korean</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <button class="navbar-toggle d-xl-none js-navbar-open"><i class="fa fa-bars"></i></button>
+                                <button class="search-btn" type="button"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <nav class="bg-light">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!"><i class="fa fa-home mr-2"></i>Home</a></li>
+                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Products</a></li>
+                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Products commercial</a></li>
+                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!">CNC Machine and small devices</a></li>
+                            <li class="breadcrumb-item active">SKKL-B</li>
+                        </ol>
+                    </div>
+                </nav>
+                <section class="pt-40 pb-20">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-xl-9 mb-30">
+                                <section class="section">
+                                    <div class="section__header">
+                                        <h2 class="section__title">SKKL series</h2>
+                                    </div>
+                                    <h1 class="product-title">SKKL-B</h1>
+                                    <article class="preview">
+                                        <div class="preview__main">
+                                            <div class="preview-slider">
+                                                <div class="preview-slider__container swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="preview-slider__frame"><img src="http://placekitten.com/1000/750" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="preview-slider__frame"><img src="http://placekitten.com/1000/751" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="preview-slider__frame"><img src="http://placekitten.com/1000/752" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="preview-slider__frame"><img src="http://placekitten.com/1000/753" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="preview-slider__frame"><img src="http://placekitten.com/1000/754" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="preview-slider__frame"><img src="http://placekitten.com/1000/755" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="preview__thumbs">
+                                            <div class="thumb-slider">
+                                                <div class="thumb-slider__prev"><i class="fa fa-angle-left"></i></div>
+                                                <div class="thumb-slider__next"><i class="fa fa-angle-right"></i></div>
+                                                <div class="thumb-slider__container swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/750" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/751" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/752" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/753" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/754" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/755" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <section class="section-2">
+                                        <h2 class="section-2__title">Product features</h2>
+                                        <div class="section-2__body">
+                                            <p>The SKKL-B model is a self-supporting desktop product.</p>
+                                            <p>The newly designed, LED-exclusive slim head uses a board-mounted LED with high color rendering (Ra≧90) and heat generation.</p>
+                                            <p>A flat, diffuser and protector will reduce the work and the light source as well as the glare unique to LEDs.</p>
+                                            <p>The on/off switch is on the head for better control.</p>
+                                            <p>The newly designed table stand takes work efficiency into account, providing plenty of work space and staying out of your way.</p>
+                                            <p>An electronically conductive mat in the shape of the table stand is available as an optional purchase. Place on top of the table stand to prevents dirt from building up and protect your work. Connect correctly with the ground to turn the table stand into a temporary static-free space. (Ground Resistor of the Mat: R≦108)</p>
+                                        </div>
+                                    </section>
+                                    <section class="section-2">
+                                        <h2 class="section-2__title">Product Name</h2>
+                                        <div class="section-2__body">
+                                            <p>LED Illuminated Magnifier</p>
+                                        </div>
+                                    </section>
+                                    <section class="section-2">
+                                        <h2 class="section-2__title">Model</h2>
+                                        <div class="section-2__body">
+                                            <p>SKKL-B (Table Stand Type Illuminated Magnifier)</p>
+                                        </div>
+                                    </section>
+                                    <section class="section-2">
+                                        <h2 class="section-2__title">Product Specifications</h2>
+                                        <div class="section-2__body">
+                                            <p class="text-center"><img src="./images/product-specifications.jpg" alt=""></p>
+                                        </div>
+                                    </section>
+                                    <div class="product-nav">
+                                        <div class="product-nav__item"><a class="product-nav__link media" href="#!"><i class="fa fa-2x fa-angle-left mr-3"></i>
+                                                <div class="media-body">SKKL-CL</div>
+                                            </a></div>
+                                        <div class="product-nav__item"><a class="product-nav__link media" href="#!">
+                                                <div class="media-body">The BARLIGHT 530 (LED light for checking surface flaws)</div><i class="fa fa-2x fa-angle-right ml-3"></i>
+                                            </a></div>
+                                    </div>
+                                </section>
+                                <section class="section">
+                                    <div class="section__header">
+                                        <h2 class="section__title">Related products</h2>
+                                    </div>
+                                    <div class="row gutter -all-30 -under-sm-16 mb-30 mb-sm-0">
+                                        <div class="col-lg-4 col-6 mb-3 mb-sm-30">
+                                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.png" alt="" /></a>
+                                                <h3 class="product__title"><a href="./product-detail.html">SKKL series</a></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6 mb-3 mb-sm-30">
+                                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.png" alt="" /></a>
+                                                <h3 class="product__title"><a href="./product-detail.html">SKKL series</a></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6 mb-3 mb-sm-30">
+                                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.png" alt="" /></a>
+                                                <h3 class="product__title"><a href="./product-detail.html">SKKL series</a></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6 mb-3 mb-sm-30">
+                                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.png" alt="" /></a>
+                                                <h3 class="product__title"><a href="./product-detail.html">SKKL series</a></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6 mb-3 mb-sm-30">
+                                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.png" alt="" /></a>
+                                                <h3 class="product__title"><a href="./product-detail.html">SKKL series</a></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-6 mb-3 mb-sm-30">
+                                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.png" alt="" /></a>
+                                                <h3 class="product__title"><a href="./product-detail.html">SKKL series</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 mb-30">
+                                <ul class="as-menu">
+                                    <li class="as-menu__item"><a class="as-menu__link" href="#!">Product portfolio</a>
+                                        <ul class="as-menu__sub">
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link active" href="./products.html">Products distribution</a>
+                                                <ul class="as-menu__sub-2 active">
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">CNC Machine and small devices</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Spare parts</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Consumable supplies</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link active" href="./products-2.html">Hand tools</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Electrical equipment</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Industrial valves</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Tool box</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Motor - Industrial pumps</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Test and Measurement</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Hydraulic devices</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Transmission equipment</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Spare parts, Chemicals, Components Moulds</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Transport equipment and lifting</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Pneumatic Equipment</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Welding equipment</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Cutting tools</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Mechanical machining</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Pruduct distribution in VietNam</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Construction of industrial installations</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="./products.html">Products commercial</a>
+                                                <ul class="as-menu__sub-2">
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">CNC Machine and small devices</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Spare parts</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Consumable supplies</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Hand tools</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Electrical equipment</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Industrial valves</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Tool box</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Motor - Industrial pumps</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Test and Measurement</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Hydraulic devices</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Transmission equipment</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Spare parts, Chemicals, Components Moulds</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Transport equipment and lifting</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Pneumatic Equipment</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Welding equipment</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Cutting tools</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Mechanical machining</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Pruduct distribution in VietNam</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Construction of industrial installations</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="as-menu__sub-item"><a class="as-menu__sub-link" href="./products.html">Products Handmade</a>
+                                                <ul class="as-menu__sub-2">
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">CNC Machine and small devices</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Spare parts</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Consumable supplies</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Hand tools</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Electrical equipment</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Industrial valves</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Tool box</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Motor - Industrial pumps</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Test and Measurement</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Hydraulic devices</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Transmission equipment</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Spare parts, Chemicals, Components Moulds</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Transport equipment and lifting</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Pneumatic Equipment</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Welding equipment</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Cutting tools</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Mechanical machining</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Pruduct distribution in VietNam</a></li>
+                                                    <li class="as-menu__sub-2-item"><a class="as-menu__sub-2-link" href="./products-2.html">Construction of industrial installations</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul><a class="d-block mb-20" href="#!"><img class="d-block w-100" src="./images/banner-aside.jpg" alt="" /></a>
+                                <section class="aside">
+                                    <h2 class="aside__title">News</h2>
+                                    <div class="aside__body">
+                                        <ul class="as-list">
+                                            <li class="as-list__item"><a class="as-list__link" href="./news-detail.html">[New Product information] Offset Clamp newly launched</a></li>
+                                            <li class="as-list__item"><a class="as-list__link" href="./news-detail.html">New Product information</a></li>
+                                            <li class="as-list__item"><a class="as-list__link" href="./news-detail.html">New Product information</a></li>
+                                            <li class="as-list__item"><a class="as-list__link" href="./news-detail.html">New Product information</a></li>
+                                            <li class="as-list__item"><a class="as-list__link" href="./news-detail.html">New Product information</a></li>
+                                            <li class="as-list__item"><a class="as-list__link" href="./news-detail.html">New Product information</a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <section class="aside">
+                                    <h2 class="aside__title">Online Support</h2>
+                                    <div class="aside__body">
+                                        <div class="as-support media">
+                                            <div class="as-support__frame"><img src="./images/support-girl.png" alt="" /></div>
+                                            <div class="media-body">
+                                                <div class="as-support__label">24/7 support</div>
+                                                <div class="as-support__number"><a href="tel:0986 832 938">0986 832 938</a></div>
+                                                <div class="as-support__number"><a href="tel:0975 851 932">0975 851 932</a></div>
+                                                <div class="as-support__number"><a href="tel:0964 804 081">0964 804 081</a></div>
+                                                <div class="as-support__nav"><a class="as-support__nav-item" href="#!"><img src="./images/icon-messenger.png" alt="" /></a><a class="as-support__nav-item" href="#!"><img src="./images/icon-zalo.png" alt="" /></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="aside-map embed-responsive">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.276132266639!2d105.78908421533202!3d21.021634493396395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1587606986563!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mb-40">
+                            <h2 class="footer__title">Products:</h2>
+                            <div class="footer__content">
+                                <p>・Illuminated Magnifiers / Wide-view Illuminated Magnifiers / Energy-saving, LED Illuminated Magnifiers<br />・Interchangeable Lens System for Illuminated Magnifiers<br />・Multi (AR) Coated Interchangeable Lens System for Fatigue and Inspection Accuracy Improvement<br />・LED Inspection Lighting for Surface Scratches<br />・LED Inspection Loupe for Holes, Dents, and Interior / Stereoscopic Microscope / Loupe</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-40">
+                            <h2 class="footer__title">Products Purposes:</h2>
+                            <div class="footer__content">
+                                <p>・General Inspection<br />・Visual Inspection / Appearance Inspection / Appearance Visual Inspection / 100% Inspection / 100% Visual Inspection / Sampling Inspection<br />・Inspection for Surface Scratches / Inspection for Surface Dust<br />・Surface Irradiation Method / Diffused Reflection Method<br />・Burrs on Blind Hole / Visual Inspection for Foreign Article<br />・Burrs on Deep Groove / Scratches / Visual Inspection for Foreign Article</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-40">
+                            <h2 class="footer__title">Site Map:</h2>
+                            <ul class="sitemap">
+                                <li class="sitemap__item"><a class="sitemap__link" href="#!">Home</a></li>
+                                <li class="sitemap__item"><a class="sitemap__link" href="#!">Company Overview</a><a class="sitemap__link" href="#!">About Us</a>
+                                    <ul class="sitemap__sub">
+                                        <li class="sitemap__sub-item"><a class="sitemap__sub-link" href="#!">Our Business</a></li>
+                                        <li class="sitemap__sub-item"><a class="sitemap__sub-link" href="#!">Company Profile</a></li>
+                                        <li class="sitemap__sub-item"><a class="sitemap__sub-link" href="#!">History</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sitemap__item"><a class="sitemap__link" href="#!">Products</a><a class="sitemap__link" href="#!">OOTSUKA</a>
+                                    <ul class="sitemap__sub">
+                                        <li class="sitemap__sub-item"><a class="sitemap__sub-link" href="#!">LUXO</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sitemap__item"><a class="sitemap__link" href="#!">Download</a><a class="sitemap__link" href="#!">Demo Unit</a>
+                                    <ul class="sitemap__sub">
+                                        <li class="sitemap__sub-item"><a class="sitemap__sub-link" href="#!">Issuance of Certificate of Non-applicability</a></li>
+                                        <li class="sitemap__sub-item"><a class="sitemap__sub-link" href="#!">Warranty Certificate</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sitemap__item"><a class="sitemap__link" href="#!">Contact Us</a>
+                                    <ul class="sitemap__sub">
+                                        <li class="sitemap__sub-item"><a class="sitemap__sub-link" href="#!">Frequently Asked Questions</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="endpage">
+                    <div class="container">
+                        <div class="endpage__inner">
+                            <div class="endpage__title">INDUSTRIES DENTACHI VIET NAM., JSC</div>
+                            <nav class="endpage__nav"><a class="endpage__nav-item" href="#!">Website Policy</a><a class="endpage__nav-item" href="#!">Site Map</a></nav>
+                            <div class="endpage__copyright">© INDUSTRIES DENTACHI VIET NAM., JSC. All Rights Reserved.</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <button class="btn btn-movetop"><i class="fa fa-arrow-up"></i></button><a class="phone-ring" href="#!"><span class="phone-ring__icon"><i class="fa fa-phone"></i></span><span class="phone-ring__text">0123.456.789</span></a>
+        </div>
+    </body>
+</html>
