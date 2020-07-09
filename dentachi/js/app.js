@@ -79,6 +79,13 @@ function addSwiper(selector, options = {}) {
       };
     }
 
+    if (selector == ".thumb-slider") {
+      options.pagination = {
+        el: $sliderContainer.find(selector + "__pagination"),
+        type: "progressbar"
+      };
+    }
+
     return new Swiper($sliderEl, options);
   });
 }
@@ -107,10 +114,13 @@ $(function () {
     return;
   }
 
+  var length = $(".thumb-slider").find(".swiper-slide").length;
+
   var thumbSlider = addSwiper(".thumb-slider", {
     direction: "vertical",
     slidesPerView: "auto",
     freeMode: true,
+    navigation: length > 3,
     watchSlidesProgress: true,
     watchSlidesVisibility: true,
     spaceBetween: 10,
