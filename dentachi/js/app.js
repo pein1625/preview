@@ -166,11 +166,18 @@ $(function () {
 
   $(".as-menu__sub-item").on("mouseenter", function () {
 
-    $(this).find(".as-menu__sub-2").slideDown("slow");
+    $(this).find(".as-menu__sub-2").slideDown();
+  });
+
+  $(".as-menu__sub-2-item").on("mouseenter", function () {
+
+    $(this).find(".as-menu__sub-3").slideDown();
   });
 
   $(".as-menu").on("mouseleave", function () {
 
     $(".as-menu__sub-2:not(.active)").slideUp("fast");
+
+    $(".as-menu__sub-3").slideUp("fast");
   });
 });
