@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner">
+                            <button class="header__btn js-navbar-open"><span></span><span></span><span></span></button>
+                            <button class="search-btn" type="button"><i class="fa fa-search"></i></button><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__slogan">Xây niềm kiêu hãnh !</div>
+                            <form class="search">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" placeholder="Nhập từ khoá..." />
+                                    <div class="input-group-append">
+                                        <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navigation">
+                    <div class="navigation__wrapper">
+                        <div class="container">
+                            <div class="navigation__inner">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-close"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                            <button class="navbar__close js-navbar-close ml-auto"></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Giới thiệu</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./services.html">Dịch vụ</a>
+                                                </li>
+                                                <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./projects.html">Dự án</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <div class="menu-mega">
+                                                        <ul class="menu menu-sub">
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Phong cách thiết kế</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Tân cổ điển</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Hiện đại</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Cổ điển</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Phong cách thiết kế</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Tân cổ điển</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Hiện đại</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Cổ điển</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Phong cách thiết kế</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Tân cổ điển</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Hiện đại</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Cổ điển</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Phong cách thiết kế</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Tân cổ điển</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Hiện đại</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Cổ điển</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Phong cách thiết kế</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Tân cổ điển</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Hiện đại</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Cổ điển</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">Tin tức</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./contact.html">Liên hệ</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="container">
+                    <section class="about">
+                        <h1 class="about__title">Centaviet - GIÁ TRỊ - NIỀM TIN</h1>
+                        <div class="about__content">
+                            <p>Centaviet được thành lập năm 2009. Hơn 10 năm qua, chúng tôi luôn hoạt động với mong muốn cung cấp những dịch vụ, tư vấn thiết kế và thi công chuyên nghiệp đáp ứng một cách đồng bộ các nhu cầu của nhà đầu tư về các lĩnh vực Kiến trúc – Nội thất – Cảnh quan.</p>
+                            <p>Centaviet có đầy đủ tư cách pháp nhân, giấy phép hành nghề. Chúng tôi tự hào sở hữu đội ngũ cán bộ khoa học kỹ thuật, các kiến trúc sư, kỹ sư xây dựng, kỹ sư điện – nước, kết cấu, họa sỹ cảnh quan, nội thất cùng với đội ngũ chuyên gia, cán bộ giàu kinh nghiệm thực tế trong công tác tư vấn xây dựng.</p>
+                            <p>Centaviet luôn sẵn sàng mang tới khách hàng những công trình có chất lương, đạt trình độ và đẳng cấp quốc tế; Để những công trình kiến trúc mãi trường tồn với thời gian và trở thành niềm kiêu hãnh của chủ đầu tư cũng như cộng đồng.</p>
+                        </div>
+                        <div class="about-video">
+                            <div class="about-video__inner">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pwFsdtj8PLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 mt-30">
+                                <div class="about-feature">
+                                    <div class="about-feature__title">TẦM NHÌN CỦA FCL</div>
+                                    <div class="about-feature__content">Trở thành tổ chức kinh tế phát triển có vị thế số 1 Việt Nam trong việc cung cấp toàn diện các sản phẩm, dịch vụ trong lĩnh vực Nhà ở và các Công trình tư nhân.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mt-30">
+                                <div class="about-feature">
+                                    <div class="about-feature__title">SỨ MỆNH CỦA FCL</div>
+                                    <div class="about-feature__content">Hội tụ “năng lượng, đam mê, sáng tạo" kiến thiết xây dựng những công trình là niềm kiêu hãnh của cộng đồng, trường tồn với thời gian.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mt-30">
+                                <div class="about-feature">
+                                    <div class="about-feature__title">GIÁ TRỊ CỐT LÕI CỦA FCL</div>
+                                    <div class="about-feature__content">Chất lượng tuyệt hảo.<br>Trung thực tuyệt đối.<br>Niềm đam mê và nghị lực phi thường.<br>Phát triển năng lực, sự nghiệp cá nhân.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mt-30">
+                                <div class="about-feature">
+                                    <div class="about-feature__title">TRIẾT LÝ KINH DOANH CỦA FCL</div>
+                                    <div class="about-feature__content">Cung cấp toàn diện các sản phẩm – dịch vụ đồng bộ trong chuỗi giá trị khép kín trong lĩnh vực xây dựng nhà ở và công trình tư nhân, từ giai đoạn tư vấn thiết kế, thi công xây dựng đến cung cấp vật tư trang thiết bị hoàn thiện công trình.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="about">
+                        <h2 class="about__title">XƯỞNG SẢN XUẤT – SHOWROOM – HOẠT ĐỘNG SỰ KIỆN</h2>
+                        <article class="preview">
+                            <div class="preview__main">
+                                <div class="preview-slider">
+                                    <div class="preview-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="preview-slider__frame"><img src="http://placekitten.com/1000/750" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="preview-slider__frame"><img src="http://placekitten.com/1000/751" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="preview-slider__frame"><img src="http://placekitten.com/1000/752" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="preview-slider__frame"><img src="http://placekitten.com/1000/753" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="preview-slider__frame"><img src="http://placekitten.com/1000/754" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="preview-slider__frame"><img src="http://placekitten.com/1000/755" alt="" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview__thumbs">
+                                <div class="thumb-slider">
+                                    <div class="thumb-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/750" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/751" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/752" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/753" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/754" alt="" /></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/755" alt="" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thumb-slider__pagination"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mb-30">
+                            <form class="advice" action="">
+                                <div class="advice__title">Đặt lịch tư vấn & Nhận báo giá</div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Họ và tên *" required="required" />
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-sm-6 form-group">
+                                        <input class="form-control" type="text" placeholder="Email hoặc zalo" />
+                                    </div>
+                                    <div class="col-sm-6 form-group">
+                                        <input class="form-control" type="text" placeholder="Điện thoại *" required="required" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="4" placeholder="Diện tích đất? Số tầng? Kiểu nhà? Số tiền đầu tư?... Các thông tin chi tiết là cơ sở để Betaviet đưa ra phương án tối ưu nhất"></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button class="advice__btn" type="submit">Nhận tư vấn</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4 mb-30"><img class="d-block w-100" src="./images/fanpage.jpg" alt="" /></div>
+                        <div class="col-lg-4 mb-30"><img class="d-block w-100" src="./images/youtube-page.jpg" alt="" /></div>
+                    </div>
+                    <div class="footer__grid">
+                        <div class="footer__col"><a class="footer__logo" href="#!"><img src="./images/logo.png" alt="" /></a></div>
+                        <div class="footer__col">
+                            <div class="footer__contact">
+                                <p>Tầng 8, Tòa nhà BETAVIET, số 9A, đường Thanh Liệt, quận Thanh Xuân, TP. Hà Nội.</p>
+                                <p><strong>Hotline</strong>: 0915 010 800</p>
+                                <p><strong>Hành chính</strong>: 024 6674 6376</p>
+                                <p>Phản ánh dịch vụ: 0983 154 486 (PGĐ)</p>
+                                <p>Email: info@centaviet.vn</p>
+                                <p>Website: centaviet.vn</p>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">Showroom Nội thất Centaviet</div>
+                            <div class="footer__addr">Tầng 5, Tòa nhà BETAVIET, đường Thanh Liệt, quận Thanh Xuân, TP. Hà Nội.</div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">Nhà máy SX Nội thất gỗ CentaDecor</div>
+                            <div class="footer__addr">Tầng 5, Tòa nhà BETAVIET, đường Thanh Liệt, quận Thanh Xuân, TP. Hà Nội.</div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">Nhà máy SX Nội thất gỗ CentaDecor</div>
+                            <div class="footer__addr">Tầng 5, Tòa nhà BETAVIET, đường Thanh Liệt, quận Thanh Xuân, TP. Hà Nội.</div>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">Copyright © Centa Việt. Alright reserverd. Thương hiệu đã được đăng ký. ® Ghi rõ nguồn "https://centaviet.vn" khi phát hành lại thông tin từ website này.</div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <button class="btn btn-movetop js-scroll-to" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button><a class="phone-ring" href="#!"><span class="phone-ring__icon"><i class="fa fa-phone"></i></span><span class="phone-ring__text">0123.456.789</span></a>
+        </div>
+    </body>
+</html>

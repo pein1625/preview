@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner">
+                            <button class="header__btn js-navbar-open"><span></span><span></span><span></span></button>
+                            <button class="search-btn" type="button"><i class="fa fa-search"></i></button><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__slogan">Xây niềm kiêu hãnh !</div>
+                            <form class="search">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" placeholder="Nhập từ khoá..." />
+                                    <div class="input-group-append">
+                                        <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navigation">
+                    <div class="navigation__wrapper">
+                        <div class="container">
+                            <div class="navigation__inner">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-close"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                            <button class="navbar__close js-navbar-close ml-auto"></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Giới thiệu</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./services.html">Dịch vụ</a>
+                                                </li>
+                                                <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./projects.html">Dự án</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <div class="menu-mega">
+                                                        <ul class="menu menu-sub">
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Phong cách thiết kế</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Tân cổ điển</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Hiện đại</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Cổ điển</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Phong cách thiết kế</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Tân cổ điển</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Hiện đại</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Cổ điển</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Phong cách thiết kế</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Tân cổ điển</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Hiện đại</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Cổ điển</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Phong cách thiết kế</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Tân cổ điển</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Hiện đại</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Cổ điển</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Phong cách thiết kế</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Tân cổ điển</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Hiện đại</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Kiến trúc Cổ điển</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">Tin tức</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./contact.html">Liên hệ</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <!-- banner-slider-->
+                <div class="banner-slider">
+                    <div class="banner-slider__prev"><i class="fa fa-angle-left"></i></div>
+                    <div class="banner-slider__next"><i class="fa fa-angle-right"></i></div>
+                    <div class="banner-slider__pagination"></div>
+                    <div class="swiper-container banner-slider__container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="banner-slider__frame"><img src="./images/home-banner.jpg" alt="" /></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="banner-slider__frame"><img src="./images/home-banner.jpg" alt="" /></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="banner-slider__frame"><img src="./images/home-banner.jpg" alt="" /></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="banner-slider__frame"><img src="./images/home-banner.jpg" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- chúng tôi là ai-->
+                <section class="section mt-40 mb-30">
+                    <div class="container">
+                        <div class="section__header">
+                            <h2 class="section__title">CHÚNG TÔI LÀ AI !</h2>
+                            <div class="section__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet felis lacinia, ultrices lacus et, venenatis urna. Etiam et semper velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eget faucibus ligula, sed pharetra tellus. Proin at lorem vitae mi dignissim consectetur ut sed eros.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7 mb-30"><img class="d-block w-100" src="./images/about-map.jpg" alt=""></div>
+                            <div class="col-lg-5 mb-30">
+                                <section class="home-about">
+                                    <h3 class="home-about__title">ĐƠN VỊ UY TÍN HÀNG ĐẦU VỀ THIẾT KẾ VÀ THI CÔNG BIỆT THỰ</h3>
+                                    <div class="home-about__content">
+                                        <p>Chúng tôi mong muốn cung cấp các giải pháp tối ưu nhất trong lĩnh vực tư vấn thiết kế và thi công xây dựng, đáp ứng đồng bộ nhu cầu của các Chủ đầu tư về các hạng mục Kiến trúc – Nội thất – Cảnh quan.</p>
+                                        <p>Với 3 dịch vụ chính là tư vấn thiết kế, thi công xây dựng và cung cấp đồ nội thất – vật liệu xây dựng, Betaviet Group mang tới quý vị sự tiện lợi dễ dàng nhất trong việc hoàn thiện các công trình xây dựng.</p>
+                                        <p>Với chuyên môn vững vàng, chúng tôi sẽ đồng hành với quý vị trên mọi miền đất nước để kiến tạo nên những công trình trường tồn cùng thời gian, là niềm kiêu hãnh của gia đình và cộng đồng.</p>
+                                        <p>Chúng tôi cam kết về chất lượng dịch vụ, mong muốn được đáp ứng nhu cầu của quý vị theo những cách sáng tạo và chu đáo nhất. Hãy cùng chúng tôi viết tiếp câu chuyện về những ngôi nhà đẹp theo tiêu chuẩn quốc tế.</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- chúng tôi làm gì-->
+                <section class="section mb-60">
+                    <div class="container">
+                        <div class="section__header">
+                            <h2 class="section__title">CHÚNG TÔI LÀM GÌ ?</h2>
+                            <div class="section__desc">Chúng tôi cung cấp các giải pháp nhằm đáp ứng đồng bộ nhu cầu của các Chủ đầu tư về các hạng mục Kiến trúc – Nội thất – Cảnh quan.</div>
+                        </div>
+                        <div class="intro">
+                            <div class="intro__col">
+                                <div class="intro__icon"><img src="./images/intro-icon-1.png" alt=""></div>
+                                <div class="intro__title">KIẾN TRÚC</div>
+                                <div class="intro__desc">Dịch vụ tư vấn thiết kế nội thất mang lại không gian sống tiện lợi và đẳng cấp, cập nhật những xu hướng thẩm mỹ cao cấp nhất trong định hình không gian sống.</div>
+                            </div>
+                            <div class="intro__col">
+                                <div class="intro__icon"><img src="./images/intro-icon-2.png" alt=""></div>
+                                <div class="intro__title">NỘI THẤT</div>
+                                <div class="intro__desc">Dịch vụ tư vấn thiết kế kiến trúc đáp ứng nhu cầu của các chủ đầu tư trong việc kiến tạo ngoại thất, bố trí công năng mặt bằng và định hình phong cách ngôi nhà.</div>
+                            </div>
+                            <div class="intro__col">
+                                <div class="intro__icon"><img src="./images/intro-icon-3.png" alt=""></div>
+                                <div class="intro__title">THI CÔNG</div>
+                                <div class="intro__desc">Dịch vụ tư vấn thiết kế kiến trúc đáp ứng nhu cầu của các chủ đầu tư trong việc kiến tạo ngoại thất, bố trí công năng mặt bằng và định hình phong cách ngôi nhà.</div>
+                            </div>
+                            <div class="intro__col">
+                                <div class="intro__icon"><img src="./images/intro-icon-4.png" alt=""></div>
+                                <div class="intro__title">SẢN XUẤT</div>
+                                <div class="intro__desc">Dịch vụ tư vấn thiết kế kiến trúc đáp ứng nhu cầu của các chủ đầu tư trong việc kiến tạo ngoại thất, bố trí công năng mặt bằng và định hình phong cách ngôi nhà.</div>
+                            </div>
+                            <div class="intro__col">
+                                <div class="intro__icon"><img src="./images/intro-icon-5.png" alt=""></div>
+                                <div class="intro__title">THƯƠNG MẠI</div>
+                                <div class="intro__desc">Dịch vụ tư vấn thiết kế kiến trúc đáp ứng nhu cầu của các chủ đầu tư trong việc kiến tạo ngoại thất, bố trí công năng mặt bằng và định hình phong cách ngôi nhà.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- dự án thi công-->
+                <section class="section section--custom">
+                    <div class="container">
+                        <div class="section__header">
+                            <h2 class="section__title">DỰ ÁN THI CÔNG</h2>
+                            <div class="section__desc">Thư viện Video giúp quý vị có cái nhìn trực quan nhất xu hướng thiết kế và xây dựng nhà ở tại Việt Nam hiện nay. Hãy thưởng lãm trực tiếp<br>hàng trăm công trình đã hoàn thiện, đa dạng phong cách, khơi nguồn ý tưởng thiết kế ngôi nhà của bạn!</div>
+                        </div>
+                        <div class="category-slider">
+                            <div class="category-slider__prev"><i class="fa fa-angle-left"></i></div>
+                            <div class="category-slider__next"><i class="fa fa-angle-right"></i></div>
+                            <div class="category-slider__container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="category">
+                                            <div class="category__frame"><img src="./images/thumb-1.jpg" alt="" /><img src="./images/thumb-1-1.webp" alt="" /></div><a class="category__overlay" href="#!">Nội thất dinh thự</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category">
+                                            <div class="category__frame"><img src="./images/thumb-2.jpg" alt="" /><img src="./images/thumb-1-1.webp" alt="" /></div><a class="category__overlay" href="#!">Nội thất biệt thự</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category">
+                                            <div class="category__frame"><img src="./images/thumb-3.jpg" alt="" /><img src="./images/thumb-1-1.webp" alt="" /></div><a class="category__overlay" href="#!">Nội thất nhà phố</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category">
+                                            <div class="category__frame"><img src="./images/thumb-4.jpg" alt="" /><img src="./images/thumb-1-1.webp" alt="" /></div><a class="category__overlay" href="#!">Nội thất dự án KĐT</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category">
+                                            <div class="category__frame"><img src="./images/thumb-5.jpg" alt="" /><img src="./images/thumb-1-1.webp" alt="" /></div><a class="category__overlay" href="#!">Nội thất văn phòng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="project-grid">
+                            <div class="project"><a class="project__frame" href="#!"><img src="./images/project-img.jpg" alt="" /></a>
+                                <h3 class="project__title"><a href="#!">Mẫu thiết kế Dinh thự Pháp Tân cổ điển lộng lẫy KĐT Thống Nhất (CĐT: Bà Dung – Nam Định) KT19024</a></h3>
+                            </div>
+                            <div class="project"><a class="project__frame" href="#!"><img src="./images/project-img.jpg" alt="" /></a>
+                                <h3 class="project__title"><a href="#!">Mẫu thiết kế Dinh thự Pháp Tân cổ điển lộng lẫy KĐT Thống Nhất (CĐT: Bà Dung – Nam Định) KT19024</a></h3>
+                            </div>
+                            <div class="project"><a class="project__frame" href="#!"><img src="./images/project-img.jpg" alt="" /></a>
+                                <h3 class="project__title"><a href="#!">Mẫu thiết kế Dinh thự Pháp Tân cổ điển lộng lẫy KĐT Thống Nhất (CĐT: Bà Dung – Nam Định) KT19024</a></h3>
+                            </div>
+                            <div class="project"><a class="project__frame" href="#!"><img src="./images/project-img.jpg" alt="" /></a>
+                                <h3 class="project__title"><a href="#!">Mẫu thiết kế Dinh thự Pháp Tân cổ điển lộng lẫy KĐT Thống Nhất (CĐT: Bà Dung – Nam Định) KT19024</a></h3>
+                            </div>
+                            <div class="project"><a class="project__frame" href="#!"><img src="./images/project-img.jpg" alt="" /></a>
+                                <h3 class="project__title"><a href="#!">Mẫu thiết kế Dinh thự Pháp Tân cổ điển lộng lẫy KĐT Thống Nhất (CĐT: Bà Dung – Nam Định) KT19024</a></h3>
+                            </div>
+                            <div class="project"><a class="project__frame" href="#!"><img src="./images/project-img.jpg" alt="" /></a>
+                                <h3 class="project__title"><a href="#!">Mẫu thiết kế Dinh thự Pháp Tân cổ điển lộng lẫy KĐT Thống Nhất (CĐT: Bà Dung – Nam Định) KT19024</a></h3>
+                            </div>
+                        </div>
+                        <div class="text-center"><a class="button" href="#!"><i class="fa fa-link mr-2"></i>Xem tất cả kiển trúc</a></div>
+                    </div>
+                </section>
+                <!-- thiết kế kiến trúc-->
+                <section class="section section--custom">
+                    <div class="container">
+                        <div class="section__header">
+                            <h2 class="section__title">THIẾT KẾ KIẾN TRÚC</h2>
+                        </div>
+                        <div class="category-slider">
+                            <div class="category-slider__prev"><i class="fa fa-angle-left"></i></div>
+                            <div class="category-slider__next"><i class="fa fa-angle-right"></i></div>
+                            <div class="category-slider__container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="category">
+                                            <div class="category__frame"><img src="./images/thumb-1.jpg" alt="" /><img src="./images/thumb-1-1.webp" alt="" /></div><a class="category__overlay" href="#!">Lâu đài - dinh thự</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category">
+                                            <div class="category__frame"><img src="./images/thumb-2.jpg" alt="" /><img src="./images/thumb-1-1.webp" alt="" /></div><a class="category__overlay" href="#!">Biệt thự 2 tầng</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category">
+                                            <div class="category__frame"><img src="./images/thumb-3.jpg" alt="" /><img src="./images/thumb-1-1.webp" alt="" /></div><a class="category__overlay" href="#!">Biệt thự 3 tầng</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category">
+                                            <div class="category__frame"><img src="./images/thumb-4.jpg" alt="" /><img src="./images/thumb-1-1.webp" alt="" /></div><a class="category__overlay" href="#!">Biệt thự 4 tầng trở lên</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category">
+                                            <div class="category__frame"><img src="./images/thumb-5.jpg" alt="" /><img src="./images/thumb-1-1.webp" alt="" /></div><a class="category__overlay" href="#!">Khách sạn - nhà hàng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="project-grid">
+                            <div class="project"><a class="project__frame" href="#!"><img src="./images/project-img-2.jpg" alt="" /></a>
+                                <h3 class="project__title"><a href="#!">Mẫu thiết kế Dinh thự Pháp Tân cổ điển lộng lẫy KĐT Thống Nhất (CĐT: Bà Dung – Nam Định) KT19024</a></h3>
+                            </div>
+                            <div class="project"><a class="project__frame" href="#!"><img src="./images/project-img-2.jpg" alt="" /></a>
+                                <h3 class="project__title"><a href="#!">Mẫu thiết kế Dinh thự Pháp Tân cổ điển lộng lẫy KĐT Thống Nhất (CĐT: Bà Dung – Nam Định) KT19024</a></h3>
+                            </div>
+                            <div class="project"><a class="project__frame" href="#!"><img src="./images/project-img-2.jpg" alt="" /></a>
+                                <h3 class="project__title"><a href="#!">Mẫu thiết kế Dinh thự Pháp Tân cổ điển lộng lẫy KĐT Thống Nhất (CĐT: Bà Dung – Nam Định) KT19024</a></h3>
+                            </div>
+                            <div class="project"><a class="project__frame" href="#!"><img src="./images/project-img-2.jpg" alt="" /></a>
+                                <h3 class="project__title"><a href="#!">Mẫu thiết kế Dinh thự Pháp Tân cổ điển lộng lẫy KĐT Thống Nhất (CĐT: Bà Dung – Nam Định) KT19024</a></h3>
+                            </div>
+                            <div class="project"><a class="project__frame" href="#!"><img src="./images/project-img-2.jpg" alt="" /></a>
+                                <h3 class="project__title"><a href="#!">Mẫu thiết kế Dinh thự Pháp Tân cổ điển lộng lẫy KĐT Thống Nhất (CĐT: Bà Dung – Nam Định) KT19024</a></h3>
+                            </div>
+                            <div class="project"><a class="project__frame" href="#!"><img src="./images/project-img-2.jpg" alt="" /></a>
+                                <h3 class="project__title"><a href="#!">Mẫu thiết kế Dinh thự Pháp Tân cổ điển lộng lẫy KĐT Thống Nhất (CĐT: Bà Dung – Nam Định) KT19024</a></h3>
+                            </div>
+                        </div>
+                        <div class="text-center"><a class="button" href="#!"><i class="fa fa-link mr-2"></i>Xem tất cả kiển trúc</a></div>
+                    </div>
+                </section>
+                <!-- cảm nhận khách hàng-->
+                <section class="section mb-40">
+                    <div class="container">
+                        <div class="section__header">
+                            <h2 class="section__title">CẢM NHẬN KHÁCH HÀNG</h2>
+                            <div class="section__desc">Centaviet cung cấp sản phẩm nội thất là thương hiệu nổi tiếng trên thế giới, mang tới khách hàng sản phẩm đạt tiêu chuẩn<br>chất lượng quốc tế, cùng không gian sống đẳng cấp, thượng lưu.</div>
+                        </div>
+                        <div class="testimonial-slider">
+                            <div class="swiper-container testimonial-slider__container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial">
+                                            <div class="testimonial__content">
+                                                <div class="testimonial__title">" Satisfied Clients! "</div>
+                                                <div class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel orci rutrum, efficitur est eget, congue erat. Phasellus consequat ut felis vel suscipit. A vitae diam risus. In luctus condimentum eleifend.</div>
+                                            </div>
+                                            <div class="testimonial__body media">
+                                                <div class="testimonial__frame"><img src="./images/avatar.jpg" alt="" /></div>
+                                                <div class="media-body">
+                                                    <div class="testimonial__name">Bruce Holt</div>
+                                                    <div class="testimonial__pos">manager at TechDream</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial">
+                                            <div class="testimonial__content">
+                                                <div class="testimonial__title">" Satisfied Clients! "</div>
+                                                <div class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel orci rutrum, efficitur est eget, congue erat. Phasellus consequat ut felis vel suscipit. A vitae diam risus. In luctus condimentum eleifend.</div>
+                                            </div>
+                                            <div class="testimonial__body media">
+                                                <div class="testimonial__frame"><img src="./images/avatar.jpg" alt="" /></div>
+                                                <div class="media-body">
+                                                    <div class="testimonial__name">Bruce Holt</div>
+                                                    <div class="testimonial__pos">manager at TechDream</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial">
+                                            <div class="testimonial__content">
+                                                <div class="testimonial__title">" Satisfied Clients! "</div>
+                                                <div class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel orci rutrum, efficitur est eget, congue erat. Phasellus consequat ut felis vel suscipit. A vitae diam risus. In luctus condimentum eleifend.</div>
+                                            </div>
+                                            <div class="testimonial__body media">
+                                                <div class="testimonial__frame"><img src="./images/avatar.jpg" alt="" /></div>
+                                                <div class="media-body">
+                                                    <div class="testimonial__name">Bruce Holt</div>
+                                                    <div class="testimonial__pos">manager at TechDream</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial">
+                                            <div class="testimonial__content">
+                                                <div class="testimonial__title">" Satisfied Clients! "</div>
+                                                <div class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel orci rutrum, efficitur est eget, congue erat. Phasellus consequat ut felis vel suscipit. A vitae diam risus. In luctus condimentum eleifend.</div>
+                                            </div>
+                                            <div class="testimonial__body media">
+                                                <div class="testimonial__frame"><img src="./images/avatar.jpg" alt="" /></div>
+                                                <div class="media-body">
+                                                    <div class="testimonial__name">Bruce Holt</div>
+                                                    <div class="testimonial__pos">manager at TechDream</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- tin tức centaviet-->
+                <section class="section mb-60">
+                    <div class="container">
+                        <div class="section__header">
+                            <h2 class="section__title">TIN TỨC CENTAVIET</h2>
+                            <div class="section__desc">Centaviet cung cấp sản phẩm nội thất là thương hiệu nổi tiếng trên thế giới, mang tới khách hàng sản phẩm đạt tiêu chuẩn<br>chất lượng quốc tế, cùng không gian sống đẳng cấp, thượng lưu</div>
+                        </div>
+                        <div class="custom-grid">
+                            <div class="row gutter -all-60">
+                                <div class="col-lg-4">
+                                    <div class="news"><a class="news__frame" href="#!"><img src="./images/news-img.jpg" alt="" /></a>
+                                        <h3 class="news__title"><a href="#!">Giới thiệu bộ Sofa Emozioni 440 hàng nhập khẩu</a></h3>
+                                        <div class="news__time">Ngày 18 Tháng 02 Năm 2020</div>
+                                        <div class="news__desc">Gạch nhập khẩu khổ lớn hiện nay đang được ưa chuộng nhiều hơn. Là mẫu gạch tạo nên những xu hướng thiết kế ấn tượng bậc nhất [...]</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="news"><a class="news__frame" href="#!"><img src="./images/news-img.jpg" alt="" /></a>
+                                        <h3 class="news__title"><a href="#!">Giới thiệu bộ Sofa Emozioni 440 hàng nhập khẩu</a></h3>
+                                        <div class="news__time">Ngày 18 Tháng 02 Năm 2020</div>
+                                        <div class="news__desc">Gạch nhập khẩu khổ lớn hiện nay đang được ưa chuộng nhiều hơn. Là mẫu gạch tạo nên những xu hướng thiết kế ấn tượng bậc nhất [...]</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="news"><a class="news__frame" href="#!"><img src="./images/news-img.jpg" alt="" /></a>
+                                        <h3 class="news__title"><a href="#!">Giới thiệu bộ Sofa Emozioni 440 hàng nhập khẩu</a></h3>
+                                        <div class="news__time">Ngày 18 Tháng 02 Năm 2020</div>
+                                        <div class="news__desc">Gạch nhập khẩu khổ lớn hiện nay đang được ưa chuộng nhiều hơn. Là mẫu gạch tạo nên những xu hướng thiết kế ấn tượng bậc nhất [...]</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center"><a class="button" href="#!"><i class="fa fa-link mr-2"></i>Xem tất cả tin tức</a></div>
+                    </div>
+                </section>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mb-30">
+                            <form class="advice" action="">
+                                <div class="advice__title">Đặt lịch tư vấn & Nhận báo giá</div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Họ và tên *" required="required" />
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-sm-6 form-group">
+                                        <input class="form-control" type="text" placeholder="Email hoặc zalo" />
+                                    </div>
+                                    <div class="col-sm-6 form-group">
+                                        <input class="form-control" type="text" placeholder="Điện thoại *" required="required" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="4" placeholder="Diện tích đất? Số tầng? Kiểu nhà? Số tiền đầu tư?... Các thông tin chi tiết là cơ sở để Betaviet đưa ra phương án tối ưu nhất"></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button class="advice__btn" type="submit">Nhận tư vấn</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4 mb-30"><img class="d-block w-100" src="./images/fanpage.jpg" alt="" /></div>
+                        <div class="col-lg-4 mb-30"><img class="d-block w-100" src="./images/youtube-page.jpg" alt="" /></div>
+                    </div>
+                    <div class="footer__grid">
+                        <div class="footer__col"><a class="footer__logo" href="#!"><img src="./images/logo.png" alt="" /></a></div>
+                        <div class="footer__col">
+                            <div class="footer__contact">
+                                <p>Tầng 8, Tòa nhà BETAVIET, số 9A, đường Thanh Liệt, quận Thanh Xuân, TP. Hà Nội.</p>
+                                <p><strong>Hotline</strong>: 0915 010 800</p>
+                                <p><strong>Hành chính</strong>: 024 6674 6376</p>
+                                <p>Phản ánh dịch vụ: 0983 154 486 (PGĐ)</p>
+                                <p>Email: info@centaviet.vn</p>
+                                <p>Website: centaviet.vn</p>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">Showroom Nội thất Centaviet</div>
+                            <div class="footer__addr">Tầng 5, Tòa nhà BETAVIET, đường Thanh Liệt, quận Thanh Xuân, TP. Hà Nội.</div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">Nhà máy SX Nội thất gỗ CentaDecor</div>
+                            <div class="footer__addr">Tầng 5, Tòa nhà BETAVIET, đường Thanh Liệt, quận Thanh Xuân, TP. Hà Nội.</div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">Nhà máy SX Nội thất gỗ CentaDecor</div>
+                            <div class="footer__addr">Tầng 5, Tòa nhà BETAVIET, đường Thanh Liệt, quận Thanh Xuân, TP. Hà Nội.</div>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">Copyright © Centa Việt. Alright reserverd. Thương hiệu đã được đăng ký. ® Ghi rõ nguồn "https://centaviet.vn" khi phát hành lại thông tin từ website này.</div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <button class="btn btn-movetop js-scroll-to" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button><a class="phone-ring" href="#!"><span class="phone-ring__icon"><i class="fa fa-phone"></i></span><span class="phone-ring__text">0123.456.789</span></a>
+        </div>
+    </body>
+</html>
