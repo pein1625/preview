@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container-fluid">
+                        <div class="header__inner"><a class="header__logo logo" href="./index.html">HOPE</a>
+                            <div class="header__nav">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="logo" href="./index.html">HOPE</a>
+                                            <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <form class="search">
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" placeholder="" />
+                                                    <div class="input-group-append">
+                                                        <button class="input-group-text"><img src="./images/icon-search.png" alt="" /></button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link" href="#!">NEW 5%</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">BEST</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">ALL</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">OUTER</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">TOP</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">SHIRT</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">BOTTOM</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">SHOES</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="header__elements"><a class="header__btn" href="#!"><img class="d-md-none mr-1" src="./images/icon-shopping-bag.png" alt="" /><span class="d-none d-md-inline">GIỎ HÀNG</span><span>(0)</span></a><a class="header__btn header__btn--hotline" href="#!">HOTLINE: 010-6390-8382</a><a class="header__btn" href="#!"><i class="fa fa-instagram"></i></a><a class="header__btn" href="#!"><i class="fa fa-facebook"></i></a>
+                                <button class="navbar-toggle d-xl-none js-navbar-toggle ml-3"><span></span><span></span><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="container-fluid">
+                    <div class="content-wrapper">
+                        <section class="section-2">
+                            <h2 class="section-2__title">Cart</h2>
+                            <div class="cart table-responsive mb-30">
+                                <table class="cart-table table table-hover border rounded">
+                                    <thead class="text-13 bg-light">
+                                        <tr>
+                                            <th>Sản phẩm</th>
+                                            <th>Màu sắc</th>
+                                            <th style="width: 75px;">Size</th>
+                                            <th style="width: 75px;">Số lượng</th>
+                                            <th class="text-right">Đơn giá</th>
+                                            <th class="text-right">Thành tiền</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="media"><a class="cart__frame" href="./product-detail.html"><img src="./images/product-img-2.jpg" alt=""></a>
+                                                    <div class="media-body">
+                                                        <div class="cart__title"><a class="d-inline-block text-default text-uppercase" href="./product-detail.html">Áo thun ngắn tay tròn tiêu chuẩn (10 màu sắc)</a></div>
+                                                        <div class="cart__code">Code: FXDS8101526TA</div>
+                                                        <div class="mt-2"><a class="cart__remove" href="#!"><i class="fa fa-times-circle mr-1"></i><span>Delete</span></a></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-label="Color">
+                                                <select class="custom-select">
+                                                    <option>Màu trắng</option>
+                                                    <option>Màu trắng</option>
+                                                    <option>Màu trắng</option>
+                                                </select>
+                                            </td>
+                                            <td data-label="Size">
+                                                <select class="custom-select">
+                                                    <option>S</option>
+                                                    <option>M</option>
+                                                    <option>L</option>
+                                                    <option>XL</option>
+                                                </select>
+                                            </td>
+                                            <td data-label="Quantity">
+                                                <div class="quantity">
+                                                    <div class="quantity__btn" data-plus="-1"></div>
+                                                    <input class="quantity__input" type="text" value="1" />
+                                                    <div class="quantity__btn" data-plus="1"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right" data-label="Unit Price">
+                                                <div>1.438.400đ</div>
+                                                <div>
+                                                    <del class="text-muted">1.798.000đ</del>
+                                                </div>
+                                            </td>
+                                            <td class="text-right" data-label="Amount">
+                                                <div>1.438.400 đ</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="media"><a class="cart__frame" href="./product-detail.html"><img src="./images/product-img-2.jpg" alt=""></a>
+                                                    <div class="media-body">
+                                                        <div class="cart__title"><a class="d-inline-block text-default text-uppercase" href="./product-detail.html">Áo thun ngắn tay tròn tiêu chuẩn (10 màu sắc)</a></div>
+                                                        <div class="cart__code">Code: FXDS8101526TA</div>
+                                                        <div class="mt-2"><a class="cart__remove" href="#!"><i class="fa fa-times-circle mr-1"></i><span>Delete</span></a></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-label="Color">
+                                                <select class="custom-select">
+                                                    <option>Màu trắng</option>
+                                                    <option>Màu trắng</option>
+                                                    <option>Màu trắng</option>
+                                                </select>
+                                            </td>
+                                            <td data-label="Size">
+                                                <select class="custom-select">
+                                                    <option>S</option>
+                                                    <option>M</option>
+                                                    <option>L</option>
+                                                    <option>XL</option>
+                                                </select>
+                                            </td>
+                                            <td data-label="Quantity">
+                                                <div class="quantity">
+                                                    <div class="quantity__btn" data-plus="-1"></div>
+                                                    <input class="quantity__input" type="text" value="1" />
+                                                    <div class="quantity__btn" data-plus="1"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right" data-label="Unit Price">
+                                                <div>1.438.400đ</div>
+                                                <div>
+                                                    <del class="text-muted">1.798.000đ</del>
+                                                </div>
+                                            </td>
+                                            <td class="text-right" data-label="Amount">
+                                                <div>1.438.400 đ</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right" colspan="6"><span class="mr-2">Into Money:</span><span class="cart__subtotal">2.156.800đ</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="section-2">
+                            <h2 class="section-2__title">Purchase Information</h2>
+                            <div class="row">
+                                <div class="col-lg-8 pb-30">
+                                    <section class="section-3">
+                                        <h3 class="section-3__title">Purchase Information</h3>
+                                        <div class="section-3__body pb-1">
+                                            <h4 class="section-3__subtitle">Buyer information</h4>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="Name*" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="Phone number">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="email" placeholder="Email">
+                                            </div>
+                                            <div class="form-group border-top pt-3">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input js-receiver-info-checker" type="checkbox" name="" checked="checked"><span class="checkbox-styled__icon"></span><span>Consignee information is the same as buyer information</span>
+                                                </label>
+                                            </div>
+                                            <div class="js-receiver-info-form collapse">
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" placeholder="Name*" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" placeholder="Phone number">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="email" placeholder="Email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="col-lg-4 pb-30">
+                                    <section class="section-3">
+                                        <h3 class="section-3__title">Account Information</h3>
+                                        <div class="section-3__body text -size-20 -center">xxx xxx xxx 352-711-368-1113 xxx xxx xxx</div>
+                                    </section>
+                                    <hr class="mt-0">
+                                    <div class="form-group">
+                                        <label class="checkbox-styled">
+                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>I agree with <a class="text-primary" href="#!">terms and services</a>
+                                        </label>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="btn btn-block btn-danger" type="submit">Proceed to payment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <nav class="footer__nav">
+                    <div class="container-fluid">
+                        <div class="content-wrapper">
+                            <div class="footer__nav-inner"><a class="footer__nav-item" href="#!">Giới thiệu</a><a class="footer__nav-item" href="#!">Hợp đồng</a><a class="footer__nav-item" href="#!">Hướng dẫn</a><a class="footer__nav-item" href="#!">Chính sách</a></div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="content-wrapper">
+                        <div class="footer__grid">
+                            <div class="footer__col">
+                                <p>10-6390-8382<br />협은행 : 352-711-368-1113<br />예주금 : 주지은<br />hứ 2 - Thứ 6 : 11AM - 5PM<br />HỜI GIAN NGHỈ 1PM - 2PM VÀ THỨ 7, CHỦ NHẬT</p>
+                            </div>
+                            <div class="footer__col">
+                                <p>CÔNG TY : HOPE . CEO : MANH CUONG<br />ĐỊA CHỈ : 서울 성동구 행당동 19-110<br />GIẤY PHÉP KINH DOANH : 296-26-00673<br />EMAIL : hopekr19@gmail.com</p>
+                                <p class="text-center">농협은행 352-711-368-1113<br />예주금 주지은</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <button class="btn btn-movetop js-scroll-to" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button><a class="phone-ring" href="#!"><span class="phone-ring__icon"><i class="fa fa-phone"></i></span><span class="phone-ring__text">0123.456.789</span></a>
+        </div>
+    </body>
+</html>
