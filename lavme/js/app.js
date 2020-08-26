@@ -13,6 +13,20 @@ $(function () {
 
     $toggle.parent().siblings(".menu-item-group").children(".menu-toggle").removeClass("active");
   });
+
+  $(".cat-slider").on("click", ".swiper-slide-duplicate .menu-toggle", function () {
+    var $toggle = $(this);
+
+    $toggle.toggleClass("active").siblings(".menu-sub").slideToggle();
+
+    $toggle.siblings(".menu-mega").children(".menu-sub").slideToggle();
+
+    $toggle.parent().siblings(".menu-item-group").children(".menu-sub").slideUp();
+
+    $toggle.parent().siblings(".menu-item-group").children(".menu-mega").children(".menu-sub").slideUp();
+
+    $toggle.parent().siblings(".menu-item-group").children(".menu-toggle").removeClass("active");
+  });
 });
 
 // navbar mobile toggle
@@ -121,11 +135,34 @@ $(function () {
   })[0];
 
   addSwiper(".preview-slider", {
+    autoplay: {
+      delay: 4500,
+      disableOnInteraction: false
+    },
     effect: "fade",
     allowTouchMove: false,
     thumbs: {
       swiper: thumbSlider
     }
+  });
+});
+
+$(function () {
+  $(function () {
+    const catSlider = addSwiper(".cat-slider", {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false
+      },
+      speed: 600,
+      preventClicks: false
+    })[0];
+
+    catSlider.on("slideChange", function () {
+      $(".cat-slider").find(".menu-sub").slideUp();
+      $(".cat-slider").find(".menu-toggle").removeClass("active");
+    });
   });
 });
 
