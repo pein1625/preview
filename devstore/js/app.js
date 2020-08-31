@@ -286,6 +286,45 @@ $(function () {
   });
 });
 
+// scroll to fixed div
+(function ($) {
+  $.fn.scrollFixed = function (options) {
+    const $el = $(this);
+    const $window = $(window);
+
+    // merge the default plugin settings with the custom options
+    options = $.extend({}, $.fn.scrollFixed.defaults, options || {});
+
+    $window.on("scroll", function () {
+      let scrollTop = $window.scrollTop();
+      let offsetTop = $el.offset().top;
+      let height = $el.outerHeight();
+
+      if (scrollTop > offsetTop) {
+        $el.addClass("is-fixed").css({
+          height: height,
+          position: "relative",
+          zIndex: 100
+        }).children().css({
+          width: "100%",
+          position: "fixed",
+          top: 0,
+          left: 0
+        });
+
+        return;
+      }
+
+      $el.removeClass("is-fixed").children().css({
+        position: "relative"
+      });
+    });
+  };
+
+  $.fn.scrollFixed.defaults = {};
+  $(".js-scroll-fixed").scrollFixed();
+})(jQuery);
+
 // common.js
 $(function () {
   $(".pd-menu__toggle").on("click", function (e) {
@@ -294,5 +333,20 @@ $(function () {
     if ($(window).width() < 1200) {
       $(".pd-menu__dropdown").slideToggle();
     }
+  });
+});
+
+$(function () {
+  const $content = $(".pd-detail__content");
+  const $toggle = $(".pd-detail__more");
+
+  if ($content.height() > 400) {
+    $content.addClass("is-collapsable is-collapsed");
+  }
+
+  $toggle.on("click", function (e) {
+    e.preventDefault();
+
+    $content.toggleClass("is-collapsed");
   });
 });
