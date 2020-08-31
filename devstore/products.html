@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="toppage">
+                    <div class="container">
+                        <div class="toppage__inner">
+                            <nav class="social"><a class="social__item" href="#!"><i class="fa fa-fw fa-facebook"></i></a><a class="social__item" href="#!"><i class="fa fa-fw fa-twitter"></i></a><a class="social__item" href="#!"><i class="fa fa-fw fa-google-plus"></i></a><a class="social__item" href="#!"><i class="fa fa-fw fa-instagram"></i></a><a class="social__item" href="#!"><i class="fa fa-fw fa-youtube"></i></a></nav>
+                            <nav class="topnav"><a class="topnav__item" href="#!"><i class="fa fa-fw fa-user"></i><span class="ml-2">Tài khoản</span></a><a class="topnav__item" href="#!"><i class="fa fa-fw fa-heart"></i><span class="ml-2">Yêu thích</span></a><a class="topnav__item" href="#!"><i class="fa fa-fw fa-map-marker"></i><span class="ml-2">Bản đồ tới Devstore</span></a></nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__elements"><a class="header__btn media" href="#!"><i class="fa fa-fw fa-lg fa-phone"></i>
+                                    <div class="header__btn-text media-body ml-2"><small>Hỗ trợ</small>
+                                        <div class="font-weight-bold">0999999999</div>
+                                    </div>
+                                </a><a class="header__btn media js-cart-open" href="#!"><i class="fa fa-fw fa-lg fa-shopping-basket"></i><span class="header__btn-quantity">(0)</span>
+                                    <div class="header__btn-text media-body ml-2"><small>Giỏ hàng</small>
+                                        <div class="font-weight-bold">(0) sản phẩm</div>
+                                    </div>
+                                </a>
+                                <button class="navbar-toggle d-xl-none js-navbar-toggle ml-10"><span></span><span></span><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navigation js-scroll-fixed">
+                    <div class="navigation__wrapper">
+                        <div class="container">
+                            <div class="navigation__inner">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                            <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <div class="pd-menu"><a class="pd-menu__toggle" href="#!"><i class="fa fa-th mr-3"></i>DANH MỤC SẢN PHẨM</a>
+                                                <div class="pd-menu__dropdown">
+                                                    <ul class="menu menu-aside">
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Tất cả sản phẩm</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Sản phẩm khuyến mại</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">COMBO</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Vi điều khiển - Nhúng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Module</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Cảm biến</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Linh kiện điện tử</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">IC chức năng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">LED</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">LCD</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dụng cụ-Phụ kiện</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Connector</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Thiết bị chế tạo</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Góc học tập</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Kiểm tra vận đơn</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Tích điểm - Đổi quà</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Tuyển dụng</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Đồ án - Dự án</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <form class="search">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="Tìm kiếm sản phẩm..." />
+                                        <div class="input-group-append">
+                                            <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Cảm biến</li>
+                    </ol>
+                    <section class="section-4">
+                        <h1 class="section-4__title">Cảm biến</h1>
+                        <div class="section-4__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis ornare mauris, sit amet mattis est porttitor quis. Nullam vitae nulla sem. Etiam pharetra non nunc sollicitudin rhoncus. Curabitur malesuada tortor nec est euismod, ac luctus orci vehicula. Etiam eu nulla sit amet turpis tempus fringilla non eu sem. Donec convallis risus a nibh venenatis tristique. Phasellus convallis nisl luctus lectus bibendum fermentum. Sed condimentum lacus et velit cursus gravida. Cras viverra risus sit amet ante vestibulum, id tincidunt sapien lobortis. In eget ligula quis magna viverra placerat. Nulla volutpat, nulla ut tincidunt suscipit, risus nulla gravida mauris, ac lobortis est felis non ligula. Donec nec nulla eget lorem consequat viverra sed sed lacus.</div>
+                        <div class="filter">
+                            <div class="filter__bar">
+                                <ul class="nav filter__nav">
+                                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-th"></i></a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list"></i></a></li>
+                                </ul>
+                                <div class="filter__elements">
+                                    <select class="custom-select">
+                                        <option>Sắp xếp</option>
+                                        <option>Sắp xếp</option>
+                                        <option>Sắp xếp</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option>24 sản phẩm</option>
+                                        <option>24 sản phẩm</option>
+                                        <option>24 sản phẩm</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="filter__list">
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter" checked="checked"><span>Tất cả sản phẩm</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter"><span>Nhiệt Độ - Độ Ẩm</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter"><span>Âm Thanh</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter"><span>Chuyển Động</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter"><span>Ánh Sáng</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter"><span>Hồng Ngoại</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter"><span>Cảm Biến Khí</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter"><span>Cảm Biến Dòng</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter"><span>Cảm Biến HALL</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter"><span>Nhịp Tim</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter"><span>Áp Suất</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter"><span>Màu Sắc</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input type="checkbox" name="filter"><span>Siêu Âm</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pd-grid-2">
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                            <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                <div class="product__price">3.200.000₫</div>
+                                <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                            </div>
+                        </div>
+                        <nav class="d-flex justify-content-center mt-30">
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a class="page-link" href="#!"><i class="fa fa-angle-double-left"></i></a></li>
+                                <li class="page-item active"><a class="page-link" href="#!">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#!"><i class="fa fa-angle-double-right"></i></a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <section class="section mb-50">
+                        <h2 class="section__title">Sản phẩm đã xem</h2>
+                        <div class="product-slider-3">
+                            <div class="product-slider-3__prev"><i class="fa fa-angle-left"></i></div>
+                            <div class="product-slider-3__next"><i class="fa fa-angle-right"></i></div>
+                            <div class="swiper-container product-slider-3__container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__grid">
+                        <div class="footer__col">
+                            <h2 class="footer__title">THÔNG TIN LIÊN HỆ</h2>
+                            <div class="footer__contact">
+                                <p>Địa chỉ: Số 70, Ngõ 40 - Tạ Quang Bửu - Hai Bà Trưng - Hà Nội.<br />Điện thoại: 0966 129 629<br />0966 129 629 ( Cửa Hàng ) | 036 386 03 26 ( Kĩ Thuật )<br />036 386 03 26 Hotline Góp Ý - Hợp Tác<br />Email: linhkientcp@gmail.com<br />Thời gian làm việc: 8h30 - 18h</p>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <h2 class="footer__title">VỀ CHÚNG TÔI</h2>
+                            <ul class="f-menu">
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Sự đặc biệt của chúng tôi</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Liên hệ</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Tuyển dụng</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Hợp Tác Kinh Doanh</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Bản đồ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h2 class="footer__title">HỖ TRỢ - CHÍNH SÁCH</h2>
+                            <ul class="f-menu">
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Phương thức thanh toán</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách bảo hành- đổi trả</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Hướng dẫn mua hàng online</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h2 class="footer__title">FANPAGE FACEBOOK</h2>
+                            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote class="fb-xfbml-parse-ignore" cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="container">Copyright © 2020 Devstore.Vn | © Bản quyền thuộc về Devstore.Vn</div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <button class="btn btn-movetop js-scroll-to" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button><a class="phone-ring" href="#!"><span class="phone-ring__icon"><i class="fa fa-phone"></i></span><span class="phone-ring__text">0123.456.789</span></a>
+            <article class="cart js-cart">
+                <div class="cart__backdrop js-cart-close"></div>
+                <div class="cart__wrapper">
+                    <div class="cart__header">
+                        <div class="cart__title">GIỎ HÀNG</div>
+                        <button class="cart__close js-cart-close"></button>
+                    </div>
+                    <div class="cart__body">
+                        <ul class="cart__list">
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/650/450/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/630/430/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/647/447/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/667/467/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/621/421/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/672/472/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/633/433/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/633/433/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/636/436/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/685/485/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cart__footer">
+                        <div class="cart__total"><span class="text-uppercase">Tổng</span><span class="ml-auto text-primary js-cart-product-total">1,000,000</span><span class="text-primary ml-1">VNĐ</span></div><a class="btn btn-block btn-primary rounded-18 text-uppercase text-700" href="#!">ĐẶT HÀNG</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </body>
+</html>

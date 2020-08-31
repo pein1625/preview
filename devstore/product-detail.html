@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="toppage">
+                    <div class="container">
+                        <div class="toppage__inner">
+                            <nav class="social"><a class="social__item" href="#!"><i class="fa fa-fw fa-facebook"></i></a><a class="social__item" href="#!"><i class="fa fa-fw fa-twitter"></i></a><a class="social__item" href="#!"><i class="fa fa-fw fa-google-plus"></i></a><a class="social__item" href="#!"><i class="fa fa-fw fa-instagram"></i></a><a class="social__item" href="#!"><i class="fa fa-fw fa-youtube"></i></a></nav>
+                            <nav class="topnav"><a class="topnav__item" href="#!"><i class="fa fa-fw fa-user"></i><span class="ml-2">Tài khoản</span></a><a class="topnav__item" href="#!"><i class="fa fa-fw fa-heart"></i><span class="ml-2">Yêu thích</span></a><a class="topnav__item" href="#!"><i class="fa fa-fw fa-map-marker"></i><span class="ml-2">Bản đồ tới Devstore</span></a></nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__elements"><a class="header__btn media" href="#!"><i class="fa fa-fw fa-lg fa-phone"></i>
+                                    <div class="header__btn-text media-body ml-2"><small>Hỗ trợ</small>
+                                        <div class="font-weight-bold">0999999999</div>
+                                    </div>
+                                </a><a class="header__btn media js-cart-open" href="#!"><i class="fa fa-fw fa-lg fa-shopping-basket"></i><span class="header__btn-quantity">(0)</span>
+                                    <div class="header__btn-text media-body ml-2"><small>Giỏ hàng</small>
+                                        <div class="font-weight-bold">(0) sản phẩm</div>
+                                    </div>
+                                </a>
+                                <button class="navbar-toggle d-xl-none js-navbar-toggle ml-10"><span></span><span></span><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navigation js-scroll-fixed">
+                    <div class="navigation__wrapper">
+                        <div class="container">
+                            <div class="navigation__inner">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                            <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <div class="pd-menu"><a class="pd-menu__toggle" href="#!"><i class="fa fa-th mr-3"></i>DANH MỤC SẢN PHẨM</a>
+                                                <div class="pd-menu__dropdown">
+                                                    <ul class="menu menu-aside">
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Tất cả sản phẩm</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Sản phẩm khuyến mại</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">COMBO</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Vi điều khiển - Nhúng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Module</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Cảm biến</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Linh kiện điện tử</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">IC chức năng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">LED</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">LCD</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dụng cụ-Phụ kiện</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Connector</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Thiết bị chế tạo</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Góc học tập</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Kiểm tra vận đơn</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Tích điểm - Đổi quà</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Tuyển dụng</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Đồ án - Dự án</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <form class="search">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="Tìm kiếm sản phẩm..." />
+                                        <div class="input-group-append">
+                                            <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Cảm biến</a></li>
+                        <li class="breadcrumb-item active">Máy Nén Khí Điều Hòa Mini 275W</li>
+                    </ol>
+                    <div class="form-row">
+                        <div class="col-xl-9">
+                            <div class="form-row">
+                                <div class="col-md-6 mb-30">
+                                    <article class="preview">
+                                        <div class="preview__main">
+                                            <div class="preview-slider">
+                                                <div class="preview-slider__container swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="preview-slider__frame"><img src="http://placekitten.com/1000/750" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="preview-slider__frame"><img src="http://placekitten.com/1000/751" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="preview-slider__frame"><img src="http://placekitten.com/1000/752" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="preview-slider__frame"><img src="http://placekitten.com/1000/753" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="preview-slider__frame"><img src="http://placekitten.com/1000/754" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="preview-slider__frame"><img src="http://placekitten.com/1000/755" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="preview__thumbs">
+                                            <div class="thumb-slider">
+                                                <div class="thumb-slider__prev"><i class="fa fa-angle-left"></i></div>
+                                                <div class="thumb-slider__next"><i class="fa fa-angle-right"></i></div>
+                                                <div class="thumb-slider__container swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/750" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/751" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/752" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/753" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/754" alt="" /></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumb-slider__frame"><img src="http://placekitten.com/1000/755" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-6 mb-30">
+                                    <!-- product-info-->
+                                    <section class="pd-info">
+                                        <h1 class="pd-info__title">Máy nén khí điều hòa mini 275W</h1>
+                                        <div class="pd-info__price"><span>3.200.000₫</span>
+                                            <del>3.500.000₫</del><small class="pd-info__saving">-9%</small>
+                                        </div>
+                                        <div class="pd-info__desc">
+                                            <p><strong>Mã SKU:</strong> TCP00045</p>
+                                            <ul>
+                                                <li>Máy điều hòa không khí mini</li>
+                                                <li>Máy hút ẩm</li>
+                                                <li>Tủ lạnh vừa và nhỏ</li>
+                                                <li>Thiết bị làm lạnh, máy nước mát, bán hàng tự động...</li>
+                                                <li>Điện áp: 220VAC/ 50Hz</li>
+                                                <li>Công suất: 275W</li>
+                                                <li>Kích thước: 300 x 180 x 160mm.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mb-3 mb-lg-4">
+                                            <div class="mb-1">Số lượng</div>
+                                            <div class="quantity quantity--lg">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pd-info__btns"><a class="pd-info__btn" href="#!"><i class="fa fa-shopping-basket mr-2"></i>Thêm giỏ hàng</a><a class="pd-info__btn pd-info__btn--primary" href="#!">Mua ngay</a></div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 mb-30">
+                            <!-- features-->
+                            <ul class="features">
+                                <li class="features__item media">
+                                    <div class="features__icon"><img src="./images/icon-truck.png" alt=""></div>
+                                    <div class="media-body">
+                                        <div class="features__title">Vận chuyển</div>
+                                        <div class="features__desc">Khách hàng dễ dàng kiểm tra đơn hàng tại mục "hành trình đơn hàng"</div>
+                                    </div>
+                                </li>
+                                <li class="features__item media">
+                                    <div class="features__icon"><img src="./images/icon-clock.png" alt=""></div>
+                                    <div class="media-body">
+                                        <div class="features__title">Cước vận chuyển</div>
+                                        <div class="features__desc">Cước vận chuyển được tự động đồng bộ với Viettel Post, Sản phẩm phát ngay trong ngày.</div>
+                                    </div>
+                                </li>
+                                <li class="features__item media">
+                                    <div class="features__icon"><img src="./images/icon-exchange.png" alt=""></div>
+                                    <div class="media-body">
+                                        <div class="features__title">Dịch vụ hậu mãi</div>
+                                        <div class="features__desc">Tất cả sản phẩm đều được test kĩ và có kĩ thuật ngay khi gặp khó khăn.</div>
+                                    </div>
+                                </li>
+                                <li class="features__item media">
+                                    <div class="features__icon"><img src="./images/icon-file-check.png" alt=""></div>
+                                    <div class="media-body">
+                                        <div class="features__title">Sản phẩm chất lượng</div>
+                                        <div class="features__desc">Chất lượng đảm bảo, sản phẩm được test kĩ và đóng gói cẩn thận.</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-9 mb-30">
+                            <section class="pd-detail mb-30">
+                                <h2 class="pd-detail__title"><span>Mô tả chi tiết</span></h2>
+                                <div class="pd-detail__content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus mi semper luctus vestibulum. Phasellus tincidunt sollicitudin orci, eget hendrerit quam interdum sed. Morbi id dolor nisl. Donec tincidunt sodales sem. Mauris euismod tellus orci, quis tempor felis mattis ut. Praesent tempus pretium finibus. In iaculis mauris ut tortor venenatis, faucibus rutrum odio tincidunt. Aenean eget ex eu ligula egestas sodales vel non turpis. Nam nec metus condimentum, euismod libero eget, tristique neque.</p>
+                                    <p>Morbi in maximus risus, non aliquet quam. Cras et tellus rhoncus, lobortis orci eget, rhoncus augue. Quisque et interdum ipsum. Maecenas nec bibendum leo, et gravida nulla. Cras varius dui id arcu fringilla, non molestie odio sollicitudin. Etiam ac enim convallis, mollis quam eu, elementum ex. Donec suscipit, massa vitae blandit scelerisque, nisi odio elementum dui.</p>
+                                    <p class="text-center"><img src="./images/product-img-2.jpg" alt=""></p>
+                                    <p class="text-center"><img src="./images/product-img-3.jpg" alt=""></p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus mi semper luctus vestibulum. Phasellus tincidunt sollicitudin orci, eget hendrerit quam interdum sed. Morbi id dolor nisl. Donec tincidunt sodales sem. Mauris euismod tellus orci, quis tempor felis mattis ut. Praesent tempus pretium finibus. In iaculis mauris ut tortor venenatis, faucibus rutrum odio tincidunt. Aenean eget ex eu ligula egestas sodales vel non turpis. Nam nec metus condimentum, euismod libero eget, tristique neque.</p>
+                                    <p>Morbi in maximus risus, non aliquet quam. Cras et tellus rhoncus, lobortis orci eget, rhoncus augue. Quisque et interdum ipsum. Maecenas nec bibendum leo, et gravida nulla. Cras varius dui id arcu fringilla, non molestie odio sollicitudin. Etiam ac enim convallis, mollis quam eu, elementum ex. Donec suscipit, massa vitae blandit scelerisque, nisi odio elementum dui, mollis venenatis lorem lacus quis elit. Morbi tincidunt urna quis consequat vulputate.</p>
+                                    <p>Praesent quis eleifend purus. Aenean aliquam velit et orci laoreet, nec molestie velit porta. Sed ultrices nunc a odio scelerisque volutpat. Praesent fringilla quam non posuere mollis. Nunc nisi elit, vestibulum sed nunc vel, aliquam tempus ex. In ut laoreet tellus, sit amet vehicula nulla. Aliquam erat volutpat. Donec pulvinar justo vel placerat porta.</p>
+                                    <p>Morbi consequat interdum vulputate. Sed sodales cursus nunc, at dapibus metus gravida ac. Vivamus fermentum dolor ac magna interdum, eget tincidunt turpis rutrum. Praesent luctus varius aliquet. Vestibulum purus nisl, imperdiet congue nulla quis, consequat viverra tortor. Suspendisse ultrices metus nec dui congue, auctor luctus est faucibus. Nulla molestie condimentum fermentum. Cras malesuada nulla sed dui vulputate malesuada. Ut turpis leo, sollicitudin rhoncus felis egestas, sodales cursus nisl. Curabitur finibus dui eu lobortis congue. In scelerisque felis et arcu rhoncus posuere. Quisque feugiat sagittis erat sed pulvinar. Phasellus elit sapien, varius id tincidunt nec, posuere non lorem. Donec nec mollis turpis, vel suscipit ex. Pellentesque rutrum sapien id mauris sollicitudin, nec egestas sem aliquet. Nullam magna dui, dictum vel laoreet id, facilisis non orci.</p>
+                                </div>
+                                <div class="pd-detail__footer"><a class="pd-detail__more" href="#!" data-lang-expand="Xem thêm" data-lang-collapse="Thu gọn"></a></div>
+                            </section>
+                            <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 mb-30">
+                            <section class="aside">
+                                <h2 class="aside__title">Danh mục</h2>
+                                <ul class="menu menu-aside">
+                                    <li class="menu-item"><a class="menu-link" href="#!">Tất cả sản phẩm</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#!">Sản phẩm khuyến mại</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#!">COMBO</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#!">Vi điều khiển - Nhúng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#!">Module</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#!">Cảm biến</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#!">Linh kiện điện tử</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#!">IC chức năng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#!">LED</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#!">LCD</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#!">Dụng cụ-Phụ kiện</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#!">Connector</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link" href="#!">Thiết bị chế tạo</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- Sản phẩm cùng loại-->
+                    <section class="section mb-20">
+                        <h2 class="section__title">Sản phẩm cùng loại</h2>
+                        <div class="product-slider-3">
+                            <div class="product-slider-3__prev"><i class="fa fa-angle-left"></i></div>
+                            <div class="product-slider-3__next"><i class="fa fa-angle-right"></i></div>
+                            <div class="swiper-container product-slider-3__container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Sản phẩm đã xem-->
+                    <section class="section mb-50">
+                        <h2 class="section__title">Sản phẩm đã xem</h2>
+                        <div class="product-slider-3">
+                            <div class="product-slider-3__prev"><i class="fa fa-angle-left"></i></div>
+                            <div class="product-slider-3__next"><i class="fa fa-angle-right"></i></div>
+                            <div class="swiper-container product-slider-3__container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-img.jpg" alt="" /></a>
+                                            <h3 class="product__title"><a href="./product-detail.html">Máy Nén Khí Điều Hòa Mini 275W</a></h3>
+                                            <div class="product__price">3.200.000₫</div>
+                                            <div class="product__nav"><a class="product__btn product__btn--primary" href="#!"><i class="fa fa-shopping-basket mr-1"></i>Mua ngay</a><a class="product__btn" href="#!"><i class="fa fa-search"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__grid">
+                        <div class="footer__col">
+                            <h2 class="footer__title">THÔNG TIN LIÊN HỆ</h2>
+                            <div class="footer__contact">
+                                <p>Địa chỉ: Số 70, Ngõ 40 - Tạ Quang Bửu - Hai Bà Trưng - Hà Nội.<br />Điện thoại: 0966 129 629<br />0966 129 629 ( Cửa Hàng ) | 036 386 03 26 ( Kĩ Thuật )<br />036 386 03 26 Hotline Góp Ý - Hợp Tác<br />Email: linhkientcp@gmail.com<br />Thời gian làm việc: 8h30 - 18h</p>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <h2 class="footer__title">VỀ CHÚNG TÔI</h2>
+                            <ul class="f-menu">
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Sự đặc biệt của chúng tôi</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Liên hệ</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Tuyển dụng</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Hợp Tác Kinh Doanh</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Bản đồ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h2 class="footer__title">HỖ TRỢ - CHÍNH SÁCH</h2>
+                            <ul class="f-menu">
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Phương thức thanh toán</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách bảo hành- đổi trả</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Hướng dẫn mua hàng online</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h2 class="footer__title">FANPAGE FACEBOOK</h2>
+                            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote class="fb-xfbml-parse-ignore" cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="container">Copyright © 2020 Devstore.Vn | © Bản quyền thuộc về Devstore.Vn</div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <button class="btn btn-movetop js-scroll-to" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button><a class="phone-ring" href="#!"><span class="phone-ring__icon"><i class="fa fa-phone"></i></span><span class="phone-ring__text">0123.456.789</span></a>
+            <article class="cart js-cart">
+                <div class="cart__backdrop js-cart-close"></div>
+                <div class="cart__wrapper">
+                    <div class="cart__header">
+                        <div class="cart__title">GIỎ HÀNG</div>
+                        <button class="cart__close js-cart-close"></button>
+                    </div>
+                    <div class="cart__body">
+                        <ul class="cart__list">
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/634/434/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/620/420/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/615/415/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/669/469/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/676/476/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/625/425/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/618/418/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/668/468/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/642/442/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/672/472/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cart__footer">
+                        <div class="cart__total"><span class="text-uppercase">Tổng</span><span class="ml-auto text-primary js-cart-product-total">1,000,000</span><span class="text-primary ml-1">VNĐ</span></div><a class="btn btn-block btn-primary rounded-18 text-uppercase text-700" href="#!">ĐẶT HÀNG</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </body>
+</html>

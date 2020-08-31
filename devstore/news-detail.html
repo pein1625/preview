@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="toppage">
+                    <div class="container">
+                        <div class="toppage__inner">
+                            <nav class="social"><a class="social__item" href="#!"><i class="fa fa-fw fa-facebook"></i></a><a class="social__item" href="#!"><i class="fa fa-fw fa-twitter"></i></a><a class="social__item" href="#!"><i class="fa fa-fw fa-google-plus"></i></a><a class="social__item" href="#!"><i class="fa fa-fw fa-instagram"></i></a><a class="social__item" href="#!"><i class="fa fa-fw fa-youtube"></i></a></nav>
+                            <nav class="topnav"><a class="topnav__item" href="#!"><i class="fa fa-fw fa-user"></i><span class="ml-2">Tài khoản</span></a><a class="topnav__item" href="#!"><i class="fa fa-fw fa-heart"></i><span class="ml-2">Yêu thích</span></a><a class="topnav__item" href="#!"><i class="fa fa-fw fa-map-marker"></i><span class="ml-2">Bản đồ tới Devstore</span></a></nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__elements"><a class="header__btn media" href="#!"><i class="fa fa-fw fa-lg fa-phone"></i>
+                                    <div class="header__btn-text media-body ml-2"><small>Hỗ trợ</small>
+                                        <div class="font-weight-bold">0999999999</div>
+                                    </div>
+                                </a><a class="header__btn media js-cart-open" href="#!"><i class="fa fa-fw fa-lg fa-shopping-basket"></i><span class="header__btn-quantity">(0)</span>
+                                    <div class="header__btn-text media-body ml-2"><small>Giỏ hàng</small>
+                                        <div class="font-weight-bold">(0) sản phẩm</div>
+                                    </div>
+                                </a>
+                                <button class="navbar-toggle d-xl-none js-navbar-toggle ml-10"><span></span><span></span><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navigation js-scroll-fixed">
+                    <div class="navigation__wrapper">
+                        <div class="container">
+                            <div class="navigation__inner">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                            <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <div class="pd-menu"><a class="pd-menu__toggle" href="#!"><i class="fa fa-th mr-3"></i>DANH MỤC SẢN PHẨM</a>
+                                                <div class="pd-menu__dropdown">
+                                                    <ul class="menu menu-aside">
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Tất cả sản phẩm</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Sản phẩm khuyến mại</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">COMBO</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Vi điều khiển - Nhúng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Module</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Cảm biến</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Linh kiện điện tử</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">IC chức năng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">LED</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">LCD</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dụng cụ-Phụ kiện</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Connector</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Thiết bị chế tạo</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Góc học tập</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Kiểm tra vận đơn</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Tích điểm - Đổi quà</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Tuyển dụng</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Đồ án - Dự án</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <form class="search">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="Tìm kiếm sản phẩm..." />
+                                        <div class="input-group-append">
+                                            <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="container pb-30">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Tin tức</a></li>
+                        <li class="breadcrumb-item active">Lorem ipsum dolor sit amet</li>
+                    </ol>
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-9 order-lg-1 mb-30">
+                            <article class="post mb-30">
+                                <h1 class="post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit sque vehicula diam</h1>
+                                <div class="post-info">
+                                    <div class="pr-3 mr-auto"><i class="fa fa-user mr-2"></i>Đăng bởi : Admin - 09/05/2018</div>
+                                    <div><img src="./images/social-btns.png" alt=""></div>
+                                </div>
+                                <h2 class="post-sapo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus mi semper luctus vestibulum. Phasellus tincidunt sollici tudin orci, eget hendrerit quam interdum sed. Morbi id dolor nisl. Donec tincidunt sodales sem. Mauris euismod tellus orci, quis tempor felis mattis ut. Praesent tempus pretium finibus. In iaculis mauris ut tortor venenatis.</h2>
+                                <div class="post-content">
+                                    <p class="text-center"><img src="./images/post-img.jpg" alt=""></p>
+                                    <p>Donec eget dolor convallis, ornare leo at, varius purus. Maecenas ut magna ac nisi viverra mattis in eget felis. Sed id cursus sem. Donec tempus, quam a molestie rhoncus, justo lacus lobortis velit, vitae ullamcorper lorem eros et justo. Donec pharetra, magna ut rutrum varius, mi justo feugiat mi, ut consectetur sapien tellus ut orci. Praesent at diam non velit viverra feugiat et sed enim. Nam sapien lacus, convallis eu augue at, faucibus imperdiet purus. Phasellus urna tortor, efficitur sit amet malesuada id, sodales eget nisl. Ut porttitor mattis laoreet. Nullam accumsan ultrices odio a convallis. Suspendisse pellentesque iaculis dolor et elementum. Duis at neque eget nibh pretium tempus et ac felis. Vivamus a massa vehicula, fermentum leo ac, vehicula turpis.</p>
+                                    <p>Nullam sem tortor, blandit pharetra placerat in, porttitor ac turpis. In aliquam sagittis erat, sed porta eros auctor vel. Vestibulum pellentesque lorem sed arcu vulputate, id placerat lorem eleifend. Donec pellentesque, nulla condimentum ultrices vulputate, mauris mi mollis orci, a accumsan urna sapien vel orci. In volutpat in nunc quis lacinia. Nam nec aliquet ligula. Aliquam et metus imperdiet, fringilla ex non, commodo nisi. Duis vehicula, justo nec gravida lacinia, sem elit finibus augue, sit amet sodales dui odio eu ante. In condimentum dignissim fermentum. Nulla pharetra ultrices purus, faucibus vulputate risus lacinia vitae. Sed et bibendum quam. Nunc consectetur tortor sit amet urna consequat, ut aliquet risus efficitur. Aliquam suscipit, lorem et volutpat blandit, leo velit gravida odio, eu luctus purus nisl non dui. Vestibulum tristique sollicitudin pretium. Morbi eu augue elementum, tincidunt massa eu, placerat sapien.</p>
+                                </div>
+                            </article>
+                            <div class="fb-comments mb-30" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+                            <section class="relate-post pb-0">
+                                <h2 class="relate-post__title">Bài viết liên quan</h2>
+                                <div class="row gutter -all-20 -under-sm-16">
+                                    <div class="col-lg-3 col-6 mb-20">
+                                        <div class="news-4"><a class="news-4__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="" /></a>
+                                            <h3 class="news-4__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 mb-20">
+                                        <div class="news-4"><a class="news-4__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="" /></a>
+                                            <h3 class="news-4__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 mb-20">
+                                        <div class="news-4"><a class="news-4__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="" /></a>
+                                            <h3 class="news-4__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 mb-20">
+                                        <div class="news-4"><a class="news-4__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="" /></a>
+                                            <h3 class="news-4__title"><a href="./news-detail.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 mb-30">
+                            <section class="aside">
+                                <h2 class="aside__title">Danh mục tin tức</h2>
+                                <ul class="menu menu-aside">
+                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Hướng dẫn chế - Diy điện tử</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Lập trình vi điều khiển</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Quà tặng điện tử</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Tài liệu - phần mềm</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Thông Tin Tuyển Dụng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Thiết bị đo lường điều khiển</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                        <ul class="menu menu-sub">
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                            <li class="menu-item"><a class="menu-link" href="#!">Sub menu</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="aside">
+                                <h2 class="aside__title">Bài viết nổi bật</h2>
+                                <div class="list-2">
+                                    <div class="list-2__item">
+                                        <div class="news-3 media"><a class="news-3__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-3__title"><a href="./news-detail.html">Vì Sao Pin Lithium Chưa Được Sử Dụng Thương Mại ?</a></h3>
+                                                <div class="news-3__info"><i class="fa fa-user mr-2"></i>Admin - 09/05/2018</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-2__item">
+                                        <div class="news-3 media"><a class="news-3__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-3__title"><a href="./news-detail.html">Vì Sao Pin Lithium Chưa Được Sử Dụng Thương Mại ?</a></h3>
+                                                <div class="news-3__info"><i class="fa fa-user mr-2"></i>Admin - 09/05/2018</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-2__item">
+                                        <div class="news-3 media"><a class="news-3__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-3__title"><a href="./news-detail.html">Vì Sao Pin Lithium Chưa Được Sử Dụng Thương Mại ?</a></h3>
+                                                <div class="news-3__info"><i class="fa fa-user mr-2"></i>Admin - 09/05/2018</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-2__item">
+                                        <div class="news-3 media"><a class="news-3__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-3__title"><a href="./news-detail.html">Vì Sao Pin Lithium Chưa Được Sử Dụng Thương Mại ?</a></h3>
+                                                <div class="news-3__info"><i class="fa fa-user mr-2"></i>Admin - 09/05/2018</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-2__item">
+                                        <div class="news-3 media"><a class="news-3__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-3__title"><a href="./news-detail.html">Vì Sao Pin Lithium Chưa Được Sử Dụng Thương Mại ?</a></h3>
+                                                <div class="news-3__info"><i class="fa fa-user mr-2"></i>Admin - 09/05/2018</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-2__item">
+                                        <div class="news-3 media"><a class="news-3__frame" href="./news-detail.html"><img src="./images/news-img.jpg" alt="" /></a>
+                                            <div class="media-body">
+                                                <h3 class="news-3__title"><a href="./news-detail.html">Vì Sao Pin Lithium Chưa Được Sử Dụng Thương Mại ?</a></h3>
+                                                <div class="news-3__info"><i class="fa fa-user mr-2"></i>Admin - 09/05/2018</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__grid">
+                        <div class="footer__col">
+                            <h2 class="footer__title">THÔNG TIN LIÊN HỆ</h2>
+                            <div class="footer__contact">
+                                <p>Địa chỉ: Số 70, Ngõ 40 - Tạ Quang Bửu - Hai Bà Trưng - Hà Nội.<br />Điện thoại: 0966 129 629<br />0966 129 629 ( Cửa Hàng ) | 036 386 03 26 ( Kĩ Thuật )<br />036 386 03 26 Hotline Góp Ý - Hợp Tác<br />Email: linhkientcp@gmail.com<br />Thời gian làm việc: 8h30 - 18h</p>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <h2 class="footer__title">VỀ CHÚNG TÔI</h2>
+                            <ul class="f-menu">
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Sự đặc biệt của chúng tôi</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Liên hệ</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Tuyển dụng</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Hợp Tác Kinh Doanh</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Bản đồ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h2 class="footer__title">HỖ TRỢ - CHÍNH SÁCH</h2>
+                            <ul class="f-menu">
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Phương thức thanh toán</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách bảo hành- đổi trả</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Hướng dẫn mua hàng online</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h2 class="footer__title">FANPAGE FACEBOOK</h2>
+                            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote class="fb-xfbml-parse-ignore" cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="container">Copyright © 2020 Devstore.Vn | © Bản quyền thuộc về Devstore.Vn</div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <button class="btn btn-movetop js-scroll-to" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button><a class="phone-ring" href="#!"><span class="phone-ring__icon"><i class="fa fa-phone"></i></span><span class="phone-ring__text">0123.456.789</span></a>
+            <article class="cart js-cart">
+                <div class="cart__backdrop js-cart-close"></div>
+                <div class="cart__wrapper">
+                    <div class="cart__header">
+                        <div class="cart__title">GIỎ HÀNG</div>
+                        <button class="cart__close js-cart-close"></button>
+                    </div>
+                    <div class="cart__body">
+                        <ul class="cart__list">
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/643/443/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/620/420/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/697/497/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/682/482/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/650/450/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/661/461/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/629/429/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/640/440/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/669/469/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-product media"><a class="cart-product__remove" href="#!">&times;</a><a class="cart-product__frame" href="#!"><img src="https://placeimg.qom.vn/622/422/any" alt="" /></a>
+                                    <div class="media-body">
+                                        <h3 class="cart-product__title mb-2"><a href="#!">JACKET MILITARY GREEN</a></h3>
+                                        <div class="d-flex align-items-center">
+                                            <div class="quantity">
+                                                <div class="quantity__btn" data-plus="-1"></div>
+                                                <input class="quantity__input" type="text" value="1" />
+                                                <div class="quantity__btn" data-plus="1"></div>
+                                            </div>
+                                            <div class="cart-product__price"><span> 100,000</span><span> VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cart__footer">
+                        <div class="cart__total"><span class="text-uppercase">Tổng</span><span class="ml-auto text-primary js-cart-product-total">1,000,000</span><span class="text-primary ml-1">VNĐ</span></div><a class="btn btn-block btn-primary rounded-18 text-uppercase text-700" href="#!">ĐẶT HÀNG</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </body>
+</html>
