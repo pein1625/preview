@@ -254,6 +254,24 @@ $(function () {
   });
 });
 
+// smooth scroll to div
+$(function () {
+  $(".js-scroll-to").on("click", function (e) {
+    e.preventDefault();
+
+    const $el = $(this),
+          target = $el.data("target") || $el.attr("href"),
+          offset = parseInt($el.data("offset")) || 0,
+          duration = parseInt($el.data("duration")) || 800;
+
+    if (!$(target).length) return;
+
+    $("html, body").animate({
+      scrollTop: $(target).offset().top - offset
+    }, duration);
+  });
+});
+
 // common.js
 $(function () {
   $(".anchor-select").on("change", function () {
