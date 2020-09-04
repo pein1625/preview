@@ -159,3 +159,11 @@ $(function () {
     $(this).closest(".filter__group").find("input").prop("checked", false);
   });
 });
+
+$(function () {
+  var images = document.querySelectorAll(".parallax");
+  new simpleParallax(images, {
+    overflow: true,
+    scale: 2
+  });
+});
