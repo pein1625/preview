@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="header__logo logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__elements">
+                                <nav class="lang"><a class="lang__item" href="#!"><img src="./images/vn.svg" alt="" /></a><a class="lang__item" href="#!"><img src="./images/gb.svg" alt="" /></a></nav>
+                                <button class="navbar-toggle d-xl-none js-navbar-toggle ml-10"><span></span><span></span><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navigation js-scroll-fixed">
+                    <div class="navigation__wrapper">
+                        <div class="container">
+                            <div class="navigation__inner">
+                                <div class="navigation__slogan">Công ty cổ phần Đầu tư Công nghệ Thông Minh</div>
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                            <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <form class="search">
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" placeholder="Tìm khóa..." size="10" />
+                                                    <div class="input-group-append">
+                                                        <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                                    </div>
+                                                </div>
+                                            </form><a class="hotline" href="tel:096 3697 688"><img class="mr-10" src="./images/icon-phone-call.png" alt="" />096 3697 688</a>
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Giới thiệu</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Sản phẩm - Dịch vụ</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="./products.html">Sản phẩm</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="./services.html">Dịch vụ</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./projects.html">DỰ ÁN - Đối tác</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="./projects.html">Dự án</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="./partners.html">Đối tác</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">Tin tức</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">tuyển dụng</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./contact.html">Liên hệ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <!-- banner slider-->
+                <div class="banner-slider">
+                    <div class="banner-slider__pagination"></div>
+                    <div class="swiper-container banner-slider__container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a class="banner-slider__frame" href="#!"><img class="d-block w-100" src="./images/banner-home.jpg" alt="" /></a>
+                            </div>
+                            <div class="swiper-slide"><a class="banner-slider__frame" href="#!"><img class="d-block w-100" src="./images/banner-home.jpg" alt="" /></a>
+                            </div>
+                            <div class="swiper-slide"><a class="banner-slider__frame" href="#!"><img class="d-block w-100" src="./images/banner-home.jpg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="section home-about">
+                    <div class="container">
+                        <h2 class="section__title section__title--white">Giới thiệu</h2>
+                        <div class="row">
+                            <div class="col-md-6 mb-30">
+                                <div class="home-about__content">
+                                    <p class="text-uppercase font-weight-bold">Về công ty:</p>
+                                    <p>Vào tháng 3 năm 2013, Công ty cổ phần Đầu tư Công nghệ Thông Minh - ra đời với thương hiệu Smitech - không ngừng nỗ lực và phát triển thành một Doanh nghiệp cung cấp giải pháp, thiết bị và lắp đặt các hệ thống cơ điện chuyên nghiệp hàng đầu Việt Nam.</p>
+                                    <p>Smitech có rất nhiều đối tác lớn trong và ngoài nước như: Airportlighting, Schneider, ABB, Siemens, EVN, Vinaconex, Bộ NN & PTNT, Vinacomin, Dabaco, …. Smitech cam kết mang đến những sản phẩm và dịch vụ chất lương tốt nhất từ những thiết bị công nghệ thông minh, tiên tiến nhất …khiến cho quý khách hàng luôn hài lòng khi sử dụng sản phẩm và dịch vụ của Smitech.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-30">
+                                <div class="video">
+                                    <div class="video__frame"><img src="./images/home-video-img.jpg" alt="" /></div><a class="video__overlay" href="https://www.youtube.com/watch?v=0duXxSb8O3U" data-fancybox="video">
+                                        <div class="video__title">Smitech</div>
+                                        <div class="video__icon"><img src="./images/icon-play-circle.png" alt="icon play video" /></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <h2 class="section__title">SẢN PHẨM</h2>
+                        <ul class="nav pd-tabs mb-30">
+                            <li class="nav-item"><a class="nav-link js-product-tab active" href="#pd-tab-1" data-toggle="tab">Đường dây và trạm biến áp</a></li>
+                            <li class="nav-item"><a class="nav-link js-product-tab" href="#pd-tab-2" data-toggle="tab">Máy và thiết bị Công nghiệp</a></li>
+                            <li class="nav-item"><a class="nav-link js-product-tab" href="#pd-tab-3" data-toggle="tab">Máy phát điện</a></li>
+                            <li class="nav-item"><a class="nav-link js-product-tab" href="#pd-tab-4" data-toggle="tab">Thiết bị nhà thông minh</a></li>
+                            <li class="nav-item"><a class="nav-link js-product-tab" href="#pd-tab-5" data-toggle="tab">Kết cấu thép</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="pd-tab-1">
+                                <div class="product-slider">
+                                    <div class="product-slider__prev"><img src="./images/prev-button.png" alt="" /></div>
+                                    <div class="product-slider__next"><img src="./images/next-button.png" alt="" /></div>
+                                    <div class="product-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3"><a class="more" href="#!">KHÁM PHÁ NGAY<img class="ml-3" src="./images/icon-arrow-right.png" alt=""></a></div>
+                            </div>
+                            <div class="tab-pane fade" id="pd-tab-2">
+                                <div class="product-slider">
+                                    <div class="product-slider__prev"><img src="./images/prev-button.png" alt="" /></div>
+                                    <div class="product-slider__next"><img src="./images/next-button.png" alt="" /></div>
+                                    <div class="product-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3"><a class="more" href="#!">KHÁM PHÁ NGAY<img class="ml-3" src="./images/icon-arrow-right.png" alt=""></a></div>
+                            </div>
+                            <div class="tab-pane fade" id="pd-tab-3">
+                                <div class="product-slider">
+                                    <div class="product-slider__prev"><img src="./images/prev-button.png" alt="" /></div>
+                                    <div class="product-slider__next"><img src="./images/next-button.png" alt="" /></div>
+                                    <div class="product-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3"><a class="more" href="#!">KHÁM PHÁ NGAY<img class="ml-3" src="./images/icon-arrow-right.png" alt=""></a></div>
+                            </div>
+                            <div class="tab-pane fade" id="pd-tab-4">
+                                <div class="product-slider">
+                                    <div class="product-slider__prev"><img src="./images/prev-button.png" alt="" /></div>
+                                    <div class="product-slider__next"><img src="./images/next-button.png" alt="" /></div>
+                                    <div class="product-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3"><a class="more" href="#!">KHÁM PHÁ NGAY<img class="ml-3" src="./images/icon-arrow-right.png" alt=""></a></div>
+                            </div>
+                            <div class="tab-pane fade" id="pd-tab-5">
+                                <div class="product-slider">
+                                    <div class="product-slider__prev"><img src="./images/prev-button.png" alt="" /></div>
+                                    <div class="product-slider__next"><img src="./images/next-button.png" alt="" /></div>
+                                    <div class="product-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product"><a class="product__frame" href="#!"><img src="./images/home-product.jpg" alt="" /></a>
+                                                    <h3 class="product__title"><a href="#!">Tủ điện trung áp trạm nguồn</a></h3>
+                                                    <div class="product__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3"><a class="more" href="#!">KHÁM PHÁ NGAY<img class="ml-3" src="./images/icon-arrow-right.png" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <h2 class="section__title">DỊCH VỤ</h2>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6 mb-30">
+                                <div class="service"><a class="service__frame" href="#!"><img src="./images/home-service.jpg" alt="" /></a>
+                                    <h3 class="service__title"><a href="#!">Cung ứng các dịch vụ kỹ thuật:</a></h3>
+                                    <div class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt corrupti facilis esse voluptate. Quas itaque nihil saepe ipsa error fuga tempora voluptas deleniti vitae est alias eligendi, corrupti beatae.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 mb-30">
+                                <div class="service"><a class="service__frame" href="#!"><img src="./images/home-service.jpg" alt="" /></a>
+                                    <h3 class="service__title"><a href="#!">Cung cấp thiết bị &amp; thi công trọn gói:</a></h3>
+                                    <div class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt corrupti facilis esse voluptate. Quas itaque nihil saepe ipsa error fuga tempora voluptas deleniti vitae est alias eligendi, corrupti beatae.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 mb-30">
+                                <div class="service"><a class="service__frame" href="#!"><img src="./images/home-service.jpg" alt="" /></a>
+                                    <h3 class="service__title"><a href="#!">Thực hiện bảo trì, sửa chữa:</a></h3>
+                                    <div class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt corrupti facilis esse voluptate. Quas itaque nihil saepe ipsa error fuga tempora voluptas deleniti vitae est alias eligendi, corrupti beatae.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center"><a class="more" href="#!">Khám phá ngay<img class="ml-3" src="./images/icon-arrow-right.png" alt=""></a></div>
+                    </div>
+                </section>
+                <section class="section mb-20">
+                    <div class="container">
+                        <h2 class="section__title">DỰ ÁN</h2>
+                        <div class="row">
+                            <div class="col-lg-6 mb-30">
+                                <div class="project-slider">
+                                    <div class="project-slider__prev"><img src="./images/prev-button.png" alt="" /></div>
+                                    <div class="project-slider__next"><img src="./images/next-button.png" alt="" /></div>
+                                    <div class="project-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="project-3"><a class="project-3__frame" href="#!"><img src="./images/project-img.jpg" alt="" /></a>
+                                                    <h3 class="project-3__title"><a href="#!">dự án Cung ứng các dịch vụ kỹ thuật</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="project-3"><a class="project-3__frame" href="#!"><img src="./images/project-img.jpg" alt="" /></a>
+                                                    <h3 class="project-3__title"><a href="#!">dự án Cung ứng các dịch vụ kỹ thuật</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="project-3"><a class="project-3__frame" href="#!"><img src="./images/project-img.jpg" alt="" /></a>
+                                                    <h3 class="project-3__title"><a href="#!">dự án Cung ứng các dịch vụ kỹ thuật</a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-30">
+                                <section class="h-project">
+                                    <div class="h-project__desc">
+                                        <p>Smitech là một đơn vị chuyên nghiệp trong lĩnh vực cung cấp giải pháp, thiết bị và lắp đặt các hệ thống cơ điện. Sản phẩm và dịch vụ của chúng tôi cung cấp gồm có: Thiết kế, cung cấp, lắp đặt, bảo trì, bảo dưỡng hệ thống điện động lực, điều khiển, Đường dây và trạm biến áp và chiếu sáng… trong các nhà máy công nghiệp và hạ tầng khu đô thị.</p>
+                                    </div>
+                                    <h3 class="h-project__subtitle">Các dự án Smitech đã thực hiện:</h3>
+                                    <ul class="h-project__list">
+                                        <li><a href="#!">Tư vấn cung cấp giải pháp tối ưu.</a></li>
+                                        <li><a href="#!">Tư vấn quản lý dự án, Thiết kế kỹ thuật.</a></li>
+                                        <li><a href="#!">Tư vấn cung cấp giải pháp tối ưu.</a></li>
+                                        <li><a href="#!">Tư vấn quản lý dự án, Thiết kế kỹ thuật.</a></li>
+                                        <li><a href="#!">Tư vấn cung cấp giải pháp tối ưu.</a></li>
+                                        <li><a href="#!">Tư vấn quản lý dự án, Thiết kế kỹ thuật.</a></li>
+                                        <li><a href="#!">Tư vấn cung cấp giải pháp tối ưu.</a></li>
+                                        <li><a href="#!">Tư vấn quản lý dự án, Thiết kế kỹ thuật.</a></li>
+                                        <li><a href="#!">Tư vấn cung cấp giải pháp tối ưu.</a></li>
+                                        <li><a href="#!">Tư vấn quản lý dự án, Thiết kế kỹ thuật.</a></li>
+                                        <li><a href="#!">Tư vấn cung cấp giải pháp tối ưu.</a></li>
+                                        <li><a href="#!">Tư vấn quản lý dự án, Thiết kế kỹ thuật.</a></li>
+                                    </ul>
+                                    <div><a class="more" href="#!">KHÁM PHÁ NGAY<img src="./images/icon-arrow-right.png" alt=""></a></div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section mb-20">
+                    <div class="container">
+                        <h2 class="section__title">TIN TỨC NỔI BẬT</h2>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6 mb-30">
+                                <div class="news-4"><a class="news-4__frame" href="#!"><img src="./images/news-img.jpg" alt="" /></a>
+                                    <h3 class="news-4__title"><a href="#!">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
+                                    <div class="news-4__info">Admin: Smitech - 04/07/2020</div>
+                                    <div class="news-4__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, justo in ultrices cursus, massa erat dignissim sem, tincidunt porta sapien lectus ut tellus. Aliquam lacus sem, lobortis ut urna sed,...</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 mb-30">
+                                <div class="news-4"><a class="news-4__frame" href="#!"><img src="./images/news-img.jpg" alt="" /></a>
+                                    <h3 class="news-4__title"><a href="#!">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
+                                    <div class="news-4__info">Admin: Smitech - 04/07/2020</div>
+                                    <div class="news-4__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, justo in ultrices cursus, massa erat dignissim sem, tincidunt porta sapien lectus ut tellus. Aliquam lacus sem, lobortis ut urna sed,...</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 mb-30">
+                                <div class="news-4"><a class="news-4__frame" href="#!"><img src="./images/news-img.jpg" alt="" /></a>
+                                    <h3 class="news-4__title"><a href="#!">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
+                                    <div class="news-4__info">Admin: Smitech - 04/07/2020</div>
+                                    <div class="news-4__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, justo in ultrices cursus, massa erat dignissim sem, tincidunt porta sapien lectus ut tellus. Aliquam lacus sem, lobortis ut urna sed,...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <h2 class="section__title">Đối tác</h2>
+                        <div class="partner-slider">
+                            <div class="partner-slider__prev"><img src="./images/prev-button.png" alt="" /></div>
+                            <div class="partner-slider__next"><img src="./images/next-button.png" alt="" /></div>
+                            <div class="partner-slider__container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a class="partner-slider__frame" href="#!"><img src="./images/partner.png" alt="" /></a></div>
+                                    <div class="swiper-slide"><a class="partner-slider__frame" href="#!"><img src="./images/partner.png" alt="" /></a></div>
+                                    <div class="swiper-slide"><a class="partner-slider__frame" href="#!"><img src="./images/partner.png" alt="" /></a></div>
+                                    <div class="swiper-slide"><a class="partner-slider__frame" href="#!"><img src="./images/partner.png" alt="" /></a></div>
+                                    <div class="swiper-slide"><a class="partner-slider__frame" href="#!"><img src="./images/partner.png" alt="" /></a></div>
+                                    <div class="swiper-slide"><a class="partner-slider__frame" href="#!"><img src="./images/partner.png" alt="" /></a></div>
+                                    <div class="swiper-slide"><a class="partner-slider__frame" href="#!"><img src="./images/partner.png" alt="" /></a></div>
+                                    <div class="swiper-slide"><a class="partner-slider__frame" href="#!"><img src="./images/partner.png" alt="" /></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <h2 class="footer__title">Công ty Cổ phần Đầu tư Công nghệ Thông Minh</h2>
+                            <div class="footer__contact">
+                                <p>SMART TECHNOLOGY INVESTMENT JOINT STOCK COMPANY<br />Trụ sở: Số 91 Tuệ Tĩnh, Phường Nguyễn Du, Quận Hai Bà Trưng, Thành Phố Hà Nội.<br />VPGD: Tầng 4, số 44, ngõ 897 Giải Phóng, Giáp Bát, Hoàng Mai, Hà Nội<br />Hotline: 02466 593 863 - 096 3697 688<br />Email: contact.smitech@gmail.com</p>
+                            </div>
+                            <div class="mt-10"><a href="#!"><img src="./images/dathongbao.png" alt="" /></a></div>
+                        </div>
+                        <div class="col-lg-2 mb-4">
+                            <h2 class="footer__title">LIÊN KẾT NHANH</h2>
+                            <ul class="f-menu">
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Trang chủ</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Giới thiệu</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Sản phẩm - Dịch vụ</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Dự án - Đối tác</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Tin tức</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Tuyển dụng</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <h2 class="footer__title">Bản đồ</h2>
+                            <div class="footer__map embed-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.276132266639!2d105.78908421533202!3d21.021634493396395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1587606986563!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__end">
+                        <nav class="footer__nav"><a class="footer__nav-item" href="#!">Sơ đồ trang</a><a class="footer__nav-item" href="#!">Chính sách và điều khoản</a><a class="footer__nav-item" href="#!">Chính sách bảo mật thông tin cá nhân</a></nav>
+                        <div class="footer__copyright">© Bản quyền thuộc về Công ty Cổ phần Đầu tư Công nghệ Thông Minh</div>
+                    </div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <button class="btn btn-movetop js-scroll-to" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button>
+        </div>
+    </body>
+</html>
