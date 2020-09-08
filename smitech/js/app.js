@@ -182,4 +182,33 @@ $(function () {
   });
 });
 
+// horizontal preview sync slider
+$(function () {
+  if (!$(".sync-1-slider, .sync-2-slider").length) {
+    return;
+  }
+
+  if (!window.addSwiper) {
+    console.warn('"addSwiper" funtion is required!');
+    return;
+  }
+
+  var thumbSlider = addSwiper(".sync-2-slider", {
+    navigation: true,
+    slidesPerView: 4,
+    freeMode: true,
+    spaceBetween: 10,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true
+  })[0];
+
+  addSwiper(".sync-1-slider", {
+    effect: "fade",
+    allowTouchMove: false,
+    thumbs: {
+      swiper: thumbSlider
+    }
+  });
+});
+
 // common.js
