@@ -301,3 +301,21 @@ function floating() {
     });
   });
 }
+
+$(function () {
+
+  if ($(window).width() < 992) return;
+
+  $(".js-zoom").each(function () {
+
+    const $el = $(this);
+
+    const url = $el.data("url");
+
+    $el.zoom({
+
+      url: url
+
+    });
+  });
+});
