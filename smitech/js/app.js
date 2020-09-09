@@ -319,3 +319,19 @@ $(function () {
     });
   });
 });
+
+$(function () {
+
+  $(window).on("scroll", function () {
+
+    if ($(window).scrollTop() > 150) {
+
+      let headerHeight = $(".header__wrapper").outerHeight();
+
+      $(".header").css("height", headerHeight).addClass("is-fixed");
+    } else {
+
+      $(".header").css("height", "auto").removeClass("is-fixed");
+    }
+  });
+});
